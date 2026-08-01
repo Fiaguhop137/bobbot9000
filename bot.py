@@ -424,8 +424,6 @@ async def console_controller():
 @bot.event
 async def on_message(message: discord.Message):
     global current_target_server, current_target_channel, active_spam_tasks, pending_reboot, last_chat_data
-    if message.author.bot:
-        return
 
     # --- Deduplicated Chat Logger ---
     if message.guild:
