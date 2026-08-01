@@ -19,7 +19,6 @@ current_target_server: str = "all"
 current_target_channel: str = "all"
 active_spam_tasks: list[asyncio.Task] = []
 pending_reboot: bool = False
-reboot_mode: str = "restart.sh"
 
 # Chat deduplication buffer state
 last_chat_data = {
@@ -202,13 +201,13 @@ async def run_delayed_command(delay: int, full_cmd_string: str, target_context: 
 
 async def reboot_watcher():
     """Background watcher that triggers the appropriate local restart script once the reboot flag is flipped."""
-    global pending_reboot, reboot_mode
+    global pending_reboot
     while not bot.is_closed():
         if pending_reboot:
-            cprint(f"[System] Reboot flag detected using script '{reboot_mode}'. Executing restart sequence...")
+            cprint(f"[System] Reboot command detected. Executing restart sequence...")
             flush_chat_log()
             subprocess.Popen(
-                [f"./{reboot_mode}"],
+                [f"./restart.sh"],
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.DEVNULL,
                 stdin=subprocess.DEVNULL,
@@ -258,7 +257,7 @@ def resolve_targets(cmd_type: str) -> list[discord.abc.Messageable]:
 
 async def console_controller():
     """Reads terminal input asynchronously and routes commands based on state."""
-    global current_target_server, current_target_channel, active_spam_tasks, pending_reboot, reboot_mode
+    global current_target_server, current_target_channel, active_spam_tasks, pending_reboot
     await bot.wait_until_ready()
     cprint(f"\n[Console Controller Active] Connected to {len(bot.guilds)} guild(s).")
     cprint(f"Current Target Server: '{current_target_server}' | Target Channel: '#{current_target_channel}'")
@@ -286,8 +285,7 @@ async def console_controller():
                 break
 
             if cmd.startswith("reboot"):
-                reboot_mode = "restart.sh"
-                cprint("[Console] Reboot flag set. Will restart using 'restart.sh'...")
+                cprint("[Console] Reboot flag set. Will reboot now.")
                 pending_reboot = True
                 break
 
@@ -425,7 +423,7 @@ async def console_controller():
 
 @bot.event
 async def on_message(message: discord.Message):
-    global current_target_server, current_target_channel, active_spam_tasks, pending_reboot, reboot_mode, last_chat_data
+    global current_target_server, current_target_channel, active_spam_tasks, pending_reboot, last_chat_data
     if message.author.bot:
         return
 
@@ -466,8 +464,9 @@ async def on_message(message: discord.Message):
             return
 
         if cmd == "reboot":
-            await message.channel.send("`[Remote Error] 'reboot' command is disabled remotely.`")
-            log_action(guild=message.guild, channel=message.channel, user=message.author, command="reboot", action="Blocked remote reboot attempt", success=False)
+            await message.channel.send("`[Remote Success] Reboot flag set. Restarting...`")
+            log_action(guild=message.guild, channel=message.channel, user=message.author, command="reboot", action="Remote reboot triggered")
+            pending_reboot = True
             return
 
         if cmd == "stop":
