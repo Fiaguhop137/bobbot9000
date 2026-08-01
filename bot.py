@@ -286,8 +286,8 @@ async def console_controller():
                 break
 
             if cmd.startswith("reboot"):
-                reboot_mode = "open_console.sh"
-                cprint("[Console] Reboot flag set. Will open interactive bobbot9000 Console window...")
+                reboot_mode = "restart.sh"
+                cprint("[Console] Reboot flag set. Will restart using 'restart.sh'...")
                 pending_reboot = True
                 break
 
@@ -308,7 +308,7 @@ async def console_controller():
                        "• stop                                     - Halt all active background/delayed tasks\n"
                        "• set <server|channel> <name|all>          - Target specific server/channel or all\n"
                        "• servers                                  - List connected servers and channels\n"
-                       "• reboot                                   - Hard reboot, git pull, and open console\n"
+                       "• reboot                                   - Hard reboot and git pull\n"
                        "• help                                     - Show this help menu\n"
                        "• exit                                     - Shut down the bot\n"
                        "----------------------------------\n")
