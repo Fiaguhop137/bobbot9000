@@ -1,3 +1,153 @@
-  File "/home/firebot/git/bobbot9000/bot.py", line 627
-    bot.loop.create_task(reboot_watcher())
-IndentationError: expected an indented block after 'except' statement on line 625
+davey is not installed, voice will NOT be supported
+[2026-08-01 14:47:47] [INFO    ] discord.client: logging in using static token
+logging in using static token
+[2026-08-01 14:47:48] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: b9dec15e0557942bd810e7f0043f85e4).
+Shard ID None has connected to Gateway (Session ID: b9dec15e0557942bd810e7f0043f85e4).
+Logged in as bobbot9000#8975 (ID: 1533157532510584894)
+Failed to reposition 'Plasma' role in Yap: 400 Bad Request (error code: 50013): Missing Permissions
+[2026-08-01T18:48:11.424139+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #all"
+[2026-08-01T18:48:14.183055+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #emberbot137-remote-console"
+[2026-08-01T18:49:14.867799+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: hii"
+[2026-08-01T18:49:41.022449+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: hii"
+[2026-08-01T18:49:53.625718+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:49:53.927192+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:49:54.046225+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:49:54.242450+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:49:54.553758+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:49:59.407771+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:49:59.815459+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:50:00.086195+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:50:00.538384+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo meow"
+[2026-08-01T18:50:01.110747+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo meow"
+[2026-08-01T18:50:04.393547+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo meow"
+[2026-08-01T18:50:05.549439+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: meow"
+[2026-08-01T19:23:13.942347+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo meow"
+[2026-08-01T19:23:14.574333+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo meow"
+[2026-08-01T19:47:11.384839+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="echo" | Action="Remote echo: [Chorus]
+She's the nya nya girl with the mya mya brigade
+If I burn in hell it's fine, Pretty revolution!
+Protecting the world
+Keep the rhythm with my purrs too
+She's saving the day
+Mew Mew help me～
+She's the nya nya girl who is ready to play
+If I kiss in heaven it's fine, Cutie revolution!
+Slaughtering the world
+While forgetting my lunch
+She's saving the day
+Mew Mew help me～
+She is saving the day
+Collecting kitties～
+She is saving the day
+I don't know the lyrics～
+Lеt's use Cutie Mew Mеw Magic to transform!
+
+[Interlude]
+Meow, meow-meow-meow-meow
+Meow-meow-meow-meow, meow-meow, meow
+Meow, meow-meow-meow-meow
+Meow-meow-meow-meow, meow-meow, meow
+
+[Bridge]
+To the sweet you, Bullet, bullet, wish you luck
+Hear my grumpy singing voice, Mew it, mew it, you'll be struck
+But with a dreaming heart, squeeze, and squeeze, and be filled with determination
+Cutie's here
+Kitty's here
+To save you
+You might also like
+Flower Man
+Toby Fox
+Cutie Mew Mew Magic (Romanized)
+Genius Romanizations
+Cutie Mew Mew Magic
+Toby Fox
+[Chorus]
+She's the nya nya girl with the mya mya brigade
+If I burn in hell it's fine, Pretty revolution!
+Protecting the world
+Keep the rhythm with my purrs too
+She's saving the day
+Mew Mew help me～
+She's the nya nya girl who is ready to play
+If I kiss in heaven it's fine, Cutie revolution!
+Slaughtering the world
+While forgetting my lunch
+She's saving the day
+Mew Mew help me～
+She is saving the day
+Collecting kitties～
+She is saving the day
+I don't know the lyrics～
+Let's use Cutie Mew Mew Magic to transform!
+
+[Outro]
+Nya～, Nyan, Nya～, Nyan
+Nya～, Nya～n, Nya～n, Nyan
+Nya～, Nyan, Nya～, Nyan
+Nya～n, Nya～n, Nyan​​​​​​​"
+[2026-08-01T19:47:39.978868+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #emberbot137-remote-console"
+[2026-08-01T19:47:43.958333+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #everyone"
+[2026-08-01T19:47:49.767556+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="echo" | Action="Remote echo: [Chorus]
+She's the nya nya girl with the mya mya brigade
+If I burn in hell it's fine, Pretty revolution!
+Protecting the world
+Keep the rhythm with my purrs too
+She's saving the day
+Mew Mew help me～
+She's the nya nya girl who is ready to play
+If I kiss in heaven it's fine, Cutie revolution!
+Slaughtering the world
+While forgetting my lunch
+She's saving the day
+Mew Mew help me～
+She is saving the day
+Collecting kitties～
+She is saving the day
+I don't know the lyrics～
+Lеt's use Cutie Mew Mеw Magic to transform!
+
+[Interlude]
+Meow, meow-meow-meow-meow
+Meow-meow-meow-meow, meow-meow, meow
+Meow, meow-meow-meow-meow
+Meow-meow-meow-meow, meow-meow, meow
+
+[Bridge]
+To the sweet you, Bullet, bullet, wish you luck
+Hear my grumpy singing voice, Mew it, mew it, you'll be struck
+But with a dreaming heart, squeeze, and squeeze, and be filled with determination
+Cutie's here
+Kitty's here
+To save you
+You might also like
+Flower Man
+Toby Fox
+Cutie Mew Mew Magic (Romanized)
+Genius Romanizations
+Cutie Mew Mew Magic
+Toby Fox
+[Chorus]
+She's the nya nya girl with the mya mya brigade
+If I burn in hell it's fine, Pretty revolution!
+Protecting the world
+Keep the rhythm with my purrs too
+She's saving the day
+Mew Mew help me～
+She's the nya nya girl who is ready to play
+If I kiss in heaven it's fine, Cutie revolution!
+Slaughtering the world
+While forgetting my lunch
+She's saving the day
+Mew Mew help me～
+She is saving the day
+Collecting kitties～
+She is saving the day
+I don't know the lyrics～
+Let's use Cutie Mew Mew Magic to transform!
+
+[Outro]
+Nya～, Nyan, Nya～, Nyan
+Nya～, Nya～n, Nya～n, Nyan
+Nya～, Nyan, Nya～, Nyan
+Nya～n, Nya～n, Nyan​​​​​​​"

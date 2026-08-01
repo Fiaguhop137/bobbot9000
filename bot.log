@@ -67,3 +67,175 @@
 [2026-08-01T17:13:07.411799+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #everyone"
 [2026-08-01T17:13:09.843782+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="test" | Action="Remote diagnostic test executed"
 [2026-08-01T17:13:15.718222+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 30x: JARONAAA"
+[2026-08-01T17:35:09.893643+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: Froggo SMP, Channel: #all"
+[2026-08-01T17:35:37.503957+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="echo" | Action="Remote echo: <@789314712990384168>"
+[2026-08-01T17:36:07.865075+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="spam" | Action="Remote background spam task 10x: <@789314712990384168>"
+[2026-08-01T17:38:27.553051+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: Froggo SMP, Channel: #general"
+[2026-08-01T17:38:41.814439+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="spam" | Action="Remote background spam task 10x: <@789314712990384168>"
+[2026-08-01T17:39:52.642816+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="spam" | Action="Remote background spam task 10x: <@789314712990384168> reinstall bobbot and can you also add emberbot in and also once its reinstalled ur gonna wanna run the reboot command"
+[2026-08-01T17:40:58.813282+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #general"
+[2026-08-01T17:41:00.847225+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #everyone"
+[2026-08-01T17:41:05.769570+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="delay" | Action="Remote delay 2s: its been 2 seconds"
+[2026-08-01T17:41:16.103805+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="delay" | Action="Remote delay 2s: echo its been 2 seconds"
+[2026-08-01T17:41:33.044524+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="delay" | Action="Remote delay 120s: echo its been 2 minutes"
+[2026-08-01T17:49:47.515100+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 10000x: <@1342173566828810271>"
+[2026-08-01T17:49:59.381434+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="stop" | Action="Halted 1 tasks"
+[2026-08-01T17:52:04.227329+00:00] ERROR | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="reboot" | Action="Blocked remote reboot attempt"
+[2026-08-01T17:52:14.653714+00:00] ERROR | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="reboot" | Action="Blocked remote reboot attempt"
+[2026-08-01T17:52:16.763919+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 100x: <@1342173566828810271>"
+[2026-08-01T17:52:22.269443+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="stop" | Action="Halted 1 tasks"
+[2026-08-01T17:52:33.831406+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 100x: <@&1532915056386511090>"
+[2026-08-01T17:52:49.567149+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="stop" | Action="Halted 1 tasks"
+[2026-08-01T17:52:49.957287+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 100x: <@&1532915056386511090>"
+[2026-08-01T17:52:59.567358+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="stop" | Action="Halted 1 tasks"
+[2026-08-01T17:56:14.733471+00:00] ERROR | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="reboot" | Action="Blocked remote reboot attempt"
+[2026-08-01T17:56:58.562977+00:00] ERROR | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="reboot" | Action="Blocked remote reboot attempt"
+[2026-08-01T17:57:44.205976+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="reboot" | Action="Remote reboot triggered"
+[2026-08-01T18:03:44.586517+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="test" | Action="Remote diagnostic test executed"
+[2026-08-01T18:47:45.520556+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="reboot" | Action="Remote reboot triggered"
+[2026-08-01T18:48:11.424139+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #all"
+[2026-08-01T18:48:14.183055+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #emberbot137-remote-console"
+[2026-08-01T18:49:14.867799+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: hii"
+[2026-08-01T18:49:41.022449+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: hii"
+[2026-08-01T18:49:53.625718+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:49:53.927192+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:49:54.046225+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:49:54.242450+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:49:54.553758+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:49:59.407771+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:49:59.815459+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:50:00.086195+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo meow"
+[2026-08-01T18:50:00.538384+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo meow"
+[2026-08-01T18:50:01.110747+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo meow"
+[2026-08-01T18:50:04.393547+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo meow"
+[2026-08-01T18:50:05.549439+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: meow"
+[2026-08-01T19:23:13.942347+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo meow"
+[2026-08-01T19:23:14.574333+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo meow"
+[2026-08-01T19:47:11.384839+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="echo" | Action="Remote echo: [Chorus]
+She's the nya nya girl with the mya mya brigade
+If I burn in hell it's fine, Pretty revolution!
+Protecting the world
+Keep the rhythm with my purrs too
+She's saving the day
+Mew Mew help me～
+She's the nya nya girl who is ready to play
+If I kiss in heaven it's fine, Cutie revolution!
+Slaughtering the world
+While forgetting my lunch
+She's saving the day
+Mew Mew help me～
+She is saving the day
+Collecting kitties～
+She is saving the day
+I don't know the lyrics～
+Lеt's use Cutie Mew Mеw Magic to transform!
+
+[Interlude]
+Meow, meow-meow-meow-meow
+Meow-meow-meow-meow, meow-meow, meow
+Meow, meow-meow-meow-meow
+Meow-meow-meow-meow, meow-meow, meow
+
+[Bridge]
+To the sweet you, Bullet, bullet, wish you luck
+Hear my grumpy singing voice, Mew it, mew it, you'll be struck
+But with a dreaming heart, squeeze, and squeeze, and be filled with determination
+Cutie's here
+Kitty's here
+To save you
+You might also like
+Flower Man
+Toby Fox
+Cutie Mew Mew Magic (Romanized)
+Genius Romanizations
+Cutie Mew Mew Magic
+Toby Fox
+[Chorus]
+She's the nya nya girl with the mya mya brigade
+If I burn in hell it's fine, Pretty revolution!
+Protecting the world
+Keep the rhythm with my purrs too
+She's saving the day
+Mew Mew help me～
+She's the nya nya girl who is ready to play
+If I kiss in heaven it's fine, Cutie revolution!
+Slaughtering the world
+While forgetting my lunch
+She's saving the day
+Mew Mew help me～
+She is saving the day
+Collecting kitties～
+She is saving the day
+I don't know the lyrics～
+Let's use Cutie Mew Mew Magic to transform!
+
+[Outro]
+Nya～, Nyan, Nya～, Nyan
+Nya～, Nya～n, Nya～n, Nyan
+Nya～, Nyan, Nya～, Nyan
+Nya～n, Nya～n, Nyan​​​​​​​"
+[2026-08-01T19:47:39.978868+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #emberbot137-remote-console"
+[2026-08-01T19:47:43.958333+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #everyone"
+[2026-08-01T19:47:49.767556+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="echo" | Action="Remote echo: [Chorus]
+She's the nya nya girl with the mya mya brigade
+If I burn in hell it's fine, Pretty revolution!
+Protecting the world
+Keep the rhythm with my purrs too
+She's saving the day
+Mew Mew help me～
+She's the nya nya girl who is ready to play
+If I kiss in heaven it's fine, Cutie revolution!
+Slaughtering the world
+While forgetting my lunch
+She's saving the day
+Mew Mew help me～
+She is saving the day
+Collecting kitties～
+She is saving the day
+I don't know the lyrics～
+Lеt's use Cutie Mew Mеw Magic to transform!
+
+[Interlude]
+Meow, meow-meow-meow-meow
+Meow-meow-meow-meow, meow-meow, meow
+Meow, meow-meow-meow-meow
+Meow-meow-meow-meow, meow-meow, meow
+
+[Bridge]
+To the sweet you, Bullet, bullet, wish you luck
+Hear my grumpy singing voice, Mew it, mew it, you'll be struck
+But with a dreaming heart, squeeze, and squeeze, and be filled with determination
+Cutie's here
+Kitty's here
+To save you
+You might also like
+Flower Man
+Toby Fox
+Cutie Mew Mew Magic (Romanized)
+Genius Romanizations
+Cutie Mew Mew Magic
+Toby Fox
+[Chorus]
+She's the nya nya girl with the mya mya brigade
+If I burn in hell it's fine, Pretty revolution!
+Protecting the world
+Keep the rhythm with my purrs too
+She's saving the day
+Mew Mew help me～
+She's the nya nya girl who is ready to play
+If I kiss in heaven it's fine, Cutie revolution!
+Slaughtering the world
+While forgetting my lunch
+She's saving the day
+Mew Mew help me～
+She is saving the day
+Collecting kitties～
+She is saving the day
+I don't know the lyrics～
+Let's use Cutie Mew Mew Magic to transform!
+
+[Outro]
+Nya～, Nyan, Nya～, Nyan
+Nya～, Nya～n, Nya～n, Nyan
+Nya～, Nyan, Nya～, Nyan
+Nya～n, Nya～n, Nyan​​​​​​​"
