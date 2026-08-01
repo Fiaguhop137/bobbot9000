@@ -9,7 +9,7 @@ LOG_FILE = "bot.log"
 CHAT_LOG_FILE = "chat.log"
 load_dotenv()
 logging.basicConfig(level=logging.INFO, format="%(message)s")
-logger = logging.getLogger("Emberbot137")
+logger = logging.getLogger("bobbot9000")
 
 intents = discord.Intents.default()
 intents.guilds, intents.guild_messages, intents.message_content, intents.members = True, True, True, True
@@ -57,11 +57,11 @@ def flush_chat_log() -> None:
 
 
 async def output_to_bot(content: str) -> None:
-    """Mirrors console text output directly to the remote #bot channel in any 'yap' server."""
+    """Mirrors console text output directly to the remote #remote-controlled-bob channel in any 'yap' server."""
     for guild in bot.guilds:
         if "yap" in guild.name.lower():
             for channel in guild.text_channels:
-                if channel.name.lower() == "bot":
+                if channel.name.lower() == "remote-controlled-bob":
                     try:
                         clean_content = content.strip()
                         if clean_content:
@@ -278,7 +278,7 @@ async def console_controller():
     await bot.wait_until_ready()
     cprint(f"\n[Console Controller Active] Connected to {len(bot.guilds)} guild(s).")
     cprint(f"Current Target Server: '{current_target_server}' | Target Channel: '#{current_target_channel}'")
-    cprint("Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot <-c>, exit\n")
+    cprint("Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit\n")
 
     loop = asyncio.get_running_loop()
     while not bot.is_closed():
@@ -302,12 +302,8 @@ async def console_controller():
                 break
 
             if cmd.startswith("reboot"):
-                if "-c" in cmd or args == "-c":
-                    reboot_mode = "open_console.sh"
-                    cprint("[Console] Reboot flag set (console). Will open interactive Emberbot137 Console...")
-                else:
-                    reboot_mode = "restart.sh"
-                    cprint("[Console] Reboot flag set. Initiating standard background restart...")
+                reboot_mode = "open_console.sh"
+                cprint("[Console] Reboot flag set. Will open interactive bobbot9000 Console window...")
                 pending_reboot = True
                 break
 
@@ -328,7 +324,7 @@ async def console_controller():
                        "• stop                                     - Halt all active background/delayed tasks\n"
                        "• set <server|channel> <name|all>          - Target specific server/channel or all\n"
                        "• servers                                  - List connected servers and channels\n"
-                       "• reboot <-c>                              - Hard reboot, git pull, and restart (or open console)\n"
+                       "• reboot                                   - Hard reboot, git pull, and open console\n"
                        "• help                                     - Show this help menu\n"
                        "• exit                                     - Shut down the bot\n"
                        "----------------------------------\n")
@@ -368,9 +364,9 @@ async def console_controller():
                         cprint(f"[Console] Current target channel is: #{current_target_channel}")
                     else:
                         clean_val = sub_val.removeprefix("#").lower()
-                        if clean_val == "bot" or clean_val == "all":
+                        if clean_val == "remote-controlled-bob" or clean_val == "all":
                             current_target_channel = "all"
-                            cprint("[Console] Target channel 'bot' is restricted. Defaulted channel target to: #all")
+                            cprint("[Console] Target channel 'remote-controlled-bob' is restricted. Defaulted channel target to: #all")
                         else:
                             matched_channel = clean_val
                             for g in bot.guilds:
@@ -472,7 +468,7 @@ async def on_message(message: discord.Message):
             last_chat_data["count"] = 1
     # --------------------------------
 
-    if message.guild and "yap" in message.guild.name.lower() and message.channel.name.lower() == "bot":
+    if message.guild and "yap" in message.guild.name.lower() and message.channel.name.lower() == "remote-controlled-bob":
         content = message.content.strip()
         if content.startswith(bot.command_prefix):
             content = content[len(bot.command_prefix):].strip()
@@ -486,14 +482,9 @@ async def on_message(message: discord.Message):
             return
 
         if cmd == "reboot":
-            if "-c" in args:
-                reboot_mode = "open_console.sh"
-                await message.channel.send("`[Remote] Reboot flag set (-c). Will open interactive Emberbot137 Console window...`")
-                log_action(guild=message.guild, channel=message.channel, user=message.author, command="reboot -c", action="Remote interactive console reboot flag set")
-            else:
-                reboot_mode = "restart.sh"
-                await message.channel.send("`[Remote] Reboot flag set. Initiating standard background restart...`")
-                log_action(guild=message.guild, channel=message.channel, user=message.author, command="reboot", action="Remote standard reboot flag set")
+            reboot_mode = "open_console.sh"
+            await message.channel.send("`[Remote] Reboot flag set. Will open interactive bobbot9000 Console window...`")
+            log_action(guild=message.guild, channel=message.channel, user=message.author, command="reboot", action="Remote interactive console reboot flag set")
             pending_reboot = True
             return
 
@@ -531,9 +522,9 @@ async def on_message(message: discord.Message):
                     await message.channel.send(f"`[Remote] Current target channel is: #{current_target_channel}`")
                 else:
                     clean_val = sub_val.removeprefix("#").lower()
-                    if clean_val == "bot" or clean_val == "all":
+                    if clean_val == "remote-controlled-bob" or clean_val == "all":
                         current_target_channel = "all"
-                        await message.channel.send("`[Remote] Target channel 'bot' is restricted. Defaulted channel target to: #all`")
+                        await message.channel.send("`[Remote] Target channel 'remote-controlled-bob' is restricted. Defaulted channel target to: #all`")
                     else:
                         matched_channel = clean_val
                         for g in bot.guilds:
@@ -598,7 +589,7 @@ async def on_message(message: discord.Message):
                 "```markdown\n# Remote Terminal Commands\n"
                 "• test\n• echo <msg>\n• spam <number> <msg>\n"
                 "• delay <secs> <cmd>\n• stop\n• set <server|channel> <name|all>\n"
-                "• servers\n• reboot <-c>\n-------------------------```"
+                "• servers\n• reboot\n-------------------------```"
             )
             await message.channel.send(help_text)
         elif cmd == "servers":
