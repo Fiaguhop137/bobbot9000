@@ -623,6 +623,7 @@ async def on_ready():
             try:
                 await member.add_roles(plasma_role, reason="I wanna be red")
             except discord.Forbidden:
+                pass
 
     bot.loop.create_task(reboot_watcher())
     asyncio.create_task(console_controller())
