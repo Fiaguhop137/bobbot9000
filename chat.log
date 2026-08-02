@@ -638,3 +638,140 @@ Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, se
 ```
 ```"
 [2026-08-01T21:08:16.402072+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-02T15:01:18.603335+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-02T15:01:18.833761+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-02T15:01:19.171289+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-02T15:01:26.520090+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-02T15:01:26.711099+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-02T15:01:26.721141+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-02T15:11:13.246016+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="test"
+[2026-08-02T15:11:13.526582+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+ = Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 54ms
+ - Token status: loaded
+ - Connected Servers: 2 servers connected. Run ~servers to see more
+ - Permissions: Administrator```"
+[2026-08-02T15:11:13.787196+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 54ms
+ - Token status: loaded
+ - Connected Servers: 2 servers connected. Run ~servers to see more
+ - Permissions: Administrat
+```"
+[2026-08-02T15:11:13.949321+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Remote Success] Executed test diagnostics across 1 target(s).`"
+[2026-08-02T15:11:42.278111+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="https://klipy.com/gifs/okcat-thumbs-up"
+[2026-08-02T15:11:48.348712+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="echo https://klipy.com/gifs/okcat-thumbs-up"
+[2026-08-02T15:11:48.592170+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="https://klipy.com/gifs/okcat-thumbs-up"
+[2026-08-02T15:11:48.764322+00:00] Guild="Yap" | Channel="#everyone" | User="bobbot9000#8975" (1533157532510584894) | Content="https://klipy.com/gifs/okcat-thumbs-up"
+[2026-08-02T15:11:49.306987+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="https://klipy.com/gifs/okcat-thumbs-up"
+[2026-08-02T15:11:49.423029+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Echoed to 3 target(s).`"
+[2026-08-02T15:12:04.109901+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="lol"
+[2026-08-02T15:12:12.313733+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="set channel all"
+[2026-08-02T15:12:13.176547+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote] Target channel 'remote-controlled-bob' is restricted. Defaulted channel target to: #all`"
+[2026-08-02T15:12:13.315671+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Active Targets] Server: all | Channel: #all`"
+[2026-08-02T15:12:34.997057+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="echo iam bob"
+[2026-08-02T15:12:35.207230+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="iam bob"
+[2026-08-02T15:12:35.344296+00:00] Guild="Yap" | Channel="#everyone" | User="bobbot9000#8975" (1533157532510584894) | Content="iam bob"
+[2026-08-02T15:12:35.505214+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="iam bob"
+[2026-08-02T15:12:35.698071+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Echoed to 3 target(s).`"
+[2026-08-02T15:12:43.730288+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="servers"
+[2026-08-02T15:12:43.841193+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```markdown
+# Connected Servers
+• Yap
+```"
+[2026-08-02T15:12:44.858478+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="fia stop screwing with my bot"
+[2026-08-02T15:12:55.765174+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="😭"
+[2026-08-02T15:13:18.897672+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="set channel re"
+[2026-08-02T15:13:19.318706+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Remote] Target channel updated to: #remote-controlled-bob`"
+[2026-08-02T15:13:19.523205+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Active Targets] Server: yap | Channel: #remote-controlled-bob`"
+[2026-08-02T15:13:28.672187+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="echo set channel em"
+[2026-08-02T15:13:28.882563+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Content="set channel em"
+[2026-08-02T15:13:29.085897+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote] Target channel updated to: #emberbot137-remote-console`"
+[2026-08-02T15:13:29.122282+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:13:29.272420+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Active Targets] Server: all | Channel: #emberbot137-remote-console`"
+[2026-08-02T15:13:53.426995+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-02T15:13:53.909500+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Content="echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-02T15:13:54.030896+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:13:54.081047+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-02T15:13:54.229196+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:13:54.278376+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Content="echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-02T15:13:54.546025+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-02T15:13:54.546421+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:13:54.759091+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Content="echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-02T15:13:54.803820+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:13:55.018549+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:13:55.043301+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-02T15:13:55.190478+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Content="echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-02T15:13:55.266269+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:13:55.328846+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="echo echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-02T15:13:55.370175+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:13:55.435086+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Content="echo echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-02T15:13:55.611143+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:13:55.611249+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:13:55.669936+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="echo echo echo echo echo echo echo echo echo echo meow"
+[2026-08-02T15:13:55.812483+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Content="echo echo echo echo echo echo echo echo echo meow"
+[2026-08-02T15:13:55.828763+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:13:56.038162+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:13:56.038439+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="echo echo echo echo echo echo echo echo meow"
+[2026-08-02T15:13:56.176237+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Content="echo echo echo echo echo echo echo meow"
+[2026-08-02T15:14:00.333995+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:14:00.348249+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="echo echo echo echo echo echo meow"
+[2026-08-02T15:14:00.619621+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:14:00.936556+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Content="echo echo echo echo echo meow"
+[2026-08-02T15:14:00.940318+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Remote Success] Echoed to 1 target(s).` (2)"
+[2026-08-02T15:14:01.058562+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="echo echo echo echo meow"
+[2026-08-02T15:14:01.192719+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Content="echo echo echo meow"
+[2026-08-02T15:14:01.201095+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:14:01.290022+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="echo echo meow"
+[2026-08-02T15:14:01.355132+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:14:01.403975+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Content="echo meow"
+[2026-08-02T15:14:01.498804+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:14:01.512574+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="meow"
+[2026-08-02T15:14:01.556125+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:14:01.663088+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-02T15:14:21.490322+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="lol"
+[2026-08-02T15:14:51.735402+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="set channel ev"
+[2026-08-02T15:14:51.905334+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote] Target channel updated to: #everyone`"
+[2026-08-02T15:14:52.161778+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Active Targets] Server: all | Channel: #everyone`"
+[2026-08-02T15:14:57.172195+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="spam 400 <@789314712990384168>"
+[2026-08-02T15:14:57.379663+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Background spam task started across 1 target(s).`"
+[2026-08-02T15:14:57.550306+00:00] Guild="Yap" | Channel="#everyone" | User="bobbot9000#8975" (1533157532510584894) | Content="<@789314712990384168> (179)"
+[2026-08-02T15:18:00.066036+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="f off"
+[2026-08-02T15:18:00.987317+00:00] Guild="Yap" | Channel="#everyone" | User="bobbot9000#8975" (1533157532510584894) | Content="<@789314712990384168> (3)"
+[2026-08-02T15:18:02.684592+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="stop"
+[2026-08-02T15:18:03.218077+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Halted 1 active task(s).`"
+[2026-08-02T15:18:32.882257+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="?kick fiaguhop137"
+[2026-08-02T15:18:33.058182+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="Dyno#3861" (155149108183695360) | Content=""
+[2026-08-02T15:18:46.986399+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="if you keep spamming me ill kick emberbot"
+[2026-08-02T15:19:27.453925+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="noooooooooooooooo"
+[2026-08-02T15:19:45.664537+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="?purge bots 30"
+[2026-08-02T15:20:06.218211+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="?purge bots 300"
+[2026-08-02T15:20:06.284144+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="https://tenor.com/view/captain-america-marvel-avengers-gif-14328153"
+[2026-08-02T15:20:13.898511+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="?purge bots 100"
+[2026-08-02T15:24:54.294240+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="servers"
+[2026-08-02T15:24:54.731840+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Connected Servers
+ - Yap(1463624406470230232)
+  ↳ Channels: emberbot137-remote-console, plasma, plasma-dragon, plasma-frog, plasma-twi, plasma-dragon-twi, plasma-dragon-frog, everyone, remote-controlled-bob
+ - Rainbows and Clouds(1511895185007579206)
+  ↳ Channels: rainbows, clouds, info
+```"
+[2026-08-02T15:47:25.516470+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="twillight_no" (1292531498695524470) | Content="HA"
