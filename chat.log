@@ -777,3 +777,137 @@ Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, se
 [2026-08-02T15:47:25.516470+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="twillight_no" (1292531498695524470) | Content="HA"
 [2026-08-02T17:04:56.325169+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="lol"
 [2026-08-02T18:09:03.911189+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-03T13:45:15.727113+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-03T13:45:16.041359+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-03T13:45:20.803467+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-03T13:45:21.053009+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-03T13:45:21.053800+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-03T13:45:26.889193+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-03T13:45:27.093011+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Warning] Reboot initiated. 
+[Warning] Rebooting...`"
+[2026-08-03T13:45:32.418821+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[Active] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-03T13:45:39.163637+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 0%"
+[2026-08-03T13:45:39.303771+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[Error] ALSA rejected the command: amixer: Unable to find simple control 'Master',0
+```"
+[2026-08-03T13:45:47.578909+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 15"
+[2026-08-03T13:45:47.717817+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[Error] ALSA rejected the command: amixer: Unable to find simple control 'Master',0
+```"
+[2026-08-03T13:47:05.425100+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-03T13:47:05.569133+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Warning] Reboot initiated. 
+[Warning] Rebooting...`"
+[2026-08-03T13:47:06.473760+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[System] Reboot command detected. Executing restart sequence...
+```"
+[2026-08-03T13:47:10.895865+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[Active] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-03T13:47:18.710439+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 0"
+[2026-08-03T13:47:18.915055+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[Success] Volume set to 0%
+```"
+[2026-08-03T13:47:23.216418+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 33"
+[2026-08-03T13:47:23.372530+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[Success] Volume set to 33%
+```"
+[2026-08-03T13:48:44.093127+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-03T13:48:44.389391+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Warning] Reboot initiated. 
+[Warning] Rebooting...`"
+[2026-08-03T13:48:45.238575+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[System] Reboot command detected. Executing restart sequence...
+```"
+[2026-08-03T13:48:50.460978+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[Active] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-03T13:48:51.413903+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="help"
+[2026-08-03T13:48:51.515900+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Remote Console Commands:
+ - test                                    - Send diagnostic report to target(s)
+ - echo <msg>                              - Send <msg> to target(s)
+ - spam <number> <msg>                     - Send <number> of messages <msg> to target(s)
+ - delay <secs> <cmd>                      - Execute <cmd> after <secs> seconds
+ - tasks                                   - Lists all active tasks
+ - cancel <task_id>                        - Halt active tasks by task id
+ - set <server|channel> <name|all>         - Target specific server/channel
+ - servers                                 - List connected servers and channels
+ - volume <number>                         - Changes volume to <number>%
+ - reboot <-c>                             - Initiates reboot and updates. Optional -c flag will open console
+ - help                                    - Show this help menu
+```"
+[2026-08-03T13:50:19.594209+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 0"
+[2026-08-03T13:50:19.792513+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[Success] Volume set to 0%
+```"
+[2026-08-03T13:50:26.408727+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 100"
+[2026-08-03T13:50:26.594021+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[Success] Volume set to 100%
+```"
+[2026-08-03T13:50:30.882101+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 33"
+[2026-08-03T13:50:31.073340+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[Success] Volume set to 33%
+```"
+[2026-08-03T15:10:10.849061+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-03T15:10:11.152811+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="`[Warning] Reboot initiated. 
+[Warning] Rebooting...`"
+[2026-08-03T15:10:16.465934+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-03T15:10:29.402020+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail emberbot137.log"
+[2026-08-03T15:10:38.666034+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="servers"
+[2026-08-03T15:10:52.087374+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+``` (3)"
+[2026-08-03T15:13:43.089911+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+= Connected Servers & Channels
+ - Yap(ID: 1463624406470230232)
+  ↳ Channels: emberbot137-remote-console, plasma, plasma-dragon, plasma-frog, plasma-twi, plasma-dragon-twi, plasma-dragon-frog, plasma-twi-frog, everyone, remote-controlled-bob
+ - Rainbows and Clouds(ID: 1511895185007579206)
+  ↳ Channels: rainbows, clouds, info
+ - Queer City(ID: 1533520595004821645)
+  ↳ Channels: rules, announcements, chat, debates, bot, qotd-discussion, qotd, moderator, safety
+```"
+[2026-08-03T15:13:56.815790+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+File "/usr/local/lib/python3.12/dist-packages/discord/client.py", line 508, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/firebot/git/Emberbot137/emberbot137.py", line 384, in on_message
+    parts=content.split(" ",1)
+                          ^^^^^
+AttributeError: 'Client' object has no attribute 'command_prefix'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/discord/client.py", line 508, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/firebot/git/Emberbot137/emberbot137.py", line 384, in on_message
+    parts=content.split(" ",1)
+                          ^^^^^
+AttributeError: 'Client' object has no attribute 'command_prefix'
+~~~~~~~~~~~~~~
+```"
+[2026-08-03T15:16:30.584947+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```text
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"

@@ -1,26 +1,11 @@
 davey is not installed, voice will NOT be supported
-[2026-08-02 11:01:22] [INFO    ] discord.client: logging in using static token
+[2026-08-03 09:45:17] [INFO    ] discord.client: logging in using static token
 logging in using static token
-[2026-08-02 11:01:23] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 265445c7da0e95c7e443f085ed0b5135).
-Shard ID None has connected to Gateway (Session ID: 265445c7da0e95c7e443f085ed0b5135).
+[2026-08-03 09:45:18] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 350e9911db27f30f6db92b64c68f164f).
+Shard ID None has connected to Gateway (Session ID: 350e9911db27f30f6db92b64c68f164f).
 Logged in as bobbot9000#8975 (ID: 1533157532510584894)
-Failed to reposition 'Plasma' role in Yap: 400 Bad Request (error code: 50013): Missing Permissions
-[2026-08-02T15:11:49.464312+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="echo" | Action="Remote echo: https://klipy.com/gifs/okcat-thumbs-up"
-[2026-08-02T15:12:13.339397+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: all, Channel: #all"
-[2026-08-02T15:12:35.738165+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="echo" | Action="Remote echo: iam bob"
-[2026-08-02T15:13:29.297304+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="set" | Action="Remote target update -> Server: all, Channel: #emberbot137-remote-console"
-[2026-08-02T15:13:54.263092+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
-[2026-08-02T15:13:54.907004+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
-[2026-08-02T15:13:55.342340+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo echo echo meow"
-[2026-08-02T15:13:55.724577+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo echo echo meow"
-[2026-08-02T15:13:55.854378+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo echo echo meow"
-[2026-08-02T15:14:00.368239+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo echo echo meow"
-[2026-08-02T15:14:00.619116+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo echo echo meow"
-[2026-08-02T15:14:01.249136+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo echo echo meow"
-[2026-08-02T15:14:01.581954+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: echo echo meow"
-[2026-08-02T15:14:01.735929+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="Emberbot137#6769" (1532899245005475860) | Command="echo" | Action="Remote echo: meow"
-[2026-08-02T15:14:52.163430+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: all, Channel: #everyone"
-[2026-08-02T15:14:57.466090+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="spam" | Action="Remote background spam task 400x: <@789314712990384168>"
-[2026-08-02T15:18:03.217595+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="stop" | Action="Halted 1 tasks"
-[2026-08-02 13:28:59] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 265445c7da0e95c7e443f085ed0b5135.
-Shard ID None has successfully RESUMED session 265445c7da0e95c7e443f085ed0b5135.
+Failed to reposition 'Plasma' role in Yap: 403 Forbidden (error code: 50013): Missing Permissions
+[2026-08-03 10:05:05] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 350e9911db27f30f6db92b64c68f164f.
+Shard ID None has successfully RESUMED session 350e9911db27f30f6db92b64c68f164f.
+[2026-08-03 11:03:34] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 350e9911db27f30f6db92b64c68f164f.
+Shard ID None has successfully RESUMED session 350e9911db27f30f6db92b64c68f164f.
