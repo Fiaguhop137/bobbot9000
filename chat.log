@@ -2168,3 +2168,320 @@ Type help for a list of commands
 [2026-08-04T19:07:06.046944+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
 [Success] Retrieved active channel: Rainbows and Clouds/#everyone
 ```"
+[2026-08-04T19:07:10.803103+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Exception in console_controller: 'NoneType' object has no attribute 'channel'
+``` (2)"
+[2026-08-04T19:17:00.086930+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-04T19:17:00.659858+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated. Console flag found, opening Emberbot137 Console.
+```"
+[2026-08-04T19:17:05.856980+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-04T19:17:09.612230+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Available Console Commands
+ - test                                    - Send diagnostic report to target(s)
+ - echo <msg>                              - Send <msg> to target(s)
+ - spam <number> <msg>                     - Send <number> of messages <msg> to target(s)
+ - delay <secs> <cmd>                      - Execute <cmd> after <secs> seconds
+ - tasks                                   - Lists all active tasks
+ - cancel <task_id>                        - Halt active tasks by task id
+ - set <server|channel> <name|all>         - Target specific server/channel
+ - tail <file>                             - Outputs last 15 lines of any file
+ - servers                                 - List connected servers and channels
+ - volume <number>                         - Changes volume to <number>%
+ - reboot <-c>                             - Initiates reboot and updates. Optional -c flag will open console
+ - help                                    - Show this help menu
+ - exit                                    - Shut down this bot
+```"
+[2026-08-04T19:17:13.506789+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 36ms
+ - Token status: loaded
+ - Connected Servers: 3 servers connected. Run ~servers to see more
+ - Permissions: Administrator
+```"
+[2026-08-04T19:17:13.718294+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 36ms
+ - Token status: loaded
+ - Connected Servers: 3 servers connected. Run ~servers to see more
+ - Permissions: Administrator
+```"
+[2026-08-04T19:17:14.247464+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Executed test diagnostics across 1 target.
+```"
+[2026-08-04T19:17:16.066712+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="test"
+[2026-08-04T19:17:16.251562+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Echoed message to 1 target
+```"
+[2026-08-04T19:17:18.536246+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="test"
+[2026-08-04T19:17:18.628452+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Initiated background spam task #1 across 1 target.
+```"
+[2026-08-04T19:17:18.833179+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Exception in console_controller: 'dict' object has no attribute 'append'
+```"
+[2026-08-04T19:17:19.900071+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="test (2)"
+[2026-08-04T19:17:22.772918+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Scheduled command to run in 3s.
+```"
+[2026-08-04T19:17:25.409036+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 36ms
+ - Token status: loaded
+ - Connected Servers: 3 servers connected. Run ~servers to see more
+ - Permissions: Administrator
+```"
+[2026-08-04T19:17:25.589090+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 36ms
+ - Token status: loaded
+ - Connected Servers: 3 servers connected. Run ~servers to see more
+ - Permissions: Administrator
+```"
+[2026-08-04T19:17:25.969206+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Executed test diagnostics across 1 target.
+```"
+[2026-08-04T19:17:30.333721+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Scheduled command to run in 30s.
+```"
+[2026-08-04T19:17:37.151200+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Active Background Tasks
+ - 3: Running test in 30s. Started at 19:17:30
+```"
+[2026-08-04T19:17:40.337360+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Cancelled task #3.
+```"
+[2026-08-04T19:17:47.470791+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target server updated to: Rainbows and Clouds
+```"
+[2026-08-04T19:17:47.695525+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Rainbows and Clouds/#everyone
+```"
+[2026-08-04T19:17:52.485183+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Exception in console_controller: 'NoneType' object has no attribute 'channel'
+``` (3)"
+[2026-08-04T19:31:21.434117+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="jarona"
+[2026-08-04T19:32:19.797580+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="echo [Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-04T19:32:20.001916+00:00] Guild="Yap" | Channel="#everyone" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-04T19:32:20.164373+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-04T19:32:25.545794+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="wow"
+[2026-08-04T19:32:30.428218+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="i triggered it by saying jarona"
+[2026-08-04T19:32:31.940299+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="xd"
+[2026-08-04T19:32:56.137735+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="https://klipy.com/gifs/kagamine-len-kagamine-rin-2"
+[2026-08-04T19:33:53.406851+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="tf was that"
+[2026-08-04T19:33:55.825476+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="https://klipy.com/gifs/banana-len-1"
+[2026-08-04T19:34:04.271687+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="jarona"
+[2026-08-04T19:34:06.648054+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="jarona"
+[2026-08-04T19:34:16.091032+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="banana"
+[2026-08-04T19:34:17.687224+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="meaning i finished my work"
+[2026-08-04T19:34:28.291081+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="other than piano practic"
+[2026-08-04T19:34:30.147562+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="sob"
+[2026-08-04T19:34:45.481023+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="i like computer piano more i can screw with it easier"
+[2026-08-04T19:34:51.980025+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="/j"
+[2026-08-04T19:35:24.781454+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="i wish i could play the piano"
+[2026-08-04T19:35:28.931905+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="or any instrument"
+[2026-08-04T19:35:36.854942+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="piano is easy as hell"
+[2026-08-04T19:35:39.838707+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="guitar though"
+[2026-08-04T19:35:41.713351+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="that scares me"
+[2026-08-04T19:35:55.130143+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="my cousin is actually pretty good at guitar"
+[2026-08-04T19:36:04.076444+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="my irl freind is like god teir at piano"
+[2026-08-04T19:36:06.951221+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="my fingers will die if i try guitar"
+[2026-08-04T19:36:15.672601+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="same with violins or most stringed insturments"
+[2026-08-04T19:36:26.039535+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="also"
+[2026-08-04T19:36:28.259507+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="i found this peak 3d model"
+[2026-08-04T19:36:28.677828+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="https://www.printables.com/model/901316-ultrakill-v1v2-dummy-13"
+[2026-08-04T19:36:35.385248+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="im somewhat not bad at ukulele but i havent practiced in forever"
+[2026-08-04T19:36:40.178021+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="lol"
+[2026-08-04T19:36:45.928522+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="i played violin for a while"
+[2026-08-04T19:36:56.373558+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="i had to quit because of my joint problems"
+[2026-08-04T19:37:04.458697+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="it hurt my neck to hold it in place"
+[2026-08-04T19:37:16.010125+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="i think i was actually decently good"
+[2026-08-04T19:37:16.920516+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="oofie"
+[2026-08-04T19:37:25.225125+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="idk if i have any recordings tho"
+[2026-08-04T19:38:02.925052+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="also found minos prime https://www.printables.com/model/998485-ultrakill-minos-prime-dummy-13-parts-work-now"
+[2026-08-04T19:38:52.449301+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="sobs in 3d printer person language"
+[2026-08-04T19:39:04.591241+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="70 files"
+[2026-08-04T19:39:43.420087+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="i should make it send this whenever i say jarona"
+[2026-08-04T19:39:48.357021+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="idk how tho"
+[2026-08-04T19:39:50.751520+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="do any of you know the name of those thingies you eat that people commit with"
+[2026-08-04T19:39:54.660740+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="like the pill thingies"
+[2026-08-04T19:40:10.401667+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="no lol"
+[2026-08-04T19:40:13.279678+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="ok"
+[2026-08-04T19:40:31.168176+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="also dying is bad for your mental health"
+[2026-08-04T19:40:34.044512+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="so dont die"
+[2026-08-04T19:40:52.254931+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="please twi talk to a hotline"
+[2026-08-04T19:40:55.449446+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="its also bad for your physical health"
+[2026-08-04T19:40:55.504046+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="NO"
+[2026-08-04T19:41:30.924287+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="twi if you do what froggo says ill give you my base on the server"
+[2026-08-04T19:41:51.042255+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="best trade you could ever get"
+[2026-08-04T19:42:32.363560+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="seriously twi it is not fair to anyone here that you talk to some random teens instead of a real therapist we are not licensed or mentally prepared to be your therapist"
+[2026-08-04T19:42:49.502695+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="imean at least it gives me job practice /j"
+[2026-08-04T19:42:50.465595+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="but yes"
+[2026-08-04T19:42:54.889830+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="please talk to a hotline i promise they can help better than we can"
+[2026-08-04T19:43:03.991790+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="well they can help better than i can probably idk"
+[2026-08-04T19:43:12.618586+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="if theyre patronizing just try a different one"
+[2026-08-04T19:43:16.451048+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="ig"
+[2026-08-04T19:43:22.523564+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="theres probably like 200"
+[2026-08-04T19:43:29.871360+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="do you want me to"
+[2026-08-04T19:43:32.110283+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="stop"
+[2026-08-04T19:43:35.623356+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="talking to you guys"
+[2026-08-04T19:43:39.453584+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="about my issues"
+[2026-08-04T19:43:58.302004+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="well advice would be to talk to someone qualified about your issues"
+[2026-08-04T19:44:01.925347+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="i want you to talk to a hotline instead"
+[2026-08-04T19:44:05.228562+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="and wdym its not fair to you"
+[2026-08-04T19:44:05.228684+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="but you refuse to talk to therapists or hotlines"
+[2026-08-04T19:44:08.747302+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="how is this unfair"
+[2026-08-04T19:44:10.658474+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="not talking about it wont help either"
+[2026-08-04T19:44:10.728475+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="to you guys"
+[2026-08-04T19:44:30.680609+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="using us as therapy isnt fair"
+[2026-08-04T19:44:41.979347+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="its not easy on me seeing you talk about killing yourself all the time"
+[2026-08-04T19:44:47.196335+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="yea"
+[2026-08-04T19:44:48.890723+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="so i should stop"
+[2026-08-04T19:44:51.447526+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="it has negatively impacted my mental health"
+[2026-08-04T19:44:51.530106+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="right"
+[2026-08-04T19:44:52.092325+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="plus we suck at therapy"
+[2026-08-04T19:45:01.351232+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="you have the GitHub"
+[2026-08-04T19:45:01.352201+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="you need to talk to a hotline"
+[2026-08-04T19:45:01.531129+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="ok"
+[2026-08-04T19:45:03.586793+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="it will help"
+[2026-08-04T19:45:05.504704+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="you can do it"
+[2026-08-04T19:45:06.930038+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="ill try and stop"
+[2026-08-04T19:45:09.338967+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="im sorry"
+[2026-08-04T19:45:14.769626+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="talk to someone like actually qualified ig"
+[2026-08-04T19:45:18.284115+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="dont vent to a polybuzz bot tho"
+[2026-08-04T19:45:36.606449+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="bots are literally proven to make things worse a lot of the time"
+[2026-08-04T19:45:38.731296+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="yep"
+[2026-08-04T19:45:56.514165+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="only thing i use gpt for is minecraft crash logs"
+[2026-08-04T19:46:09.406679+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="i have been bot free other than that for like about 2 years by now"
+[2026-08-04T19:46:18.348914+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="ok"
+[2026-08-04T19:46:36.879663+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="its not healthy to not talk about it either"
+[2026-08-04T19:46:45.183187+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="please talk to a hotline"
+[2026-08-04T19:46:52.851084+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="yea not talking about problems isnt good"
+[2026-08-04T19:47:01.482526+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="i watched netflix when i was supposed to do homework once"
+[2026-08-04T19:47:05.953097+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="when i was like 5"
+[2026-08-04T19:47:07.129538+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="my stomach"
+[2026-08-04T19:47:08.320082+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="went like"
+[2026-08-04T19:47:10.550630+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="AAAAAARGH"
+[2026-08-04T19:47:20.333715+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="then i told my mom cuz yk i was t"
+[2026-08-04T19:47:28.076434+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="and it like yk stopped"
+[2026-08-04T19:47:29.580256+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="idk"
+[2026-08-04T19:47:34.156593+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="ok"
+[2026-08-04T19:47:35.664644+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="best comparison i could think of"
+[2026-08-04T19:47:36.119847+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="idk"
+[2026-08-04T19:48:26.308467+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="sorry"
+[2026-08-04T19:48:44.996558+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="twi you need to talk to a hotline tho"
+[2026-08-04T19:49:06.502081+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="at least like talk to someone that knows what they doin with this kinda problem"
+[2026-08-04T19:49:10.549995+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="yes"
+[2026-08-04T19:49:15.836438+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="servers"
+[2026-08-04T19:50:08.383440+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="i think im going to leave this"
+[2026-08-04T19:50:15.729395+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="ill just keep venting if i dont"
+[2026-08-04T19:50:19.030808+00:00] Guild="Yap" | Channel="#everyone" | User="twillight_no" (1292531498695524470) | Content="sorry"
+[2026-08-04T19:50:57.429254+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="guys i think twis gone"
+[2026-08-04T19:56:57.537561+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="GASP"
+[2026-08-04T19:56:57.848065+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="https://www.printables.com/model/1427587-articulated-hollow-knight-silksong-bell-beast"
