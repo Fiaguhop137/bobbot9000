@@ -3168,3 +3168,59 @@ Type help for a list of commands
   ↳ Channels: rules, announcements, chat, debates, bot, qotd-discussion, qotd, moderator, safety
 ```"
 [2026-08-04T20:37:47.588050+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-04T20:37:47.802650+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated.
+```"
+[2026-08-04T20:37:54.510785+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-04T20:37:58.770493+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="okay im done testing everything worked"
+[2026-08-04T20:39:02.034840+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail restart.sh"
+[2026-08-04T20:39:02.347704+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+#!/bin/bash
+set -e
+cd "$(dirname "$0")"
+sleep 1
+pkill -f "python3 emberbot137.py" || :
+git sync || :
+nohup python3 emberbot137.py > emberbot137.log 2>&1 &
+```"
+[2026-08-04T20:39:16.086093+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail emberbot137.py"
+[2026-08-04T20:39:16.191162+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+member = await guild.fetch_member(1342173566828810271)
+            except discord.NotFound:
+                pass
+        if member and plasma_role not in member.roles:
+            try:
+                await member.add_roles(plasma_role, reason="Since Fia is made of Plasma, gave her the Plasma role")
+                logger.info(f"Assigned 'Plasma' role to {member.name} in {guild.name}")
+            except discord.Forbidden:
+                logger.error(f"Missing permissions to assign Plasma role in {guild.name}")
+    emberbot137.loop.create_task(reboot_watcher())
+    asyncio.create_task(console_controller())
+token=os.getenv("DISCORD_TOKEN")
+if not token:
+    raise ValueError("DISCORD_TOKEN environment variable not found in .env")
+emberbot137.run(token)
+```"
+[2026-08-04T20:39:24.964091+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail emberbot137.log"
+[2026-08-04T20:39:25.068288+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+except discord.NotFound:
+                pass
+        if member and plasma_role not in member.roles:
+            try:
+                await member.add_roles(plasma_role, reason="Since Fia is made of Plasma, gave her the Plasma role")
+                logger.info(f"Assigned 'Plasma' role to {member.name} in {guild.name}")
+            except discord.Forbidden:
+                logger.error(f"Missing permissions to assign Plasma role in {guild.name}")
+    emberbot137.loop.create_task(reboot_watcher())
+    asyncio.create_task(console_controller())
+token=os.getenv("DISCORD_TOKEN")
+if not token:
+    raise ValueError("DISCORD_TOKEN environment variable not found in .env")
+emberbot137.run(token)
+~~~~~~~~~
+```"
+[2026-08-04T20:39:43.382659+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
