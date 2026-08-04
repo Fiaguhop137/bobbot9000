@@ -3242,3 +3242,6 @@ Current Target Channel: yap/#everyone
 Type help for a list of commands
 ```"
 [2026-08-04T20:42:21.053430+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -c"
+[2026-08-04T20:42:21.389584+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated. Console flag found, opening Emberbot137 Console.
+```"
