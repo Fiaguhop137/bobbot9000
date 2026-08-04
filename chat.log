@@ -2601,3 +2601,150 @@ Type help for a list of commands
 [2026-08-04T20:00:30.023287+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
 [Success] Retrieved active channel: Rainbows and Clouds/#everyone
 ```"
+[2026-08-04T20:00:32.237554+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Rainbows and Clouds/#everyone not found. Try ~servers to check names.
+``` (6)"
+[2026-08-04T20:04:11.501273+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-04T20:04:11.645709+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated. Console flag found, opening Emberbot137 Console.
+```"
+[2026-08-04T20:04:17.262533+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-04T20:04:21.311704+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target server updated to: Rainbows and Clouds
+```"
+[2026-08-04T20:04:21.422478+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Rainbows and Clouds/#everyone
+```"
+[2026-08-04T20:04:24.181431+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Rainbows and Clouds/#everyone not found. Try ~servers to check names.
+```"
+[2026-08-04T20:04:26.630560+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target channel updated to: #rainbows
+```"
+[2026-08-04T20:04:26.958323+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Rainbows and Clouds/#rainbows
+```"
+[2026-08-04T20:05:32.236270+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated. Console flag found, opening Emberbot137 Console.
+```"
+[2026-08-04T20:05:37.344436+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-04T20:07:48.868235+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target server updated to: Rainbows and Clouds
+```"
+[2026-08-04T20:07:48.971746+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Rainbows and Clouds/#everyone
+```"
+[2026-08-04T20:07:53.340014+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target channel updated to: #rainbows
+```"
+[2026-08-04T20:07:53.553200+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Rainbows and Clouds/#rainbows
+```"
+[2026-08-04T20:07:54.619376+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Available Console Commands
+ - test                                    - Send diagnostic report to target(s)
+ - echo <msg>                              - Send <msg> to target(s)
+ - spam <number> <msg>                     - Send <number> of messages <msg> to target(s)
+ - delay <secs> <cmd>                      - Execute <cmd> after <secs> seconds
+ - tasks                                   - Lists all active tasks
+ - cancel <task_id>                        - Halt active tasks by task id
+ - set <server|channel> <name|all>         - Target specific server/channel
+ - tail <file>                             - Outputs last 15 lines of any file
+ - servers                                 - List connected servers and channels
+ - volume <number>                         - Changes volume to <number>%
+ - reboot <-c>                             - Initiates reboot and updates. Optional -c flag will open console
+ - help                                    - Show this help menu
+ - exit                                    - Shut down this bot
+```"
+[2026-08-04T20:08:00.473644+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 33%
+```"
+[2026-08-04T20:08:03.349353+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
+[2026-08-04T20:08:09.475742+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[2026-08-04T18:36:48.790642+00:00 | Yap/#everyone | twillight_no(1292531498695524470] Content=so
+[2026-08-04T18:38:59.298671+00:00 | Yap/#everyone | dragondog558(789314712990384168] Content=sigh
+[2026-08-04T18:39:04.576396+00:00 | Yap/#everyone | dragondog558(789314712990384168] Content=i still have work
+[2026-08-04T18:39:06.169643+00:00 | Yap/#everyone | dragondog558(789314712990384168] Content=but its easy
+[2026-08-04T18:39:08.410884+00:00 | Yap/#everyone | dragondog558(789314712990384168] Content=but ugh its work
+[2026-08-04T18:39:09.580109+00:00 | Yap/#everyone | dragondog558(789314712990384168] Content=ughghghhghgh
+[2026-08-04T18:48:42.539524+00:00 | Yap/#emberbot137-remote-console | fiaguhop137(1342173566828810271] Content=reboot -c
+[2026-08-04T19:58:36.777552+00:00 | Yap/#everyone | dragondog558(789314712990384168] Content=?role remove ember ember
+[2026-08-04T19:58:37.249029+00:00 | Yap/#everyone | Dyno#3861(155149108183695360] Content=
+[2026-08-04T19:58:40.199054+00:00 | Yap/#everyone | dragondog558(789314712990384168] Content=hmmmmm
+[2026-08-04T19:58:41.920628+00:00 | Yap/#everyone | dragondog558(789314712990384168] Content=xd
+[2026-08-04T19:58:53.120068+00:00 | Yap/#everyone | dragondog558(789314712990384168] Content=?role add dragon role bob
+[2026-08-04T19:58:53.407527+00:00 | Yap/#everyone | Dyno#3861(155149108183695360] Content=
+[2026-08-04T19:58:59.895752+00:00 | Yap/#everyone | dragondog558(789314712990384168] Content=?role add dragon bob
+[2026-08-04T19:59:00.427456+00:00 | Yap/#everyone | Dyno#3861(155149108183695360] Content=
+```"
+[2026-08-04T20:08:20.086346+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: 'echo~tail'. Try ~help for more options.
+```"
+[2026-08-04T20:08:20.284181+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t18:36:48.790642+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:20.498569+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t18:38:59.298671+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:20.709330+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t18:39:04.576396+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:20.920594+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t18:39:06.169643+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:25.393595+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t18:39:08.410884+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:25.608432+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t18:39:09.580109+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:25.823759+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t18:48:42.539524+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:26.357284+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t19:58:36.777552+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:26.473242+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t19:58:37.249029+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:26.607358+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t19:58:40.199054+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:31.441721+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t19:58:41.920628+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:31.677209+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t19:58:53.120068+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:32.430832+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t19:58:53.407527+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:32.742625+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t19:58:59.895752+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:32.956032+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '[2026-08-04t19:59:00.427456+00:00'. Try ~help for more options.
+```"
+[2026-08-04T20:08:33.172531+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: ''. Try ~help for more options.
+```"
+[2026-08-04T20:08:37.590018+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: '~'. Try ~help for more options.
+```"
+[2026-08-04T20:08:37.715373+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Unknown local command: ''. Try ~help for more options.
+```"
