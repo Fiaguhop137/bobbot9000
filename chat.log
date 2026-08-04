@@ -3227,3 +3227,9 @@ emberbot137.run(token)
 [2026-08-04T20:39:43.545435+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
 [Warning] Reboot initiated.
 ```"
+[2026-08-04T20:39:50.144474+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-04T20:42:08.358586+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
