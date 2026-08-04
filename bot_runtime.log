@@ -1,11 +1,18 @@
 davey is not installed, voice will NOT be supported
-[2026-08-03 09:45:17] [INFO    ] discord.client: logging in using static token
+[2026-08-03 22:12:20] [INFO    ] discord.client: logging in using static token
 logging in using static token
-[2026-08-03 09:45:18] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 350e9911db27f30f6db92b64c68f164f).
-Shard ID None has connected to Gateway (Session ID: 350e9911db27f30f6db92b64c68f164f).
+[2026-08-03 22:12:21] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 487efe5b3f80add432ddd0c7ded7a3e5).
+Shard ID None has connected to Gateway (Session ID: 487efe5b3f80add432ddd0c7ded7a3e5).
 Logged in as bobbot9000#8975 (ID: 1533157532510584894)
 Failed to reposition 'Plasma' role in Yap: 403 Forbidden (error code: 50013): Missing Permissions
-[2026-08-03 10:05:05] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 350e9911db27f30f6db92b64c68f164f.
-Shard ID None has successfully RESUMED session 350e9911db27f30f6db92b64c68f164f.
-[2026-08-03 11:03:34] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 350e9911db27f30f6db92b64c68f164f.
-Shard ID None has successfully RESUMED session 350e9911db27f30f6db92b64c68f164f.
+[2026-08-04T02:13:19.421701+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="set" | Action="Remote target update -> Server: all, Channel: #everyone"
+[2026-08-04T02:13:21.412434+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #everyone"
+[2026-08-04T02:13:32.254146+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 10000x: ????????????????? THE HELL ARE THESE PICTURES BRO"
+[2026-08-04T02:13:39.784459+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="stop" | Action="Halted 1 tasks"
+[2026-08-04T02:14:48.842345+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 10000x: bro what- this is so unhinged stopp"
+[2026-08-04T02:15:04.934453+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="stop" | Action="Halted 1 tasks"
+[2026-08-04T02:16:51.293308+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 10000000000x: shutup"
+[2026-08-04T02:17:17.381705+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 1000000x: https://klipy.com/gifs/absolute-cinema-absolute-cinema-meme-7"
+[2026-08-04T02:17:33.663350+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="stop" | Action="Halted 2 tasks"
+[2026-08-04T02:17:36.045943+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 1000x: https://klipy.com/gifs/absolute-cinema-absolute-cinema-meme-7"
+[2026-08-04T02:17:56.300285+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="stop" | Action="Halted 1 tasks"
