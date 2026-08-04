@@ -2779,3 +2779,74 @@ Type help for a list of commands
 Current Target Channel: yap/#everyone 
 Type help for a list of commands
 ```"
+[2026-08-04T20:10:26.230144+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated.
+```"
+[2026-08-04T20:10:33.830450+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-04T20:10:37.342164+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="help"
+[2026-08-04T20:10:37.448609+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+```markdown= Available Console Commands
+ - test                                    - Send diagnostic report to target(s)
+ - echo <msg>                              - Send <msg> to target(s)
+ - spam <number> <msg>                     - Send <number> of messages <msg> to target(s)
+ - delay <secs> <cmd>                      - Execute <cmd> after <secs> seconds
+ - tasks                                   - Lists all active tasks
+ - cancel <task_id>                        - Halt active tasks by task id
+ - set <server|channel> <name|all>         - Target specific server/channel
+ - tail <file>                             - Outputs last 15 lines of any file
+ - servers                                 - List connected servers and channels
+ - volume <number>                         - Changes volume to <number>%
+ - reboot <-c>                             - Initiates reboot and updates. Optional -c flag will open console
+ - help                                    - Show this help menu
+ - exit                                    - Shut down this bot```
+```"
+[2026-08-04T20:11:48.446293+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="echo test"
+[2026-08-04T20:11:48.649882+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="test"
+[2026-08-04T20:11:48.910646+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Echoed message to 1 target
+```"
+[2026-08-04T20:12:20.514018+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="spam 3 test"
+[2026-08-04T20:12:20.702854+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Initiated background spam task #1 across 1 target.
+```"
+[2026-08-04T20:12:20.746767+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="test (3)"
+[2026-08-04T20:12:29.912258+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="delay 3 test"
+[2026-08-04T20:12:30.047862+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Scheduled command to run in 3s.
+```"
+[2026-08-04T20:12:32.932527+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="oh my gash shut up"
+[2026-08-04T20:12:33.056506+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Remote command execution requires a message context.
+```"
+[2026-08-04T20:12:34.521930+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="😭"
+[2026-08-04T20:12:36.621471+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="oh wait"
+[2026-08-04T20:12:39.175304+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="i can mute this channel"
+[2026-08-04T20:12:40.452639+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="MUTED"
+[2026-08-04T20:12:42.054186+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="yayayya"
+[2026-08-04T20:13:00.379440+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="delay 10 test"
+[2026-08-04T20:13:00.595866+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Scheduled command to run in 10s.
+```"
+[2026-08-04T20:13:01.861082+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tasks"
+[2026-08-04T20:13:02.031762+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Active Background Tasks
+ - 3: Running test in 10s. Started at 20:13:00
+```"
+[2026-08-04T20:13:04.520520+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="cancel 3"
+[2026-08-04T20:13:05.053700+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Cancelled task #3.
+```"
+[2026-08-04T20:13:16.932533+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="set server rain"
+[2026-08-04T20:13:17.044028+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target server updated to: Rainbows and Clouds
+```"
+[2026-08-04T20:13:17.513316+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Rainbows and Clouds/#everyone
+```"
+[2026-08-04T20:13:20.495114+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="set channel rain"
+[2026-08-04T20:13:42.085543+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="servers"
+[2026-08-04T20:13:47.788053+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="oh i think it broke"
