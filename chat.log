@@ -2748,3 +2748,20 @@ Type help for a list of commands
 [2026-08-04T20:08:37.715373+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
 [Error] Unknown local command: ''. Try ~help for more options.
 ```"
+[2026-08-04T20:08:37.853519+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Connected Servers & Channels
+ - Yap(ID: 1463624406470230232)
+  ↳ Channels: emberbot137-remote-console, plasma, plasma-dragon, plasma-frog, plasma-twi, plasma-dragon-twi, plasma-dragon-frog, plasma-twi-frog, everyone, remote-controlled-bob
+ - Rainbows and Clouds(ID: 1511895185007579206)
+  ↳ Channels: rainbows, clouds, info
+ - Queer City(ID: 1533520595004821645)
+  ↳ Channels: rules, announcements, chat, debates, bot, qotd-discussion, qotd, moderator, safety
+```"
+[2026-08-04T20:08:49.356448+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-04T20:08:49.567992+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated.
+```"
