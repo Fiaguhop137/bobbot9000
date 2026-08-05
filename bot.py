@@ -537,6 +537,9 @@ async def on_message(message: discord.Message):
                     await do_echo(ch, args)
                 await message.channel.send(f"`[Remote Success] Echoed to {len(channels)} target(s).`")
                 log_action(guild=message.guild, channel=message.channel, user=message.author, command="echo", action=f"Remote echo: {args}")
+        elif cmd == "jarona":
+            for ch in channels:
+                await do_echo(ch,"""[Verse 1]\nTen feet twenty, the Flower Man\nIs waiting for the touch of his hand\nStraightening petals out without a plan\nLike the every daily\nWish that bothers the Flower Man\nCould I do something to make him laugh?\nInside my little chamber made of glass\nSo he lived the\n\n[Chorus]\nFlower Man, Flower Man\nWith his heart in the sand\nSo he stands\nTo watch the whole wide world\nFrom a can\nWay up high in the sky\nWith the sun in his eyes\nAin't it nice?\nThe life forever for\nFlowers\n\n[Instrumental Break]\n\n[Verse 2]\nTen feet twenty, the Flower Man\nIs waiting for the touch of his hand\nFallen to pieces still without a plan\nYet the every daily\nHope that powered the Flower Man\nWould never cower off of its path\nEven if broken I am more than glass\So he lived the\n[Chorus]\nFlower Man, Flower Man\nWith his heart in the sand\nSo he stands\nTo watch the whole wide world\nFrom a canWay up high in the sky\nWith the sun in your eyes\nAin't it nice?\nThe life forever for\nFlowers""")
         elif cmd == "spam":
             spam_parts = args.split(" ", 1)
             if len(spam_parts) >= 2 and spam_parts[0].isdigit():
