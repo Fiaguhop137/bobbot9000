@@ -311,3 +311,5 @@ With the sun in your eyes
 Ain't it nice?
 The life forever for
 Flowers"
+[2026-08-05T15:50:05.009328+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: all, Channel: #everyone"
+[2026-08-05T15:50:19.582930+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #everyone"

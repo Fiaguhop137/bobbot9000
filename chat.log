@@ -3245,3 +3245,696 @@ Type help for a list of commands
 [2026-08-04T20:42:21.389584+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
 [Warning] Reboot initiated. Console flag found, opening Emberbot137 Console.
 ```"
+[2026-08-05T15:30:06.344694+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-05T15:30:06.829182+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-05T15:30:07.219894+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-05T15:30:15.420070+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-05T15:30:15.586458+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-05T15:30:15.754937+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="redstone137" (1492932060782919760) | Content="jarona"
+[2026-08-05T15:30:15.796306+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-05T15:30:16.058128+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:30:16.376003+00:00] Guild="Yap" | Channel="#dragon" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:30:16.625394+00:00] Guild="Yap" | Channel="#plasma-dragon" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:30:16.912125+00:00] Guild="Yap" | Channel="#plasma-dragon-twi" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:30:17.336948+00:00] Guild="Yap" | Channel="#plasma-dragon-frog" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:30:17.549709+00:00] Guild="Yap" | Channel="#everyone" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:30:17.870360+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:31:21.553004+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="redstone137" (1492932060782919760) | Content="<@789314712990384168> (2)"
+[2026-08-05T15:32:22.257315+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="redstone137" (1492932060782919760) | Content="oh why am i on redstone"
+[2026-08-05T15:32:23.535327+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="redstone137" (1492932060782919760) | Content="lol"
+[2026-08-05T15:32:35.995538+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="thats better"
+[2026-08-05T15:33:00.275840+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="<@789314712990384168> (7)"
+[2026-08-05T15:33:37.925272+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="also ive stopped maintaining the bob code, that will be your job"
+[2026-08-05T15:33:46.341476+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="you can look at mine for reference if you need it"
+[2026-08-05T15:33:55.657725+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="?github fiaguhop137/emberbot137"
+[2026-08-05T15:33:56.188344+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="Dyno#3861" (155149108183695360) | Content=""
+[2026-08-05T15:41:48.330477+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="okey"
+[2026-08-05T15:42:00.644829+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="jarona"
+[2026-08-05T15:42:00.962585+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:42:01.228597+00:00] Guild="Yap" | Channel="#dragon" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:42:01.814521+00:00] Guild="Yap" | Channel="#plasma-dragon" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:42:02.245201+00:00] Guild="Yap" | Channel="#plasma-dragon-twi" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:42:02.340578+00:00] Guild="Yap" | Channel="#plasma-dragon-frog" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:42:02.501090+00:00] Guild="Yap" | Channel="#everyone" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:42:02.772477+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:49:22.393788+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="jarona jarona jarona"
+[2026-08-05T15:49:25.161278+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="jarona"
+[2026-08-05T15:49:27.823336+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="hehe"
+[2026-08-05T15:49:34.666388+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="stawpss"
+[2026-08-05T15:49:44.365428+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="i should never have given you this power"
+[2026-08-05T15:49:46.460801+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="lol"
+[2026-08-05T15:49:51.358650+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="anyways bye"
+[2026-08-05T15:49:52.744017+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="set channel ev"
+[2026-08-05T15:50:04.566359+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="set channel ev"
+[2026-08-05T15:50:04.767793+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote] Target channel updated to: #everyone`"
+[2026-08-05T15:50:04.983960+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Active Targets] Server: all | Channel: #everyone`"
+[2026-08-05T15:50:10.911111+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="hehe i was doing it in this channel"
+[2026-08-05T15:50:18.835799+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="set server yap"
+[2026-08-05T15:50:19.188358+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote] Target server updated to: Yap`"
+[2026-08-05T15:50:19.580708+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Active Targets] Server: Yap | Channel: #everyone`"
+[2026-08-05T15:50:22.990608+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="jarona"
+[2026-08-05T15:50:23.101205+00:00] Guild="Yap" | Channel="#everyone" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-05T15:50:29.485493+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="okay ill stop lol"
+[2026-08-05T20:43:30.041695+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"

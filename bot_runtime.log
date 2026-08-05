@@ -1,80 +1,34 @@
-davey is not installed, voice will NOT be supported
-[2026-08-03 22:12:20] [INFO    ] discord.client: logging in using static token
 logging in using static token
-[2026-08-03 22:12:21] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 487efe5b3f80add432ddd0c7ded7a3e5).
-Shard ID None has connected to Gateway (Session ID: 487efe5b3f80add432ddd0c7ded7a3e5).
+Shard ID None has sent the IDENTIFY payload.
+Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-d-ddqv",{"micros":374892,"calls":["id_created",{"micros":718,"calls":[]},"session_lookup_time",{"micros":2098,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":371650,"calls":["start_session",{"micros":363830,"calls":["prd-rpc-d44ff59f6-drwf4",{"micros":120306,"calls":["get_user",{"micros":11814},"get_guilds",{"micros":19171},"send_scheduled_deletion_message",{"micros":14},"guild_join_requests",{"micros":5},"authorized_ip_coro",{"micros":9},"pending_payments",{"micros":2884},"apex_experiments",{"micros":221731},"sessions_experiments",{"micros":11},"played_application_ids",{"micros":7},"linked_users",{"micros":6},"ad_personalization_toggles_disabled",{"micros":5},"regional_feature_config",{"micros":5}]}]},"starting_guild_connect",{"micros":154,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":355,"calls":[]},"guilds_started",{"micros":124,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":7152,"calls":[]},"connect_finished",{"micros":7168,"calls":[]},"build_ready",{"micros":15,"calls":[]},"clean_ready",{"micros":2,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 0be33a0771e8b2ca21887f6fcf25fd1f).
 Logged in as bobbot9000#8975 (ID: 1533157532510584894)
 Failed to reposition 'Plasma' role in Yap: 403 Forbidden (error code: 50013): Missing Permissions
-[2026-08-04T02:13:19.421701+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="set" | Action="Remote target update -> Server: all, Channel: #everyone"
-[2026-08-04T02:13:21.412434+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #everyone"
-[2026-08-04T02:13:32.254146+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 10000x: ????????????????? THE HELL ARE THESE PICTURES BRO"
-[2026-08-04T02:13:39.784459+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="stop" | Action="Halted 1 tasks"
-[2026-08-04T02:14:48.842345+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 10000x: bro what- this is so unhinged stopp"
-[2026-08-04T02:15:04.934453+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="stop" | Action="Halted 1 tasks"
-[2026-08-04T02:16:51.293308+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 10000000000x: shutup"
-[2026-08-04T02:17:17.381705+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 1000000x: https://klipy.com/gifs/absolute-cinema-absolute-cinema-meme-7"
-[2026-08-04T02:17:33.663350+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="stop" | Action="Halted 2 tasks"
-[2026-08-04T02:17:36.045943+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="spam" | Action="Remote background spam task 1000x: https://klipy.com/gifs/absolute-cinema-absolute-cinema-meme-7"
-[2026-08-04T02:17:56.300285+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="stop" | Action="Halted 1 tasks"
-[2026-08-03 23:47:58] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-[2026-08-04 02:04:41] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-[2026-08-04 02:37:21] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-[2026-08-04 06:13:34] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-[2026-08-04 07:20:19] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-[2026-08-04 10:57:42] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-[2026-08-04 11:55:23] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-[2026-08-04 14:29:46] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-[2026-08-04T19:32:20.232399+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="echo" | Action="Remote echo: [Verse 1]
-Ten feet twenty, the Flower Man
-Is waiting for the touch of his hand
-Straightening petals out without a plan
-Like the every daily
-Wish that bothers the Flower Man
-Could I do something to make him laugh?
-Inside my little chamber made of glass
-So he lived the
-
-[Chorus]
-Flower Man, Flower Man
-With his heart in the sand
-So he stands
-To watch the whole wide world
-From a can
-Way up high in the sky
-With the sun in his eyes
-Ain't it nice?
-The life forever for
-Flowers
-
-[Instrumental Break]
-
-[Verse 2]
-Ten feet twenty, the Flower Man
-Is waiting for the touch of his hand
-Fallen to pieces still without a plan
-Yet the every daily
-Hope that powered the Flower Man
-Would never cower off of its path
-Even if broken I am more than glass
-So he lived the
-[Chorus]
-Flower Man, Flower Man
-With his heart in the sand
-So he stands
-To watch the whole wide world
-From a can
-Way up high in the sky
-With the sun in your eyes
-Ain't it nice?
-The life forever for
-Flowers"
-[2026-08-04 15:46:54] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
-Shard ID None has successfully RESUMED session 487efe5b3f80add432ddd0c7ded7a3e5.
+[2026-08-05T15:50:05.009328+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: all, Channel: #everyone"
+[2026-08-05T15:50:19.582930+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #everyone"
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-d-xqjf",{"micros":2159,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":306,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":15}]}].
+Timed out receiving packet. Attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-c-1xkm",{"micros":636,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":283,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":14}]}].
+Timed out receiving packet. Attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-d-gkg1",{"micros":4056,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":3163,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":15}]}].
+Websocket closed with 1006, attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-d-gs33",{"micros":8482,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":829,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":14}]}].
+Websocket closed with 1006, attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-d-29j2",{"micros":2493,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":2159,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":15}]}].
+Websocket closed with 1001, attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-c-svmp",{"micros":610,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":261,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":25}]}].
+Websocket closed with 1006, attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-d-q07z",{"micros":2769,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":2293,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":17}]}].
