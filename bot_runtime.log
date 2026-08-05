@@ -32,3 +32,9 @@ Websocket closed with 1006, attempting a reconnect.
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
 Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-d-q07z",{"micros":2769,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":2293,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":17}]}].
+Websocket closed with 1006, attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-d-6thq",{"micros":1160,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":262,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":18}]}].
+Can't keep up, shard ID None websocket is 12.3s behind.
+Can't keep up, shard ID None websocket is 27.5s behind.
