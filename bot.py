@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger("bobbot9000")
 
 intents = discord.Intents.default()
-intents.guilds, intents.guild_messages, intents.message, intents.members = True, True, True, True
+intents.guilds, intents.guild_messages, intents.messages, intents.members = True, True, True, True
 
 bot = commands.Bot(command_prefix="!", intents=intents, help_command=None)
 current_target_server: str = "all"
