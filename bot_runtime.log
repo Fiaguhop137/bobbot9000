@@ -5,3 +5,5 @@ Logged in as bobbot9000#8975 (ID: 1533157532510584894)
 Failed to reposition 'Plasma' role in Yap: 403 Forbidden (error code: 50013): Missing Permissions
 [2026-08-06T01:35:22.863067+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: all, Channel: #emberbot137-remote-console"
 [2026-08-06T01:35:31.313861+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="echo" | Action="Remote echo: reboot -l"
+[2026-08-06T02:38:27.005257+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="set" | Action="Remote target update -> Server: all, Channel: #everyone"
+[2026-08-06T02:38:32.807563+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #everyone"

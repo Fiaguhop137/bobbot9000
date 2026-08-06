@@ -4008,3 +4008,291 @@ Type help for a list of commands
 ```"
 [2026-08-06T02:19:24.691928+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail 20 chat.log (2)"
 [2026-08-06T02:19:39.100327+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-06T02:19:39.318683+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated.
+```"
+[2026-08-06T02:19:46.111251+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail 20 chat.log"
+[2026-08-06T02:19:46.374275+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-06T02:19:50.164870+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail 20 chat.log"
+[2026-08-06T02:19:56.784052+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="help"
+[2026-08-06T02:19:57.098621+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Available Console Commands
+ - test                                    - Send diagnostic report to target(s)
+ - echo <msg>                              - Send <msg> to target(s)
+ - spam <number> <msg>                     - Send <number> of messages <msg> to target(s)
+ - delay <secs> <cmd>                      - Execute <cmd> after <secs> seconds
+ - tasks                                   - Lists all active tasks
+ - cancel <task_id>                        - Halt active tasks by task id
+ - set <server|channel> <name|all>         - Target specific server/channel
+ - tail <lines> <file>                     - Outputs last <lines> lines of any file
+ - servers                                 - List connected servers and channels
+ - volume <number>                         - Changes volume to <number>%
+ - reboot <flag>                           - Initiates reboot and updates. Optional flags listed below
+  ↳ -c                                     - Opens console after reboot
+  ↳ -l                                     - Locks PC remotely
+ - help                                    - Show this help menu
+```"
+[2026-08-06T02:20:01.214412+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail 20 chat.log"
+[2026-08-06T02:20:07.381893+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail 15 chat.log"
+[2026-08-06T02:20:07.647014+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[2026-08-06T01:35:44.456372+00:00, Yap/#remote-controlled-bob] fiaguhop137(1342173566828810271: LET'S GO
+[2026-08-06T02:15:59.440386+00:00, Rainbows and Clouds/#rainbows] fiaguhop137(1342173566828810271: why
+[2026-08-06T02:16:10.568108+00:00, Rainbows and Clouds/#rainbows] fiaguhop137(1342173566828810271: okay sure you can have your name
+[2026-08-06T02:16:12.525448+00:00, Rainbows and Clouds/#rainbows] potatomisc19(1325234770950750340: I like my name
+[2026-08-06T02:16:18.505946+00:00, Rainbows and Clouds/#rainbows] fiaguhop137(1342173566828810271: how
+[2026-08-06T02:16:20.166837+00:00, Rainbows and Clouds/#rainbows] fiaguhop137(1342173566828810271: I'm sorry
+[2026-08-06T02:16:23.360891+00:00, Rainbows and Clouds/#rainbows] fiaguhop137(1342173566828810271: why did it send
+[2026-08-06T02:16:31.667747+00:00, Rainbows and Clouds/#rainbows] fiaguhop137(1342173566828810271: BEFORE you sent your response
+[2026-08-06T02:18:57.033331+00:00, Yap/#emberbot137-remote-console] fiaguhop137(1342173566828810271: help
+[2026-08-06T02:19:11.411207+00:00, Yap/#emberbot137-remote-console] fiaguhop137(1342173566828810271: tail 5 chat.log
+[2026-08-06T02:19:24.691899+00:00, Yap/#emberbot137-remote-console] fiaguhop137(1342173566828810271: tail 20 chat.log (2)
+[2026-08-06T02:19:39.100338+00:00, Yap/#emberbot137-remote-console] fiaguhop137(1342173566828810271: reboot
+[2026-08-06T02:19:46.111322+00:00, Yap/#emberbot137-remote-console] fiaguhop137(1342173566828810271: tail 20 chat.log (2)
+[2026-08-06T02:19:56.783132+00:00, Yap/#emberbot137-remote-console] fiaguhop137(1342173566828810271: help
+[2026-08-06T02:20:01.215969+00:00, Yap/#emberbot137-remote-console] fiaguhop137(1342173566828810271: tail 20 chat.log
+```"
+[2026-08-06T02:38:16.145856+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="jarona"
+[2026-08-06T02:38:16.324762+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-06T02:38:26.365174+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="set channel every"
+[2026-08-06T02:38:26.579018+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote] Target channel updated to: #everyone`"
+[2026-08-06T02:38:27.007248+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Active Targets] Server: all | Channel: #everyone`"
+[2026-08-06T02:38:32.330311+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="set server yap"
+[2026-08-06T02:38:32.543489+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote] Target server updated to: Yap`"
+[2026-08-06T02:38:32.739535+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Active Targets] Server: Yap | Channel: #everyone`"
+[2026-08-06T02:38:34.751213+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Content="jarona"
+[2026-08-06T02:38:34.890768+00:00] Guild="Yap" | Channel="#everyone" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-06T02:51:24.005179+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="why"
+[2026-08-06T02:51:29.631694+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="jarona"
+[2026-08-06T02:51:29.863374+00:00] Guild="Yap" | Channel="#everyone" | User="bobbot9000#8975" (1533157532510584894) | Content="[Verse 1]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Straightening petals out without a plan
+Like the every daily
+Wish that bothers the Flower Man
+Could I do something to make him laugh?
+Inside my little chamber made of glass
+So he lived the
+
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a can
+Way up high in the sky
+With the sun in his eyes
+Ain't it nice?
+The life forever for
+Flowers
+
+[Instrumental Break]
+
+[Verse 2]
+Ten feet twenty, the Flower Man
+Is waiting for the touch of his hand
+Fallen to pieces still without a plan
+Yet the every daily
+Hope that powered the Flower Man
+Would never cower off of its path
+Even if broken I am more than glass
+So he lived the
+[Chorus]
+Flower Man, Flower Man
+With his heart in the sand
+So he stands
+To watch the whole wide world
+From a canWay up high in the sky
+With the sun in your eyes
+Ain't it nice?
+The life forever for
+Flowers"
+[2026-08-06T02:52:21.198561+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="echo hmmm"
+[2026-08-06T02:52:21.416291+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="hmmm"
+[2026-08-06T02:52:21.728378+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Echoed message to 1 target
+```"
+[2026-08-06T02:52:25.098529+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="echo &purge 10000"
+[2026-08-06T02:52:25.219152+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="&purge 10000"
+[2026-08-06T02:52:25.666081+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Echoed message to 1 target
+```"
+[2026-08-06T02:52:30.777873+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="oh"
+[2026-08-06T02:52:31.741449+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="rip"
+[2026-08-06T02:52:47.609605+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="wrong server"
+[2026-08-06T02:52:56.976716+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="set server gay"
+[2026-08-06T02:52:57.136718+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target server updated to: Gay Programmers (Bot Testing)
+```"
+[2026-08-06T02:52:57.273662+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Gay Programmers (Bot Testing)/#everyone
+```"
+[2026-08-06T02:53:01.180807+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="set channel"
+[2026-08-06T02:53:01.453922+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved target channel: #everyone
+```"
+[2026-08-06T02:53:03.371090+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Gay Programmers (Bot Testing)/#everyone
+```"
+[2026-08-06T02:53:07.201237+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="channels"
+[2026-08-06T02:53:07.413676+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] Gay Programmers (Bot Testing)/#everyone not found. Try ~servers to check names or ~set to change servers.
+```"
+[2026-08-06T02:53:12.388772+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="servers"
+[2026-08-06T02:53:12.956714+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Connected Servers & Channels
+ - Yap(ID: 1463624406470230232)
+  ↳ Channels: emberbot137-remote-console, plasma, dragon, frog, twi, visitor, plasma-dragon, plasma-frog, plasma-twi, plasma-visitor, plasma-dragon-twi, plasma-dragon-frog, plasma-twi-frog, everyone, remote-controlled-bob
+ - Rainbows and Clouds(ID: 1511895185007579206)
+  ↳ Channels: rainbows, clouds, info
+ - Queer City(ID: 1533520595004821645)
+  ↳ Channels: rules, announcements, chat, debates, bot, moderator, safety
+ - Gay Programmers (Bot Testing)(ID: 1533293232597893130)
+  ↳ Channels: general
+```"
+[2026-08-06T02:53:16.784922+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="set server green y"
+[2026-08-06T02:53:16.963052+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target server updated to: Gay Programmers (Bot Testing)
+```"
+[2026-08-06T02:53:17.112276+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Gay Programmers (Bot Testing)/#everyone
+```"
+[2026-08-06T02:53:25.032564+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="set channel gen"
+[2026-08-06T02:53:25.199567+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target channel updated to: #general
+```"
+[2026-08-06T02:53:25.411270+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Gay Programmers (Bot Testing)/#general
+```"
+[2026-08-06T02:53:34.039328+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="echo hmmmmmm"
+[2026-08-06T02:53:34.463937+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Echoed message to 1 target
+```"
+[2026-08-06T02:53:41.196545+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="echo &purge 10000"
+[2026-08-06T02:53:41.598529+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Echoed message to 1 target
+```"
+[2026-08-06T02:54:33.250358+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail 15 chat.log"
+[2026-08-06T02:54:33.521987+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+&removerole [user] [role] - Remove a role from a user
+&kick [user] <reason> - Kick a user from the server
+&ban [user] <reason> - Ban a user from the server
+&unban [user] - Unban a user from the server
+&purge [amount] - Purge a specified number of messages (max 10,000)
+&userinfo [user] - Get information about a user
+&serverinfo - Get information about the server
+&channelinfo [channel] - Get information about a channel
+&logout - Logout the bot (can only be used by the bot owner)
+```
+[2026-08-06T02:53:51.929821+00:00, Gay Programmers (Bot Testing)/#general] pludunn(1512533966001930254: &purge 10000 (3)
+[2026-08-06T02:54:14.932247+00:00, Gay Programmers (Bot Testing)/#general] fiaguhop137(1342173566828810271: stop doing that
+[2026-08-06T02:54:19.089946+00:00, Gay Programmers (Bot Testing)/#general] fiaguhop137(1342173566828810271: it's annoying
+[2026-08-06T02:54:23.133579+00:00, Gay Programmers (Bot Testing)/#general] Plubot#7689(1534678880118378629: Warned <@1342173566828810271> for: frtiogwuntiowriuotbnwrtgohju
+[2026-08-06T02:54:31.057810+00:00, Gay Programmers (Bot Testing)/#general] pludunn(1512533966001930254: &purge 10000
+```"
+[2026-08-06T02:54:59.980234+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail 16 chat.log"
+[2026-08-06T02:55:00.158046+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+&serverinfo - Get information about the server
+&channelinfo [channel] - Get information about a channel
+&logout - Logout the bot (can only be used by the bot owner)
+```
+[2026-08-06T02:53:51.929821+00:00, Gay Programmers (Bot Testing)/#general] pludunn(1512533966001930254: &purge 10000 (3)
+[2026-08-06T02:54:14.932247+00:00, Gay Programmers (Bot Testing)/#general] fiaguhop137(1342173566828810271: stop doing that
+[2026-08-06T02:54:19.089946+00:00, Gay Programmers (Bot Testing)/#general] fiaguhop137(1342173566828810271: it's annoying
+[2026-08-06T02:54:23.133579+00:00, Gay Programmers (Bot Testing)/#general] Plubot#7689(1534678880118378629: Warned <@1342173566828810271> for: frtiogwuntiowriuotbnwrtgohju
+[2026-08-06T02:54:31.057810+00:00, Gay Programmers (Bot Testing)/#general] pludunn(1512533966001930254: &purge 10000
+[2026-08-06T02:54:33.250395+00:00, Yap/#emberbot137-remote-console] fiaguhop137(1342173566828810271: tail 15 chat.log
+[2026-08-06T02:54:42.081581+00:00, Gay Programmers (Bot Testing)/#general] pludunn(1512533966001930254: first message
+[2026-08-06T02:54:44.965061+00:00, Gay Programmers (Bot Testing)/#general] pludunn(1512533966001930254: first
+[2026-08-06T02:54:46.330115+00:00, Gay Programmers (Bot Testing)/#general] pludunn(1512533966001930254: lol
+[2026-08-06T02:54:55.765650+00:00, Gay Programmers (Bot Testing)/#general] pludunn(1512533966001930254: alr
+[2026-08-06T02:54:56.188055+00:00, Gay Programmers (Bot Testing)/#general] pludunn(1512533966001930254: uh
+[2026-08-06T02:54:59.341456+00:00, Gay Programmers (Bot Testing)/#general] pludunn(1512533966001930254: can i be invited back
+```"
