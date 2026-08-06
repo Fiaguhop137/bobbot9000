@@ -4734,3 +4734,113 @@ Flowers"
 [Success] Initiated background spam task #5 across 1 target.
 ```"
 [2026-08-06T04:11:56.935895+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="cancel 5"
+[2026-08-06T14:57:23.975773+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-06T14:57:24.280478+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-06T14:57:24.489010+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-06T14:57:31.756308+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-06T14:57:32.197749+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-06T14:57:32.779289+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-06T14:57:50.604813+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="servers"
+[2026-08-06T14:57:50.906148+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Connected Servers & Channels
+ - Yap(ID: 1463624406470230232)
+  ↳ Channels: emberbot137-remote-console, plasma, dragon, frog, twi, visitor, plasma-dragon, plasma-frog, plasma-twi, plasma-visitor, plasma-dragon-twi, plasma-dragon-frog, plasma-twi-frog, everyone, remote-controlled-bob
+ - Rainbows and Clouds(ID: 1511895185007579206)
+  ↳ Channels: rainbows, clouds, info
+ - Gay Programmers (Bot Testing)(ID: 1533293232597893130)
+  ↳ Channels: general
+ - Queer City(ID: 1533520595004821645)
+  ↳ Channels: rules, announcements, chat, debates, bot, moderator, safety
+ - Build-a-Bot(ID: 1534767673966334012)
+  ↳ Channels: chat
+```"
+[2026-08-06T15:02:17.267754+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="servers"
+[2026-08-06T15:02:17.423972+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Connected Servers & Channels
+ - Yap(ID: 1463624406470230232)
+  ↳ Channels: emberbot137-remote-console, plasma-frog, plasma-twi, plasma-visitor, plasma-dragon-twi, plasma-dragon-frog, plasma-twi-frog, everyone
+ - Rainbows and Clouds(ID: 1511895185007579206)
+  ↳ Channels: rainbows, clouds, info
+ - Gay Programmers (Bot Testing)(ID: 1533293232597893130)
+  ↳ Channels: general
+ - Queer City(ID: 1533520595004821645)
+  ↳ Channels: rules, announcements, chat, debates, bot, moderator, safety
+ - Build-a-Bot(ID: 1534767673966334012)
+  ↳ Channels: chat
+```"
+[2026-08-06T15:02:50.153375+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="im sure you may have noticed but ive made a channel with your name on it"
+[2026-08-06T15:03:01.603092+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="this is a private channel that nobody, not even me, can see"
+[2026-08-06T15:03:17.058378+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="i use mine to save things"
+[2026-08-06T15:03:48.261752+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="im gonna use mine to spam this gif"
+[2026-08-06T15:03:52.689371+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="https://cdn.discordapp.com/attachments/820289950938562592/1526647270596939897/neuron_activation.gif"
+[2026-08-06T15:04:09.491069+00:00] Guild="Yap" | Channel="#everyone" | User="redstone137" (1492932060782919760) | Content="have fun with that"
+[2026-08-06T15:04:16.241136+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="thx"
+[2026-08-06T15:04:50.647127+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="noooooooooooooooooooooooooooooo"
+[2026-08-06T15:05:19.324861+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="lmao"
+[2026-08-06T15:05:40.769308+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="also im no longer server owner"
+[2026-08-06T15:05:44.777326+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="its other me now"
+[2026-08-06T15:05:54.136662+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="https://giphy.com/gifs/teto-kasane-muglaliteto-LW7AINTc2BwD4wPK2c"
+[2026-08-06T15:06:02.944675+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="theres 2 of you!?!?"
+[2026-08-06T15:06:06.424005+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="yea"
+[2026-08-06T15:06:10.498525+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="actually there are 3"
+[2026-08-06T15:06:20.349786+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="its a good thing theres not 2 of me"
+[2026-08-06T15:06:39.276555+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="this server wouldnt be big enough for the 2 of us and wed have to fight it out"
+[2026-08-06T15:06:46.467365+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="echo me,"
+[2026-08-06T15:06:46.622075+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="me,"
+[2026-08-06T15:06:46.918301+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Echoed message to 1 target
+```"
+[2026-08-06T15:06:49.023247+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="and me!"
+[2026-08-06T15:06:58.832976+00:00] Guild="Yap" | Channel="#everyone" | User="redstone137" (1492932060782919760) | Content="and me!"
+[2026-08-06T15:07:12.272037+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="wow"
+[2026-08-06T15:09:05.832657+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="<@1511061102035992646>"
+[2026-08-06T15:09:08.429102+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="chat should i be stupid or lock in"
+[2026-08-06T15:09:18.301371+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="thats a bot"
+[2026-08-06T15:09:26.825273+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="of course"
+[2026-08-06T15:09:29.895562+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="btw"
+[2026-08-06T15:09:35.320786+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="would you like an actual bot"
+[2026-08-06T15:09:42.489496+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="i already have one"
+[2026-08-06T15:09:47.814490+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="uh"
+[2026-08-06T15:09:49.459578+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="sure"
+[2026-08-06T15:10:31.924339+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="ugh this server is barely big enough for me and froggo news bot"
+[2026-08-06T15:10:45.656075+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="<@1511061102035992646> get news (14)"
+[2026-08-06T15:11:05.642632+00:00] Guild="Yap" | Channel="#everyone" | User="froggonews.bot" (1511061102035992646) | Content="BREAKING NEWS: I know everything about you froggo."
+[2026-08-06T15:11:05.842961+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="<@1511061102035992646> get news (15)"
+[2026-08-06T15:11:22.334078+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="<@1511061102035992646> get news@froggonews.bot get news"
+[2026-08-06T15:11:22.744054+00:00] Guild="Yap" | Channel="#everyone" | User="froggonews.bot" (1511061102035992646) | Content="BREAKING NEWS: Froggo is almost done with his college python class."
+[2026-08-06T15:11:22.744643+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="<@1511061102035992646> get news (2)"
+[2026-08-06T15:11:51.208717+00:00] Guild="Yap" | Channel="#everyone" | User="froggonews.bot" (1511061102035992646) | Content="BREAKING NEWS: Froggo's life is not interesting enough to have this much news."
+[2026-08-06T15:11:59.811905+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="<@1511061102035992646> get fake news (10)"
+[2026-08-06T15:12:06.265639+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="v"
+[2026-08-06T15:12:06.875440+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="<@1511061102035992646> get fake news (2)"
+[2026-08-06T15:12:41.177566+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail 40 chat.loh"
+[2026-08-06T15:12:41.587712+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] File '40 chat.loh' not found.
+```"
+[2026-08-06T15:12:46.139228+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail 40 chat.log"
+[2026-08-06T15:12:52.958588+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail 4 chat.loh"
+[2026-08-06T15:12:53.159972+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Error] File '4 chat.loh' not found.
+```"
+[2026-08-06T15:12:57.880644+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail 4 chat.log"
+[2026-08-06T15:12:57.988028+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[2026-08-06T15:12:06.875433+00:00, Yap/#everyone] fiaguhop137(1342173566828810271: <@1511061102035992646> get fake news (2)
+[2026-08-06T15:12:41.179448+00:00, Yap/#emberbot137-remote-console] fiaguhop137(1342173566828810271: tail 40 chat.loh
+[2026-08-06T15:12:46.140583+00:00, Yap/#emberbot137-remote-console] fiaguhop137(1342173566828810271: tail 40 chat.log
+[2026-08-06T15:12:52.958595+00:00, Yap/#emberbot137-remote-console] fiaguhop137(1342173566828810271: tail 4 chat.loh
+```"
+[2026-08-06T15:13:14.551002+00:00] Guild="Yap" | Channel="#everyone" | User="froggonews.bot" (1511061102035992646) | Content="BREAKING NEWS: Froggo is going to get a girlfriend someday."
+[2026-08-06T15:14:43.910871+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="stop being unsettling"
+[2026-08-06T15:15:05.357988+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
