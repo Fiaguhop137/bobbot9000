@@ -3941,3 +3941,31 @@ Flowers"
 [2026-08-05T20:43:30.265706+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
 [Warning] Reboot initiated.
 ```"
+[2026-08-06T01:34:58.368266+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-06T01:34:58.492685+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-06T01:34:58.685500+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-06T01:35:04.546541+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-06T01:35:04.972705+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-06T01:35:05.387937+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-06T01:35:17.857890+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="okay let's try this"
+[2026-08-06T01:35:22.203097+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="set channel ember"
+[2026-08-06T01:35:22.649717+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote] Target channel updated to: #emberbot137-remote-console`"
+[2026-08-06T01:35:22.862614+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Active Targets] Server: all | Channel: #emberbot137-remote-console`"
+[2026-08-06T01:35:30.958178+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="echo reboot -l"
+[2026-08-06T01:35:31.105097+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="bobbot9000#8975" (1533157532510584894) | Content="reboot -l"
+[2026-08-06T01:35:31.255004+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="`[Remote Success] Echoed to 1 target(s).`"
+[2026-08-06T01:35:32.558336+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Lock initiated. Locking PC remotely.
+```"

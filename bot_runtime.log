@@ -1,40 +1,7 @@
 logging in using static token
 Shard ID None has sent the IDENTIFY payload.
-Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-d-ddqv",{"micros":374892,"calls":["id_created",{"micros":718,"calls":[]},"session_lookup_time",{"micros":2098,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":371650,"calls":["start_session",{"micros":363830,"calls":["prd-rpc-d44ff59f6-drwf4",{"micros":120306,"calls":["get_user",{"micros":11814},"get_guilds",{"micros":19171},"send_scheduled_deletion_message",{"micros":14},"guild_join_requests",{"micros":5},"authorized_ip_coro",{"micros":9},"pending_payments",{"micros":2884},"apex_experiments",{"micros":221731},"sessions_experiments",{"micros":11},"played_application_ids",{"micros":7},"linked_users",{"micros":6},"ad_personalization_toggles_disabled",{"micros":5},"regional_feature_config",{"micros":5}]}]},"starting_guild_connect",{"micros":154,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":355,"calls":[]},"guilds_started",{"micros":124,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":7152,"calls":[]},"connect_finished",{"micros":7168,"calls":[]},"build_ready",{"micros":15,"calls":[]},"clean_ready",{"micros":2,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 0be33a0771e8b2ca21887f6fcf25fd1f).
+Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-b-6sqj",{"micros":243118,"calls":["id_created",{"micros":534,"calls":[]},"session_lookup_time",{"micros":951,"calls":[]},"session_lookup_finished",{"micros":17,"calls":[]},"sessions-prd-gcp-us-east1-b-78",{"micros":240282,"calls":["start_session",{"micros":158829,"calls":["prd-rpc-66b64fc767-jtlcs",{"micros":53974,"calls":["get_user",{"micros":9113},"get_guilds",{"micros":8240},"send_scheduled_deletion_message",{"micros":25},"guild_join_requests",{"micros":4},"authorized_ip_coro",{"micros":12},"pending_payments",{"micros":1829},"apex_experiments",{"micros":93650},"sessions_experiments",{"micros":10},"played_application_ids",{"micros":5},"linked_users",{"micros":4},"ad_personalization_toggles_disabled",{"micros":9},"regional_feature_config",{"micros":5}]}]},"starting_guild_connect",{"micros":48,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":22543,"calls":[]},"guilds_started",{"micros":83,"calls":[]},"guilds_connect",{"micros":4,"calls":[]},"presence_connect",{"micros":58753,"calls":[]},"connect_finished",{"micros":58764,"calls":[]},"build_ready",{"micros":11,"calls":[]},"clean_ready",{"micros":2,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: ed2ade7e1f9c1f24296abc51ac841534).
 Logged in as bobbot9000#8975 (ID: 1533157532510584894)
 Failed to reposition 'Plasma' role in Yap: 403 Forbidden (error code: 50013): Missing Permissions
-[2026-08-05T15:50:05.009328+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: all, Channel: #everyone"
-[2026-08-05T15:50:19.582930+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="set" | Action="Remote target update -> Server: Yap, Channel: #everyone"
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-d-xqjf",{"micros":2159,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":306,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":15}]}].
-Timed out receiving packet. Attempting a reconnect.
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-c-1xkm",{"micros":636,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":283,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":14}]}].
-Timed out receiving packet. Attempting a reconnect.
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-d-gkg1",{"micros":4056,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":3163,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":15}]}].
-Websocket closed with 1006, attempting a reconnect.
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-d-gs33",{"micros":8482,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":829,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":14}]}].
-Websocket closed with 1006, attempting a reconnect.
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-d-29j2",{"micros":2493,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":2159,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":15}]}].
-Websocket closed with 1001, attempting a reconnect.
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-c-svmp",{"micros":610,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":261,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":25}]}].
-Websocket closed with 1006, attempting a reconnect.
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-d-q07z",{"micros":2769,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":2293,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":17}]}].
-Websocket closed with 1006, attempting a reconnect.
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 0be33a0771e8b2ca21887f6fcf25fd1f under trace ["gateway-prd-arm-us-east1-d-6thq",{"micros":1160,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":262,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-d-19",{"micros":18}]}].
-Can't keep up, shard ID None websocket is 12.3s behind.
-Can't keep up, shard ID None websocket is 27.5s behind.
+[2026-08-06T01:35:22.863067+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="set" | Action="Remote target update -> Server: all, Channel: #emberbot137-remote-console"
+[2026-08-06T01:35:31.313861+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Command="echo" | Action="Remote echo: reboot -l"
