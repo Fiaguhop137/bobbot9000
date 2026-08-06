@@ -3969,3 +3969,42 @@ Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, se
 [2026-08-06T01:35:32.558336+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
 [Warning] Lock initiated. Locking PC remotely.
 ```"
+[2026-08-06T01:35:32.768229+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Locking...
+```"
+[2026-08-06T01:35:36.388873+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="YES"
+[2026-08-06T01:35:39.497234+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-06T01:35:40.861950+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="I'M GENIUS"
+[2026-08-06T01:35:44.457671+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="fiaguhop137" (1342173566828810271) | Content="LET'S GO"
+[2026-08-06T02:18:57.033374+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="help"
+[2026-08-06T02:18:57.259769+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Available Console Commands
+ - test                                    - Send diagnostic report to target(s)
+ - echo <msg>                              - Send <msg> to target(s)
+ - spam <number> <msg>                     - Send <number> of messages <msg> to target(s)
+ - delay <secs> <cmd>                      - Execute <cmd> after <secs> seconds
+ - tasks                                   - Lists all active tasks
+ - cancel <task_id>                        - Halt active tasks by task id
+ - set <server|channel> <name|all>         - Target specific server/channel
+ - tail <lines> <file>                     - Outputs last <lines> lines of any file
+ - servers                                 - List connected servers and channels
+ - volume <number>                         - Changes volume to <number>%
+ - reboot <flag>                           - Initiates reboot and updates. Optional flags listed below
+  ↳ -c                                     - Opens console after reboot
+  ↳ -l                                     - Locks PC remotely
+ - help                                    - Show this help menu
+```"
+[2026-08-06T02:19:11.411250+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail 5 chat.log"
+[2026-08-06T02:19:11.573403+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[2026-08-06T02:16:18.505946+00:00, Rainbows and Clouds/#rainbows] fiaguhop137(1342173566828810271: how
+[2026-08-06T02:16:20.166837+00:00, Rainbows and Clouds/#rainbows] fiaguhop137(1342173566828810271: I'm sorry
+[2026-08-06T02:16:23.360891+00:00, Rainbows and Clouds/#rainbows] fiaguhop137(1342173566828810271: why did it send
+[2026-08-06T02:16:31.667747+00:00, Rainbows and Clouds/#rainbows] fiaguhop137(1342173566828810271: BEFORE you sent your response
+[2026-08-06T02:18:57.033331+00:00, Yap/#emberbot137-remote-console] fiaguhop137(1342173566828810271: help
+```"
+[2026-08-06T02:19:24.691928+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="tail 20 chat.log (2)"
+[2026-08-06T02:19:39.100327+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
