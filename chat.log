@@ -4844,3 +4844,208 @@ Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, se
 [2026-08-06T15:13:14.551002+00:00] Guild="Yap" | Channel="#everyone" | User="froggonews.bot" (1511061102035992646) | Content="BREAKING NEWS: Froggo is going to get a girlfriend someday."
 [2026-08-06T15:14:43.910871+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="stop being unsettling"
 [2026-08-06T15:15:05.357988+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-06T15:15:05.666050+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated.
+```"
+[2026-08-06T15:15:21.655568+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="reaaaaaly?"
+[2026-08-06T15:15:21.949405+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 5 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-06T15:15:28.098499+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="what about a boyfriend"
+[2026-08-06T15:15:34.378777+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="its fake news"
+[2026-08-06T15:15:34.593967+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="get one of those"
+[2026-08-06T15:16:15.708632+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="i would ask you out but
+a) ur too old(i mean goddamn bro ur ancient)
+b) im not *straight*"
+[2026-08-06T15:17:14.489055+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="twi on the other hand
+a) somewhere near my age(probably)
+b) is a girl
+c) has beautiful eyes"
+[2026-08-06T15:17:14.489237+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="why would you ask a random online stranger out 😭"
+[2026-08-06T15:17:28.925010+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="i know where you live"
+[2026-08-06T15:17:31.661892+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="ur not a stranger"
+[2026-08-06T15:18:35.485668+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="well yes i live in froggo standard time"
+[2026-08-06T15:25:30.926861+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="there is a 46% chance you live in massacusette from whati know about you"
+[2026-08-06T15:25:46.184096+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="and a 68% chance you are under 50 miles away from me"
+[2026-08-06T15:25:57.856937+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="bro why would you even think that"
+[2026-08-06T15:26:16.699013+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="unless your canadian"
+[2026-08-06T15:26:22.098206+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="which i dont think you are"
+[2026-08-06T15:26:31.577124+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="im actually sort of canadian but i dont live there"
+[2026-08-06T15:26:41.509354+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="so was i right"
+[2026-08-06T15:26:42.709381+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="im probably going to have citizenship by the end of the year"
+[2026-08-06T15:27:34.625269+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="then in like 2 years i can leave murica never to return*"
+[2026-08-06T15:27:50.294766+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="-# *ill probably return at some point to visit"
+[2026-08-06T15:28:20.100457+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="maple syrup and hockey"
+[2026-08-06T15:28:29.320560+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="indeed"
+[2026-08-06T15:29:00.408295+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="instead of being 80% water im gonna be 80% maple syrup"
+[2026-08-06T15:29:31.368588+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="ok but seriously why massachusets"
+[2026-08-06T15:29:55.635319+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="at least its a real place but why do you think i live there"
+[2026-08-06T15:33:16.041203+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-06T15:33:16.245502+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
+[2026-08-06T15:33:46.346753+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="idk"
+[2026-08-06T15:34:14.587745+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="whats the other 54%"
+[2026-08-06T15:34:28.427462+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="is that just any other place in froggo standard time"
+[2026-08-06T16:06:04.462088+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="yea"
+[2026-08-06T16:07:19.907613+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="im not even entirely sure ive been to massachusets"
+[2026-08-06T16:07:53.333632+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="what"
+[2026-08-06T16:07:57.635705+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="then where are you?"
+[2026-08-06T16:08:00.401470+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="new York?"
+[2026-08-06T16:08:04.194351+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="ny i think"
+[2026-08-06T16:08:07.997586+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="yep"
+[2026-08-06T16:08:11.385499+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="https://cdn.discordapp.com/attachments/1438240821433340108/1534624601751945347/spinel_approved.gif"
+[2026-08-06T16:08:55.892111+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="im pretty sure massachusets is a real place"
+[2026-08-06T16:09:00.920832+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="it seems fairly belivable"
+[2026-08-06T16:09:32.564211+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="against all odds florida is somehow a real place"
+[2026-08-06T17:42:08.526635+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 50"
+[2026-08-06T17:42:08.811842+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 50%
+```"
+[2026-08-06T17:42:13.339237+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-06T17:42:13.646138+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
+[2026-08-06T17:42:44.059379+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 0"
+[2026-08-06T17:42:44.316891+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 0%
+```"
+[2026-08-06T17:43:01.290265+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 100"
+[2026-08-06T17:43:01.880004+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 100%
+```"
+[2026-08-06T17:43:03.707540+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 33"
+[2026-08-06T17:43:03.850262+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 33%
+```"
+[2026-08-06T17:43:07.103376+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-06T17:43:07.234589+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
+[2026-08-06T18:15:04.281249+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="https://cdn.discordapp.com/attachments/1352759044095606805/1524264617252098119/i_am_cooked.gif"
+[2026-08-06T18:15:14.184004+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="i made my program too good for my own good"
+[2026-08-06T18:16:09.777660+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="for the reflection i have to write how a user would be most likely to break the program"
+[2026-08-06T18:16:30.769369+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="i dont think i could break it if i tried"
+[2026-08-06T18:16:55.049637+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="-# i have tryed btw"
+[2026-08-06T18:18:06.526319+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="send me the program"
+[2026-08-06T18:18:08.782729+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="i shall break it"
+[2026-08-06T18:18:47.080866+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="try to find ways to break it other than ctrl Z enter"
+[2026-08-06T18:18:56.292498+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content=""
+[2026-08-06T18:19:06.737833+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content=""11 kb""
+[2026-08-06T18:19:17.488748+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="oh wait thats the wrong version"
+[2026-08-06T18:20:31.544250+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content=""
+[2026-08-06T18:20:33.161365+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="here you go"
+[2026-08-06T18:23:07.280865+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="lmk when you break it"
+[2026-08-06T18:23:18.338293+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content=""
+[2026-08-06T18:23:24.582661+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="its pretty cool"
+[2026-08-06T18:23:31.859293+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="i just yapped at it a bunch"
+[2026-08-06T18:23:33.388862+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="thx"
+[2026-08-06T18:23:49.058325+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="wait i have one more thing to try"
+[2026-08-06T18:24:40.052323+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="okay i found a bug"
+[2026-08-06T18:24:45.822085+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="if you reply nothing to all of them"
+[2026-08-06T18:24:58.484896+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="oh thats intentional"
+[2026-08-06T18:24:58.800468+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="then it decides that every pidgeon is your pidgeon"
+[2026-08-06T18:25:02.175515+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="oh"
+[2026-08-06T18:25:05.551243+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="fu-"
+[2026-08-06T18:25:17.544477+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="uh good job froog"
+[2026-08-06T18:25:20.911812+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="o"
+[2026-08-06T18:25:37.809783+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="rip"
+[2026-08-06T18:25:39.649251+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="im cooked"
+[2026-08-06T18:25:58.289874+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="https://klipy.com/gifs/but-you-are-hazbin-hotel"
+[2026-08-06T18:26:31.209149+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="https://klipy.com/gifs/helluva-boss-helluva-boss-blitzo-3"
+[2026-08-06T18:26:42.942336+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="https://cdn.discordapp.com/attachments/1438240821433340108/1534624601751945347/spinel_approved.gif"
+[2026-08-06T18:26:45.498286+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="uh heres an idea"
+[2026-08-06T18:26:54.606408+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="make your code wose"
+[2026-08-06T18:27:05.976710+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="https://klipy.com/gifs/its-too-late-howls-moving-castle"
+[2026-08-06T18:27:10.893863+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="i already submitted it"
+[2026-08-06T18:27:15.137051+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="faa"
+[2026-08-06T18:27:36.294672+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="hack the teachers computer"
+[2026-08-06T18:27:50.073276+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="id get banned from college"
+[2026-08-06T18:28:19.084863+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="hack it so ur not banned"
+[2026-08-06T18:29:03.638642+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="i guess i could say if the user gives an input that doesnt meet the requirements and then continues to do so they will keep entering that input forever"
+[2026-08-06T18:33:36.233618+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content=""If a real user who wasn't you sat down at this program, where would they most likely break it? You don't have to have fixed this ... just identify it honestly." this is from the instructions for the reflection"
+[2026-08-06T18:33:44.826088+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="maybe its allowed to be an issue i alreadly fixed"
+[2026-08-06T18:34:04.182773+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="hey fia i got a question"
+[2026-08-06T18:34:11.246094+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="how long does it takefor a sheep to regrow wool"
+[2026-08-06T18:34:18.312748+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="ik it requires grass and id o have that"
+[2026-08-06T18:34:33.159664+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="they regrow it immeadialty if they eat grass (at least in bedrock)"
+[2026-08-06T18:34:46.887993+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="im on java and they dont do that it looks like"
+[2026-08-06T18:34:51.180229+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="cuz they wont regrow it"
+[2026-08-06T18:34:55.681119+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="its a 1 in 1000 per tick that they eat grass"
+[2026-08-06T18:35:04.698481+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="and eating grass instantly regrows it"
+[2026-08-06T18:35:38.354337+00:00] Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Content="dangit"
+[2026-08-06T18:35:52.014040+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="so 01.9811135% in the first second"
+[2026-08-06T18:35:55.596174+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="and so on"
+[2026-08-06T18:49:02.591149+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="ok i just did this:
+If the user misspells something or doesn't format their input according to the instructions they could end up with a "Pigeon not found." or "Sorry, that doesn't match the description of any of the pigeons." message even if the pigeon they are looking for does exist."
+[2026-08-06T18:49:19.438560+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="oh"
+[2026-08-06T18:49:22.507987+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="thats smart"
+[2026-08-06T18:49:28.447311+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="user error is always the best answer"
+[2026-08-06T18:50:25.989546+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="this is the name of the module"
+[2026-08-06T18:50:49.782192+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="oh"
+[2026-08-06T18:50:52.934574+00:00] Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Content="lol"
+[2026-08-06T18:52:23.350016+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content="i still have to do 2 c.o.w. comments but im probably going to save those until the day they are due"
+[2026-08-06T18:53:02.217083+00:00] Guild="Yap" | Channel="#everyone" | User="bossman_sir" (727526906161004614) | Content=""
+[2026-08-07T00:43:30.370877+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 33"
+[2026-08-07T00:43:30.710398+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 33%
+```"
+[2026-08-07T01:56:21.867711+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-07T01:56:21.868416+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-07T01:56:21.968390+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-07T01:56:21.968404+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-07T01:56:22.115211+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-07T01:56:22.110854+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-07T01:56:29.983328+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console] Reboot flag set. Will reboot now.
+```"
+[2026-08-07T01:56:34.433469+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-07T01:56:34.433522+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-07T01:56:34.866523+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-07T01:56:34.867665+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-07T01:56:34.975159+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-07T01:56:34.984732+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-07T01:56:46.156883+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 5 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-07T01:56:46.156197+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 5 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-07T01:56:50.839360+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-07T01:56:50.840309+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-07T01:56:51.008095+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated.
+``` (2)"
+[2026-08-07T01:56:50.987519+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated.
+``` (2)"
