@@ -5095,3 +5095,9 @@ Type help for a list of commands
 ```"
 [2026-08-07T01:57:38.654390+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l"
 [2026-08-07T01:57:38.653733+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l"
+[2026-08-07T01:57:38.776613+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Lock initiated. Locking PC remotely.
+```"
+[2026-08-07T01:57:38.778777+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Lock initiated. Locking PC remotely.
+```"
