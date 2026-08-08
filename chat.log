@@ -151,3 +151,110 @@ Type help for a list of commands
 [2026-08-08T01:22:51.200441+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
 [Success] Volume set to 0%
 ```"
+[2026-08-08T01:29:30.068354+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="note to self: do waxed trapdoor textures with a little orange sparkle in the corner for 2d item sprites resource pack"
+[2026-08-08T01:29:30.069567+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="note to self: do waxed trapdoor textures with a little orange sparkle in the corner for 2d item sprites resource pack"
+[2026-08-08T01:29:30.067994+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="note to self: do waxed trapdoor textures with a little orange sparkle in the corner for 2d item sprites resource pack"
+[2026-08-08T03:02:06.941033+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-08T03:02:06.941655+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-08T03:02:06.944225+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-08T03:02:06.943721+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-08T03:02:07.243182+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-08T03:02:07.243491+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-08T03:02:07.245446+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-08T03:02:07.243979+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-08T03:02:07.459337+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-08T03:02:07.432475+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-08T03:02:07.433003+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-08T03:02:07.448236+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-08T13:57:31.318158+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-08T13:57:31.318203+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-08T13:57:31.331600+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-08T13:57:31.321905+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-08T13:57:31.555378+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
+[2026-08-08T13:57:31.543923+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
+[2026-08-08T13:57:31.543395+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
+[2026-08-08T13:57:31.543349+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
+[2026-08-08T19:28:58.595432+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l"
+[2026-08-08T19:28:58.595598+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l"
+[2026-08-08T19:28:58.596540+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l"
+[2026-08-08T19:28:58.597992+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l"
+[2026-08-08T19:28:58.740772+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Lock initiated. Locking PC remotely.
+```"
+[2026-08-08T19:28:58.739583+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Lock initiated. Locking PC remotely.
+```"
+[2026-08-08T19:28:58.742084+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Lock initiated. Locking PC remotely.
+```"
+[2026-08-08T19:28:58.741804+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Lock initiated. Locking PC remotely.
+```"
+[2026-08-08T19:28:58.872422+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Locking...
+```"
+[2026-08-08T19:28:58.872059+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Locking...
+```"
+[2026-08-08T19:28:58.877752+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Locking...
+```"
+[2026-08-08T19:28:58.871759+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Locking...
+```"
+[2026-08-08T19:31:09.471523+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-08T19:31:09.457469+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-08T19:31:09.455202+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-08T19:31:09.461136+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-08T21:51:37.492415+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-08T21:51:37.504055+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-08T21:51:37.490746+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-08T21:51:37.510342+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
