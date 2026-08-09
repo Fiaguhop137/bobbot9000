@@ -290,3 +290,171 @@ Type help for a list of commands
 Current Target Channel: yap/#everyone 
 Type help for a list of commands
 ```"
+[2026-08-08T21:52:10.536003+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l"
+[2026-08-08T21:52:10.533300+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l"
+[2026-08-08T21:52:10.533731+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l"
+[2026-08-08T21:52:10.532309+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l"
+[2026-08-08T21:52:17.461917+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-08T21:52:17.469657+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-08T21:52:17.462197+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-08T21:52:17.463585+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-09T01:23:24.578105+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 5"
+[2026-08-09T01:23:24.580120+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 5"
+[2026-08-09T01:23:24.579968+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 5"
+[2026-08-09T01:23:24.578809+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 5"
+[2026-08-09T01:23:24.756579+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 5%
+```"
+[2026-08-09T01:23:24.747841+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 5%
+```"
+[2026-08-09T01:23:24.749452+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 5%
+```"
+[2026-08-09T01:23:24.746799+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 5%
+```"
+[2026-08-09T01:23:30.101687+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 10"
+[2026-08-09T01:23:30.101688+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 10"
+[2026-08-09T01:23:30.101748+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 10"
+[2026-08-09T01:23:30.102259+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 10"
+[2026-08-09T01:23:30.308796+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 10%
+```"
+[2026-08-09T01:23:30.309323+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 10%
+```"
+[2026-08-09T01:23:30.308422+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 10%
+```"
+[2026-08-09T01:23:30.309103+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 10%
+```"
+[2026-08-09T01:23:35.252643+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-09T01:23:35.239291+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-09T01:23:35.239569+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-09T01:23:35.245777+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-09T01:23:35.385894+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
+[2026-08-09T01:23:35.392703+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
+[2026-08-09T01:23:35.392260+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
+[2026-08-09T01:23:35.380782+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
+[2026-08-09T01:23:44.849693+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 15"
+[2026-08-09T01:23:44.850401+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 15"
+[2026-08-09T01:23:44.851597+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 15"
+[2026-08-09T01:23:44.851000+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 15"
+[2026-08-09T01:23:45.054704+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 15%
+```"
+[2026-08-09T01:23:45.053843+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 15%
+```"
+[2026-08-09T01:23:45.053325+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 15%
+```"
+[2026-08-09T01:23:45.054430+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 15%
+```"
+[2026-08-09T01:23:48.295591+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 10"
+[2026-08-09T01:23:48.297443+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 10"
+[2026-08-09T01:23:48.294885+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 10"
+[2026-08-09T01:23:48.294416+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 10"
+[2026-08-09T01:23:48.424641+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 10%
+```"
+[2026-08-09T01:23:48.415940+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 10%
+```"
+[2026-08-09T01:23:48.417067+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 10%
+```"
+[2026-08-09T01:23:48.415726+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 10%
+```"
+[2026-08-09T01:23:53.757512+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 12"
+[2026-08-09T01:23:53.757893+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 12"
+[2026-08-09T01:23:53.759878+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 12"
+[2026-08-09T01:23:53.757522+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 12"
+[2026-08-09T01:23:54.071839+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 12%
+```"
+[2026-08-09T01:23:54.070151+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 12%
+```"
+[2026-08-09T01:23:54.070185+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 12%
+```"
+[2026-08-09T01:23:54.072882+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 12%
+```"
+[2026-08-09T02:43:19.885627+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 10"
+[2026-08-09T02:43:19.877912+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 10"
+[2026-08-09T02:43:19.872148+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 10"
+[2026-08-09T02:43:19.872141+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 10"
+[2026-08-09T02:43:20.056749+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 10%
+```"
+[2026-08-09T02:43:20.057853+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 10%
+```"
+[2026-08-09T02:43:20.068343+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 10%
+```"
+[2026-08-09T02:43:20.055631+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 10%
+```"
+[2026-08-09T02:43:24.410200+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l"
+[2026-08-09T02:43:24.409143+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l"
+[2026-08-09T02:43:24.411025+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l"
+[2026-08-09T02:43:24.408479+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l"
+[2026-08-09T02:43:24.613989+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Lock initiated. Locking PC remotely.
+```"
+[2026-08-09T02:43:24.615175+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Lock initiated. Locking PC remotely.
+```"
+[2026-08-09T02:43:24.613162+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Lock initiated. Locking PC remotely.
+```"
+[2026-08-09T02:43:24.616108+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Lock initiated. Locking PC remotely.
+```"
+[2026-08-09T02:43:24.816959+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Locking...
+```"
+[2026-08-09T02:43:24.816691+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Locking...
+```"
+[2026-08-09T02:43:24.816683+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Locking...
+```"
+[2026-08-09T02:43:24.817136+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Locking...
+```"
+[2026-08-09T02:43:38.111197+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l (2)"
+[2026-08-09T02:43:38.117827+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l (2)"
+[2026-08-09T02:43:38.116268+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l (2)"
+[2026-08-09T02:43:38.111339+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -l (2)"
