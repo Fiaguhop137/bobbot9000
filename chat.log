@@ -1130,3 +1130,33 @@ Type help for a list of commands
 [2026-08-09T22:35:48.998432+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
 [2026-08-09T22:35:48.998066+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
 [2026-08-09T22:35:48.999880+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-09T22:35:54.944496+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 5"
+[2026-08-09T22:35:54.945481+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 5"
+[2026-08-09T22:35:54.945597+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 5"
+[2026-08-09T22:36:35.906013+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-09T22:36:35.906296+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-09T22:36:35.904909+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-09T22:36:39.773061+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-09T22:36:39.771573+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-09T22:36:39.776212+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="volume 17"
+[2026-08-09T22:36:39.925530+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
+[2026-08-09T22:36:39.925225+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
+[2026-08-09T22:36:39.925236+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Volume set to 17%
+```"
