@@ -828,3 +828,153 @@ Type help for a list of commands
 [2026-08-09T16:10:16.962888+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
 [Warning] Reboot initiated.
 ```"
+[2026-08-09T16:10:23.979533+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-09T16:10:23.978391+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-09T16:10:23.978975+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-09T16:10:23.979044+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-09T16:10:23.978392+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-09T16:14:31.536937+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="test"
+[2026-08-09T16:14:31.536991+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="test"
+[2026-08-09T16:14:31.538918+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="test"
+[2026-08-09T16:14:31.537689+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="test"
+[2026-08-09T16:14:31.540136+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="test"
+[2026-08-09T16:14:32.045047+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 34ms
+ - Token status: loaded
+ - Connected Servers: 2 servers connected. Run ~servers to see more
+ - Permissions: Manage Server, Manage Roles, Manage Channels, Kick Members, Manage Messages
+```"
+[2026-08-09T16:14:32.045053+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 34ms
+ - Token status: loaded
+ - Connected Servers: 2 servers connected. Run ~servers to see more
+ - Permissions: Manage Server, Manage Roles, Manage Channels, Kick Members, Manage Messages
+```"
+[2026-08-09T16:14:32.046643+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 34ms
+ - Token status: loaded
+ - Connected Servers: 2 servers connected. Run ~servers to see more
+ - Permissions: Manage Server, Manage Roles, Manage Channels, Kick Members, Manage Messages
+```"
+[2026-08-09T16:14:32.046879+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 34ms
+ - Token status: loaded
+ - Connected Servers: 2 servers connected. Run ~servers to see more
+ - Permissions: Manage Server, Manage Roles, Manage Channels, Kick Members, Manage Messages
+```"
+[2026-08-09T16:14:32.046324+00:00] Guild="Yap" | Channel="#everyone" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 34ms
+ - Token status: loaded
+ - Connected Servers: 2 servers connected. Run ~servers to see more
+ - Permissions: Manage Server, Manage Roles, Manage Channels, Kick Members, Manage Messages
+```"
+[2026-08-09T16:14:33.020253+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 34ms
+ - Token status: loaded
+ - Connected Servers: 2 servers connected. Run ~servers to see more
+ - Permissions: Manage Server, Manage Roles, Manage Channels, Kick Members, Manage Messages
+```"
+[2026-08-09T16:14:33.022515+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 34ms
+ - Token status: loaded
+ - Connected Servers: 2 servers connected. Run ~servers to see more
+ - Permissions: Manage Server, Manage Roles, Manage Channels, Kick Members, Manage Messages
+```"
+[2026-08-09T16:14:33.031588+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 34ms
+ - Token status: loaded
+ - Connected Servers: 2 servers connected. Run ~servers to see more
+ - Permissions: Manage Server, Manage Roles, Manage Channels, Kick Members, Manage Messages
+```"
+[2026-08-09T16:14:33.030057+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 34ms
+ - Token status: loaded
+ - Connected Servers: 2 servers connected. Run ~servers to see more
+ - Permissions: Manage Server, Manage Roles, Manage Channels, Kick Members, Manage Messages
+```"
+[2026-08-09T16:14:33.027721+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Diagnostic Report
+ - Status: Online
+ - Host Machine: plasmadmin-xps-8910(firebot)
+ - Discord Server: Yap(1463624406470230232)
+ - Latency: 34ms
+ - Token status: loaded
+ - Connected Servers: 2 servers connected. Run ~servers to see more
+ - Permissions: Manage Server, Manage Roles, Manage Channels, Kick Members, Manage Messages
+```"
+[2026-08-09T16:14:33.376009+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Executed test diagnostics across 1 target.
+```"
+[2026-08-09T16:14:33.376436+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Executed test diagnostics across 1 target.
+```"
+[2026-08-09T16:14:33.376111+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Executed test diagnostics across 1 target.
+```"
+[2026-08-09T16:14:33.376741+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Executed test diagnostics across 1 target.
+```"
+[2026-08-09T16:14:33.376453+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Executed test diagnostics across 1 target.
+```"
+[2026-08-09T16:16:32.578708+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-09T16:16:32.578931+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-09T16:16:32.579162+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-09T16:16:32.576781+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
+[2026-08-09T16:16:32.579721+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot"
