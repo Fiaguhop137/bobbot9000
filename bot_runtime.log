@@ -1,71 +1,294 @@
 logging in using static token
 Shard ID None has sent the IDENTIFY payload.
-Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-b-rt8x",{"micros":346767,"calls":["id_created",{"micros":735,"calls":[]},"session_lookup_time",{"micros":302,"calls":[]},"session_lookup_finished",{"micros":22,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":345244,"calls":["start_session",{"micros":329650,"calls":["prd-rpc-6455fc5f44-pblfm",{"micros":189271,"calls":["get_user",{"micros":35586},"get_guilds",{"micros":16736},"send_scheduled_deletion_message",{"micros":12},"guild_join_requests",{"micros":5},"authorized_ip_coro",{"micros":10},"pending_payments",{"micros":2133},"apex_experiments",{"micros":105371},"sessions_experiments",{"micros":17},"played_application_ids",{"micros":7},"linked_users",{"micros":6},"ad_personalization_toggles_disabled",{"micros":6},"regional_feature_config",{"micros":6}]}]},"starting_guild_connect",{"micros":34,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":309,"calls":[]},"guilds_started",{"micros":200,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":15021,"calls":[]},"connect_finished",{"micros":15033,"calls":[]},"build_ready",{"micros":13,"calls":[]},"clean_ready",{"micros":3,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 75d0295f9ecacd4c2e277488e4f9a712).
+Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-c-ml6j",{"micros":159175,"calls":["id_created",{"micros":1402,"calls":[]},"session_lookup_time",{"micros":193,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-c-62",{"micros":156383,"calls":["start_session",{"micros":131173,"calls":["prd-rpc-6455fc5f44-2hpks",{"micros":30040,"calls":["get_user",{"micros":6314},"get_guilds",{"micros":6778},"send_scheduled_deletion_message",{"micros":14},"guild_join_requests",{"micros":7},"authorized_ip_coro",{"micros":11},"pending_payments",{"micros":2056},"apex_experiments",{"micros":91825},"sessions_experiments",{"micros":7},"played_application_ids",{"micros":5},"linked_users",{"micros":9},"ad_personalization_toggles_disabled",{"micros":4},"regional_feature_config",{"micros":4}]}]},"starting_guild_connect",{"micros":40,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":14102,"calls":[]},"guilds_started",{"micros":143,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":10894,"calls":[]},"connect_finished",{"micros":10906,"calls":[]},"build_ready",{"micros":14,"calls":[]},"clean_ready",{"micros":3,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 49bf120a864dfb593d5705d77d330830).
 Logged in as bobbot9000#8975 (ID: 1533157532510584894)
 Failed to reposition 'Plasma' role in Yap: 403 Forbidden (error code: 50013): Missing Permissions
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-d-gs33",{"micros":629,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":306,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":15}]}].
+Shard ID None has successfully RESUMED session 49bf120a864dfb593d5705d77d330830 under trace ["gateway-prd-arm-us-east1-d-ddqv",{"micros":545,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":268,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-c-62",{"micros":15}]}].
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-b-spwx",{"micros":10756,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":10474,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":14}]}].
+Shard ID None has successfully RESUMED session 49bf120a864dfb593d5705d77d330830 under trace ["gateway-prd-arm-us-east1-d-rhtm",{"micros":531,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":242,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"sessions-prd-gcp-us-east1-c-62",{"micros":15}]}].
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-d-6wph",{"micros":564,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":260,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":14}]}].
+Shard ID None has successfully RESUMED session 49bf120a864dfb593d5705d77d330830 under trace ["gateway-prd-arm-us-east1-d-xqjf",{"micros":577,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":259,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-c-62",{"micros":17}]}].
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-b-wsrx",{"micros":517,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":212,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":13}]}].
+Shard ID None has successfully RESUMED session 49bf120a864dfb593d5705d77d330830 under trace ["gateway-prd-arm-us-east1-b-4q21",{"micros":736,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":349,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"sessions-prd-gcp-us-east1-c-62",{"micros":16}]}].
+Websocket closed with 1006, attempting a reconnect.
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-d-rbx5",{"micros":618,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":278,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":16}]}].
+Shard ID None has successfully RESUMED session 49bf120a864dfb593d5705d77d330830 under trace ["gateway-prd-arm-us-east1-b-c3s8",{"micros":676,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":282,"calls":[]},"session_lookup_finished",{"micros":8,"calls":[]},"sessions-prd-gcp-us-east1-c-62",{"micros":25}]}].
+Websocket closed with 1006, attempting a reconnect.
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-c-1xkm",{"micros":672,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":336,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":15}]}].
+Shard ID None has successfully RESUMED session 49bf120a864dfb593d5705d77d330830 under trace ["gateway-prd-arm-us-east1-c-v4hl",{"micros":3679,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":3366,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-c-62",{"micros":15}]}].
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-c-93fm",{"micros":607,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":306,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":15}]}].
+Shard ID None has successfully RESUMED session 49bf120a864dfb593d5705d77d330830 under trace ["gateway-prd-arm-us-east1-c-0smk",{"micros":3337,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":540,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"sessions-prd-gcp-us-east1-c-62",{"micros":16}]}].
+Timed out receiving packet. Attempting a reconnect.
+Got a request to RESUME the websocket.
+Attempting a reconnect in 1.59s
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 964, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [No address associated with hostname]
+Attempting a reconnect in 2.80s
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 964, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 192, in request
+    async with sTimed out receiving packet. Attempting a reconnect.
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-b-s4xg",{"micros":2527,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":309,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":15}]}].
+Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-c-602l",{"micros":651,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":344,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":16}]}].
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-c-kbrr",{"micros":725,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":321,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":16}]}].
+Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-c-lw57",{"micros":569,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":284,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":21}]}].
+Timed out receiving packet. Attempting a reconnect.
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-d-wz42",{"micros":579,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":241,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":20}]}].
+Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-b-r8hh",{"micros":3721,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":697,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":17}]}].
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-d-ct80",{"micros":564,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":262,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":13}]}].
+Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-b-k3qr",{"micros":4769,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":4505,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":14}]}].
+local/lib/python3.12/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Timed out receiving packet. Attempting a reconnect.
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-c-0smk",{"micros":599,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":303,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":12}]}].
+Shard ID None has successfully RESUMED session 96dd8c3e41751aa00d94998a4dc5bd8b under trace ["gateway-prd-arm-us-east1-b-6pf1",{"micros":461,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":227,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-b-10",{"micros":15}]}].
+Timed out receiving packet. Attempting a reconnect.
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 96dd8c3e41751aa00d94998a4dc5bd8b under trace ["gateway-prd-arm-us-east1-b-wsrx",{"micros":11762,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":11342,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-10",{"micros":38}]}].
+Shard ID None has successfully RESUMED session 96dd8c3e41751aa00d94998a4dc5bd8b under trace ["gateway-prd-arm-us-east1-c-hf0c",{"micros":673,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":319,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"sessions-prd-gcp-us-east1-b-10",{"micros":19}]}].
+^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Name or service not known]
+Attempting a reconnect in 0.67s
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 964, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Name or service not known]
+Attempting a reconnect in 8.59s
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 964, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 1020, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 969, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1182, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "/usr/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+Shard ID None has sent the RESUME payload.
+Shard ID None session has been invalidated.
+Got a request to IDENTIFY the websocket.
+Shard ID None has sent the IDENTIFY payload.
+Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-d-5pcl",{"micros":431968,"calls":["id_created",{"micros":975,"calls":[]},"session_lookup_time",{"micros":2134,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"sessions-prd-gcp-us-east1-d-9",{"micros":428382,"calls":["start_session",{"micros":408764,"calls":["prd-rpc-69cfbc5768-sdkn6",{"micros":168099,"calls":["get_user",{"micros":16830},"get_guilds",{"micros":8993},"send_scheduled_deletion_message",{"micros":13},"guild_join_requests",{"micros":474},"authorized_ip_coro",{"micros":13},"pending_payments",{"micros":1999},"apex_experiments",{"micros":219435},"sessions_experiments",{"micros":8},"played_application_ids",{"micros":6},"linked_users",{"micros":6},"ad_personalization_toggles_disabled",{"micros":6},"regional_feature_config",{"micros":5}]}]},"starting_guild_connect",{"micros":78,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":461,"calls":[]},"guilds_started",{"micros":113,"calls":[]},"guilds_connect",{"micros":9,"calls":[]},"presence_connect",{"micros":18901,"calls":[]},"connect_finished",{"micros":18946,"calls":[]},"build_ready",{"micros":15,"calls":[]},"clean_ready",{"micros":3,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: d0c7296d88124d38b9389345d95a3b94).
+Logged in as bobbot9000#8975 (ID: 1533157532510584894)
+Failed to reposition 'Plasma' role in Yap: 403 Forbidden (error code: 50013): Missing Permissions
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 96dd8c3e41751aa00d94998a4dc5bd8b under trace ["gateway-prd-arm-us-east1-d-d8nv",{"micros":564,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":218,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-10",{"micros":14}]}].
+Shard ID None has successfully RESUMED session d0c7296d88124d38b9389345d95a3b94 under trace ["gateway-prd-arm-us-east1-b-q70f",{"micros":868,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":410,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-d-9",{"micros":16}]}].
+Timed out receiving packet. Attempting a reconnect.
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 96dd8c3e41751aa00d94998a4dc5bd8b under trace ["gateway-prd-arm-us-east1-d-22rn",{"micros":528,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":225,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-b-10",{"micros":16}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 96dd8c3e41751aa00d94998a4dc5bd8b under trace ["gateway-prd-arm-us-east1-d-0md7",{"micros":638,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":308,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-10",{"micros":14}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 96dd8c3e41751aa00d94998a4dc5bd8b under trace ["gateway-prd-arm-us-east1-b-98s3",{"micros":554,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":266,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-10",{"micros":16}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 96dd8c3e41751aa00d94998a4dc5bd8b under trace ["gateway-prd-arm-us-east1-b-7l5j",{"micros":3366,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":2159,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-10",{"micros":58}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 96dd8c3e41751aa00d94998a4dc5bd8b under trace ["gateway-prd-arm-us-east1-c-rctj",{"micros":676,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":332,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"sessions-prd-gcp-us-east1-b-10",{"micros":20}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 96dd8c3e41751aa00d94998a4dc5bd8b under trace ["gateway-prd-arm-us-east1-d-gkg1",{"micros":602,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":309,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"sessions-prd-gcp-us-east1-b-10",{"micros":14}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 96dd8c3e41751aa00d94998a4dc5bd8b under trace ["gateway-prd-arm-us-east1-c-vj0w",{"micros":582,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":287,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"sessions-prd-gcp-us-east1-b-10",{"micros":16}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 96dd8c3e41751aa00d94998a4dc5bd8b under trace ["gateway-prd-arm-us-east1-d-gkg1",{"micros":567,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":265,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-b-10",{"micros":13}]}].
+Shard ID None has successfully RESUMED session d0c7296d88124d38b9389345d95a3b94 under trace ["gateway-prd-arm-us-east1-b-s4xg",{"micros":661,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":323,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-d-9",{"micros":17}]}].
