@@ -1478,3 +1478,19 @@ Current Target Server: 'all' | Target Channel: '#all'
 [2026-08-10T19:31:03.490877+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
 Current Target Server: 'all' | Target Channel: '#all'
 ```"
+[2026-08-10T19:31:03.834404+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-10T19:31:03.836993+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-10T19:31:03.833517+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-10T19:31:03.835465+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, set, servers, help, reboot, exit
+```"
+[2026-08-10T21:04:38.966852+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -c"
+[2026-08-10T21:04:38.966075+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -c"
+[2026-08-10T21:04:38.964208+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -c"
+[2026-08-10T21:04:38.967110+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -c"
