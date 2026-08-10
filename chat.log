@@ -1494,3 +1494,123 @@ Commands: test, echo <msg>, spam <number> <msg>, stop, delay <seconds> <cmd>, se
 [2026-08-10T21:04:38.966075+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -c"
 [2026-08-10T21:04:38.964208+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -c"
 [2026-08-10T21:04:38.967110+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Content="reboot -c"
+[2026-08-10T21:04:39.140666+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated. Console flag found, opening Emberbot137 Console.
+```"
+[2026-08-10T21:04:39.138601+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated. Console flag found, opening Emberbot137 Console.
+```"
+[2026-08-10T21:04:39.140997+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated. Console flag found, opening Emberbot137 Console.
+```"
+[2026-08-10T21:04:39.139780+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Warning] Reboot initiated. Console flag found, opening Emberbot137 Console.
+```"
+[2026-08-10T21:04:48.335762+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-10T21:04:48.336384+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-10T21:04:48.335800+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-10T21:04:48.335762+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 2 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-10T21:04:56.113099+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Connected Servers & Channels
+ - Yap(ID: 1463624406470230232)
+  ↳ Channels: emberbot137-remote-console, plasma, plasma-frog, plasma-twi, plasma-visitor, plasma-dragon-twi, plasma-dragon-frog, plasma-twi-frog, everyone
+ - Rainbows and Clouds(ID: 1511895185007579206)
+  ↳ Channels: rainbows, clouds
+```"
+[2026-08-10T21:04:56.111302+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Connected Servers & Channels
+ - Yap(ID: 1463624406470230232)
+  ↳ Channels: emberbot137-remote-console, plasma, plasma-frog, plasma-twi, plasma-visitor, plasma-dragon-twi, plasma-dragon-frog, plasma-twi-frog, everyone
+ - Rainbows and Clouds(ID: 1511895185007579206)
+  ↳ Channels: rainbows, clouds
+```"
+[2026-08-10T21:04:56.112609+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Connected Servers & Channels
+ - Yap(ID: 1463624406470230232)
+  ↳ Channels: emberbot137-remote-console, plasma, plasma-frog, plasma-twi, plasma-visitor, plasma-dragon-twi, plasma-dragon-frog, plasma-twi-frog, everyone
+ - Rainbows and Clouds(ID: 1511895185007579206)
+  ↳ Channels: rainbows, clouds
+```"
+[2026-08-10T21:04:56.111835+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+= Connected Servers & Channels
+ - Yap(ID: 1463624406470230232)
+  ↳ Channels: emberbot137-remote-console, plasma, plasma-frog, plasma-twi, plasma-visitor, plasma-dragon-twi, plasma-dragon-frog, plasma-twi-frog, everyone
+ - Rainbows and Clouds(ID: 1511895185007579206)
+  ↳ Channels: rainbows, clouds
+```"
+[2026-08-10T21:11:11.191285+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target server updated to: Aethersent
+```"
+[2026-08-10T21:11:11.193299+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target server updated to: Aethersent
+```"
+[2026-08-10T21:11:11.193766+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target server updated to: Aethersent
+```"
+[2026-08-10T21:11:11.192212+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target server updated to: Aethersent
+```"
+[2026-08-10T21:11:11.402765+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Aethersent/#everyone
+```"
+[2026-08-10T21:11:11.403489+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Aethersent/#everyone
+```"
+[2026-08-10T21:11:11.404863+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Aethersent/#everyone
+```"
+[2026-08-10T21:11:11.404173+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Aethersent/#everyone
+```"
+[2026-08-10T21:11:17.549658+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target channel updated to: #general
+```"
+[2026-08-10T21:11:17.549990+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target channel updated to: #general
+```"
+[2026-08-10T21:11:17.562382+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target channel updated to: #general
+```"
+[2026-08-10T21:11:17.571190+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Target channel updated to: #general
+```"
+[2026-08-10T21:11:18.432552+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Aethersent/#general
+```"
+[2026-08-10T21:11:18.432883+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Aethersent/#general
+```"
+[2026-08-10T21:11:18.433825+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Aethersent/#general
+```"
+[2026-08-10T21:11:18.433763+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Retrieved active channel: Aethersent/#general
+```"
+[2026-08-10T21:11:21.987886+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Echoed message to 1 target
+``` (2)"
+[2026-08-10T21:11:21.987875+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Echoed message to 1 target
+``` (2)"
+[2026-08-10T21:11:21.985715+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Echoed message to 1 target
+``` (2)"
+[2026-08-10T21:11:21.997363+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Echoed message to 1 target
+``` (2)"
