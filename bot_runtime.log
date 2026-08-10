@@ -38,7 +38,7 @@ Shard ID None has sent the RESUME payload.
 Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-d-ct80",{"micros":564,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":262,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":13}]}].
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 96dd8c3e41751aa00d94998a4dc5bd8b under trace ["gateway-prd-arm-us-east1-c-1lfr",{"micros":777,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":337,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-b-10",{"micros":16}]}].
+Shard ID None has successfully RESUMED session 75d0295f9ecacd4c2e277488e4f9a712 under trace ["gateway-prd-arm-us-east1-c-0smk",{"micros":599,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":303,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-79",{"micros":12}]}].
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
 Shard ID None has successfully RESUMED session 96dd8c3e41751aa00d94998a4dc5bd8b under trace ["gateway-prd-arm-us-east1-b-wsrx",{"micros":11762,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":11342,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-10",{"micros":38}]}].
