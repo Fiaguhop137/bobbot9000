@@ -1626,3 +1626,53 @@ Type help for a list of commands
 [2026-08-10T21:11:32.277867+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
 [Warning] Reboot initiated.
 ```"
+[2026-08-10T21:11:40.054481+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-10T21:11:40.054511+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-10T21:11:40.055939+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-10T21:11:40.054481+00:00] Guild="Yap" | Channel="#emberbot137-remote-console" | User="Emberbot137#6769" (1532899245005475860) | Content="```markdown
+[Success] Connected to 3 channels 
+Current Target Channel: yap/#everyone 
+Type help for a list of commands
+```"
+[2026-08-11T03:02:09.481130+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-11T03:02:09.483168+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-11T03:02:09.481135+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-11T03:02:09.481092+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-11T03:02:09.481718+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+[Console Controller Active] Connected to 1 guild(s).
+```"
+[2026-08-11T03:02:09.909383+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-11T03:02:09.913376+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-11T03:02:09.910435+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-11T03:02:09.911928+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
+[2026-08-11T03:02:09.909440+00:00] Guild="Yap" | Channel="#remote-controlled-bob" | User="bobbot9000#8975" (1533157532510584894) | Content="```text
+Current Target Server: 'all' | Target Channel: '#all'
+```"
