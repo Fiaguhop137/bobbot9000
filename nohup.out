@@ -537,3 +537,6 @@ Websocket closed with 1001, attempting a reconnect.
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
 Shard ID None has successfully RESUMED session 255883ba1d708a0ec5e6f7b2065bac15 under trace ["gateway-prd-arm-us-east1-c-0smk",{"micros":567,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":269,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-b-34",{"micros":13}]}].
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 255883ba1d708a0ec5e6f7b2065bac15 under trace ["gateway-prd-arm-us-east1-c-xwzh",{"micros":621,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":272,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"sessions-prd-gcp-us-east1-b-34",{"micros":15}]}].

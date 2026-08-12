@@ -580,8 +580,10 @@ Websocket closed with 1006, attempting a reconnect.
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
 Shard ID None has successfully RESUMED session 1c7da647a5452d1b9e63c4c4f4cf316c under trace ["gateway-prd-arm-us-east1-d-zhjv",{"micros":1608,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":580,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-d-83",{"micros":14}]}].
-one has successfully RESUMED session 18ce9bac6263c5e101e6d84a017a1a92 under trace ["gateway-prd-arm-us-east1-b-4q21",{"micros":599,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":277,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-c-49",{"micros":14}]}].
-Websocket closed with 1001, attempting a reconnect.
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 18ce9bac6263c5e101e6d84a017a1a92 under trace ["gateway-prd-arm-us-east1-c-knpq",{"micros":2398,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":276,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-c-49",{"micros":47}]}].
+Shard ID None has successfully RESUMED session 1c7da647a5452d1b9e63c4c4f4cf316c under trace ["gateway-prd-arm-us-east1-d-67ls",{"micros":777,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":423,"calls":[]},"session_lookup_finished",{"micros":20,"calls":[]},"sessions-prd-gcp-us-east1-d-83",{"micros":14}]}].
+Websocket closed with 1006, attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 1c7da647a5452d1b9e63c4c4f4cf316c under trace ["gateway-prd-arm-us-east1-d-dq66",{"micros":4999,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":2840,"calls":[]},"session_lookup_finished",{"micros":8,"calls":[]},"sessions-prd-gcp-us-east1-d-83",{"micros":18}]}].
