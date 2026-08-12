@@ -3,3 +3,537 @@ Shard ID None has sent the IDENTIFY payload.
 Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-c-knpq",{"micros":506127,"calls":["id_created",{"micros":509,"calls":[]},"session_lookup_time",{"micros":211,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-c-47",{"micros":504650,"calls":["start_session",{"micros":461994,"calls":["prd-rpc-85fd975cd5-hh7wc",{"micros":338201,"calls":["get_user",{"micros":27250},"get_guilds",{"micros":9765},"send_scheduled_deletion_message",{"micros":12},"guild_join_requests",{"micros":16330},"authorized_ip_coro",{"micros":14},"pending_payments",{"micros":1909},"apex_experiments",{"micros":69397},"sessions_experiments",{"micros":6},"played_application_ids",{"micros":4},"linked_users",{"micros":4},"ad_personalization_toggles_disabled",{"micros":3},"regional_feature_config",{"micros":4}]}]},"starting_guild_connect",{"micros":27,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":12589,"calls":[]},"guilds_started",{"micros":84,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":29923,"calls":[]},"connect_finished",{"micros":29936,"calls":[]},"build_ready",{"micros":15,"calls":[]},"clean_ready",{"micros":3,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 5b1a516aef02c34a1d9e3e020260c9cb).
 Logged in as bobbot9000#8975 (ID: 1533157532510584894)
 Failed to reposition 'Plasma' role in Yap: 403 Forbidden (error code: 50013): Missing Permissions
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 5b1a516aef02c34a1d9e3e020260c9cb under trace ["gateway-prd-arm-us-east1-c-vltz",{"micros":541,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":264,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-c-47",{"micros":14}]}].
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 5b1a516aef02c34a1d9e3e020260c9cb under trace ["gateway-prd-arm-us-east1-b-qtkr",{"micros":540,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":213,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-c-47",{"micros":15}]}].
+Timed out receiving packet. Attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 5b1a516aef02c34a1d9e3e020260c9cb under trace ["gateway-prd-arm-us-east1-c-ncxl",{"micros":2474,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":204,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-c-47",{"micros":15}]}].
+Timed out receiving packet. Attempting a reconnect.
+Got a request to RESUME the websocket.
+Attempting a reconnect in 0.10s
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 964, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Name or service not known]
+Attempting a reconnect in 1.15s
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 964, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Name or service not known]
+Attempting a reconnect in 0.30s
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 964, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Name or service not known]
+Attempting a reconnect in 11.60s
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 964, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Name or service not known]
+Attempting a reconnect in 14.36s
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 964, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Name or service not known]
+Attempting a reconnect in 58.23s
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 964, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Name or service not known]
+Attempting a reconnect in 37.65s
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 964, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Name or service not known]
+Attempting a reconnect in 219.52s
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 964, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Name or service not known]
+Attempting a reconnect in 466.74s
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 964, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Name or service not known]
+Shard ID None has sent the RESUME payload.
+Shard ID None session has been invalidated.
+Got a request to IDENTIFY the websocket.
+Shard ID None has sent the IDENTIFY payload.
+Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-b-g4x7",{"micros":215665,"calls":["id_created",{"micros":719,"calls":[]},"session_lookup_time",{"micros":276,"calls":[]},"session_lookup_finished",{"micros":26,"calls":[]},"sessions-prd-gcp-us-east1-b-34",{"micros":213260,"calls":["start_session",{"micros":149512,"calls":["prd-rpc-654c7dff8f-wxwpv",{"micros":62632,"calls":["get_user",{"micros":16476},"get_guilds",{"micros":14692},"send_scheduled_deletion_message",{"micros":10},"guild_join_requests",{"micros":2},"authorized_ip_coro",{"micros":8},"pending_payments",{"micros":1216},"apex_experiments",{"micros":77530},"sessions_experiments",{"micros":10},"played_application_ids",{"micros":5},"linked_users",{"micros":4},"ad_personalization_toggles_disabled",{"micros":4},"regional_feature_config",{"micros":3}]}]},"starting_guild_connect",{"micros":29,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":261,"calls":[]},"guilds_started",{"micros":76,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":63323,"calls":[]},"connect_finished",{"micros":63338,"calls":[]},"build_ready",{"micros":10,"calls":[]},"clean_ready",{"micros":2,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 255883ba1d708a0ec5e6f7b2065bac15).
+Logged in as bobbot9000#8975 (ID: 1533157532510584894)
+Failed to reposition 'Plasma' role in Yap: 403 Forbidden (error code: 50013): Missing Permissions
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 255883ba1d708a0ec5e6f7b2065bac15 under trace ["gateway-prd-arm-us-east1-d-gc5z",{"micros":513,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":247,"calls":[]},"session_lookup_finished",{"micros":7,"calls":[]},"sessions-prd-gcp-us-east1-b-34",{"micros":12}]}].
+Websocket closed with 1001, attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 255883ba1d708a0ec5e6f7b2065bac15 under trace ["gateway-prd-arm-us-east1-d-d8nv",{"micros":553,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":254,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-b-34",{"micros":14}]}].
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 255883ba1d708a0ec5e6f7b2065bac15 under trace ["gateway-prd-arm-us-east1-c-pz9c",{"micros":546,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":243,"calls":[]},"session_lookup_finished",{"micros":18,"calls":[]},"sessions-prd-gcp-us-east1-b-34",{"micros":13}]}].
+Websocket closed with 1006, attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 255883ba1d708a0ec5e6f7b2065bac15 under trace ["gateway-prd-arm-us-east1-c-30p5",{"micros":597,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":259,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-34",{"micros":14}]}].
+Websocket closed with 1006, attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 255883ba1d708a0ec5e6f7b2065bac15 under trace ["gateway-prd-arm-us-east1-c-bf43",{"micros":563,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":274,"calls":[]},"session_lookup_finished",{"micros":8,"calls":[]},"sessions-prd-gcp-us-east1-b-34",{"micros":22}]}].
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 255883ba1d708a0ec5e6f7b2065bac15 under trace ["gateway-prd-arm-us-east1-b-wsrx",{"micros":2627,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":1586,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-b-34",{"micros":30}]}].
+Websocket closed with 1006, attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 255883ba1d708a0ec5e6f7b2065bac15 under trace ["gateway-prd-arm-us-east1-d-5md9",{"micros":580,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":295,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-b-34",{"micros":16}]}].
+Websocket closed with 1001, attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 255883ba1d708a0ec5e6f7b2065bac15 under trace ["gateway-prd-arm-us-east1-c-0smk",{"micros":567,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":269,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-b-34",{"micros":13}]}].
