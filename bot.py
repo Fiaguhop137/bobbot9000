@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import asyncio
+import json
 import logging
 import os
 import socket
@@ -29,8 +30,14 @@ if not MINECRAFT_RCON_PASSWORD:
     raise RuntimeError("MINECRAFT_RCON_PASSWORD is missing from .env")
 
 
-# Minecraft server is intentionally hardcoded.
+# ============================================================
+# Hardcoded Configuration
+# ============================================================
+
+OWNER_ID = 789314712990384168
+
 MINECRAFT_DIRECTORY = "/home/firebot/Downloads/minecraft_server"
+
 MINECRAFT_JAR = (
     "fabric-server-mc.1.21.1-loader.0.19.3-launcher.1.1.2.jar"
 )
@@ -48,10 +55,26 @@ MINECRAFT_COMMAND = [
 ]
 
 BOT_DIRECTORY = os.path.dirname(os.path.abspath(__file__))
-RESTART_SCRIPT = os.path.join(BOT_DIRECTORY, "restart.sh")
 
-LOG_FILE = "bot.log"
-CHAT_LOG_FILE = "chat.log"
+PERMISSIONS_FILE = os.path.join(
+    BOT_DIRECTORY,
+    "permissions.json",
+)
+
+RESTART_SCRIPT = os.path.join(
+    BOT_DIRECTORY,
+    "restart.sh",
+)
+
+LOG_FILE = os.path.join(
+    BOT_DIRECTORY,
+    "bot.log",
+)
+
+CHAT_LOG_FILE = os.path.join(
+    BOT_DIRECTORY,
+    "chat.log",
+)
 
 
 # ============================================================
@@ -74,6 +97,178 @@ def write_file(path: str, line: str):
         logger.error(f"Failed to write {path}: {e}")
 
 
+# ============================================================
+# Permissions
+# ============================================================
+
+def default_permissions():
+    return {
+        "owner": str(OWNER_ID),
+        "admins": [],
+        "mods": [],
+    }
+
+
+def save_permissions():
+    try:
+        temp_file = PERMISSIONS_FILE + ".tmp"
+
+        with open(
+            temp_file,
+            "w",
+            encoding="utf-8",
+        ) as file:
+            json.dump(
+                permissions,
+                file,
+                indent=4,
+            )
+            file.write("\n")
+
+        os.replace(
+            temp_file,
+            PERMISSIONS_FILE,
+        )
+
+    except OSError as e:
+        logger.error(
+            f"Failed to save permissions: {e}"
+        )
+
+
+def load_permissions():
+    global permissions
+
+    if not os.path.isfile(PERMISSIONS_FILE):
+        logger.info(
+            "[System] permissions.json not found."
+        )
+
+        permissions = default_permissions()
+
+        save_permissions()
+
+        logger.info(
+            "[System] Created permissions.json."
+        )
+
+        return
+
+    try:
+        with open(
+            PERMISSIONS_FILE,
+            "r",
+            encoding="utf-8",
+        ) as file:
+            data = json.load(file)
+
+        if not isinstance(data, dict):
+            raise ValueError(
+                "permissions.json must contain an object."
+            )
+
+        permissions = data
+
+    except (
+        OSError,
+        json.JSONDecodeError,
+        ValueError,
+    ) as e:
+        logger.error(
+            f"Failed to load permissions.json: {e}"
+        )
+
+        logger.info(
+            "[System] Recreating permissions.json."
+        )
+
+        permissions = default_permissions()
+        save_permissions()
+
+    # Make sure required fields exist.
+    permissions.setdefault(
+        "owner",
+        str(OWNER_ID),
+    )
+
+    permissions.setdefault(
+        "admins",
+        [],
+    )
+
+    permissions.setdefault(
+        "mods",
+        [],
+    )
+
+    # The hardcoded owner always wins.
+    if permissions["owner"] != str(OWNER_ID):
+        logger.warning(
+            "[Permissions] Owner ID in JSON did not match "
+            "the hardcoded owner. Restoring owner."
+        )
+
+        permissions["owner"] = str(OWNER_ID)
+        save_permissions()
+
+
+permissions = {}
+load_permissions()
+
+
+def get_role(user_id: int) -> str | None:
+    user_id = str(user_id)
+
+    # Owner is always the hardcoded owner.
+    if user_id == str(OWNER_ID):
+        return "owner"
+
+    if user_id in permissions.get("admins", []):
+        return "admin"
+
+    if user_id in permissions.get("mods", []):
+        return "mod"
+
+    return None
+
+
+def role_level(role: str | None) -> int:
+    levels = {
+        None: 0,
+        "mod": 1,
+        "admin": 2,
+        "owner": 3,
+    }
+
+    return levels.get(role, 0)
+
+
+def has_role(
+    user_id: int,
+    minimum_role: str,
+) -> bool:
+    user_role = get_role(user_id)
+
+    return (
+        role_level(user_role)
+        >= role_level(minimum_role)
+    )
+
+
+def bot_permission(minimum_role: str):
+    async def predicate(ctx: commands.Context):
+        return has_role(
+            ctx.author.id,
+            minimum_role,
+        )
+
+    return commands.check(predicate)
+
+
+# ============================================================
+# User Helpers
+# ============================================================
+
 def user_tag(user: discord.abc.User) -> str:
     if user.discriminator != "0":
         return f"{user.name}#{user.discriminator}"
@@ -87,10 +282,23 @@ def log_action(
     action: str,
     success: bool = True,
 ):
-    guild = ctx.guild.name if ctx.guild else "DM"
-    channel = getattr(ctx.channel, "name", "unknown")
+    guild = (
+        ctx.guild.name
+        if ctx.guild
+        else "DM"
+    )
+
+    channel = getattr(
+        ctx.channel,
+        "name",
+        "unknown",
+    )
+
     user = user_tag(ctx.author)
-    timestamp = datetime.now(timezone.utc).isoformat()
+
+    timestamp = datetime.now(
+        timezone.utc
+    ).isoformat()
 
     line = (
         f"[{timestamp}] "
@@ -103,7 +311,10 @@ def log_action(
     )
 
     logger.info(line)
-    write_file(LOG_FILE, line)
+    write_file(
+        LOG_FILE,
+        line,
+    )
 
 
 # ============================================================
@@ -111,6 +322,7 @@ def log_action(
 # ============================================================
 
 intents = discord.Intents.default()
+
 intents.guilds = True
 intents.guild_messages = True
 intents.messages = True
@@ -150,7 +362,9 @@ def flush_chat_log():
     content = pending_chat["content"]
 
     if pending_chat["count"] > 1:
-        content += f" ({pending_chat['count']})"
+        content += (
+            f" ({pending_chat['count']})"
+        )
 
     line = (
         f"[{pending_chat['timestamp']}] "
@@ -161,13 +375,18 @@ def flush_chat_log():
         f'Content="{content}"'
     )
 
-    write_file(CHAT_LOG_FILE, line)
+    write_file(
+        CHAT_LOG_FILE,
+        line,
+    )
 
     pending_chat = None
 
 
 @bot.listen("on_message")
-async def log_chat(message: discord.Message):
+async def log_chat(
+    message: discord.Message,
+):
     global pending_chat
 
     if message.author == bot.user:
@@ -184,8 +403,10 @@ async def log_chat(message: discord.Message):
         pending_chat
         and pending_chat["guild"] == guild
         and pending_chat["channel"] == channel
-        and pending_chat["author_id"] == message.author.id
-        and pending_chat["content"] == message.content
+        and pending_chat["author_id"]
+        == message.author.id
+        and pending_chat["content"]
+        == message.content
     )
 
     if same_message:
@@ -200,23 +421,11 @@ async def log_chat(message: discord.Message):
         "author": author,
         "author_id": message.author.id,
         "content": message.content,
-        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "timestamp": datetime.now(
+            timezone.utc
+        ).isoformat(),
         "count": 1,
     }
-
-
-# ============================================================
-# Permissions
-# ============================================================
-
-def admin_only():
-    async def predicate(ctx: commands.Context):
-        return (
-            ctx.guild is not None
-            and ctx.author.guild_permissions.administrator
-        )
-
-    return commands.check(predicate)
 
 
 # ============================================================
@@ -232,9 +441,11 @@ def rcon(command: str) -> str:
         return connection.command(command)
 
 
-async def mc_command(command: str) -> str:
-    # MCRcon uses signal handling internally in this version,
-    # so it must remain in the main Python thread.
+async def mc_command(
+    command: str,
+) -> str:
+    # mcrcon in the installed version uses signal handling,
+    # so do NOT put this into asyncio.to_thread().
     return rcon(command)
 
 
@@ -242,10 +453,15 @@ async def send_mc_result(
     ctx: commands.Context,
     response: str,
 ):
-    response = response or "Command executed successfully."
+    response = (
+        response
+        or "Command executed successfully."
+    )
 
     await ctx.send(
-        f"```text\n{response[:1900]}\n```"
+        f"```text\n"
+        f"{response[:1900]}"
+        f"\n```"
     )
 
 
@@ -263,21 +479,24 @@ def minecraft_running() -> bool:
         return True
 
     minecraft_process = None
+
     return False
 
 
-def start_minecraft_server() -> subprocess.Popen:
+def start_minecraft_server():
     global minecraft_process
 
     if minecraft_running():
         raise RuntimeError(
-            f"Minecraft server is already running "
+            "Minecraft server is already running "
             f"(PID {minecraft_process.pid})"
         )
 
-    if not os.path.isdir(MINECRAFT_DIRECTORY):
+    if not os.path.isdir(
+        MINECRAFT_DIRECTORY
+    ):
         raise FileNotFoundError(
-            f"Minecraft directory does not exist:\n"
+            "Minecraft directory does not exist:\n"
             f"{MINECRAFT_DIRECTORY}"
         )
 
@@ -288,7 +507,7 @@ def start_minecraft_server() -> subprocess.Popen:
 
     if not os.path.isfile(jar_path):
         raise FileNotFoundError(
-            f"Minecraft server JAR does not exist:\n"
+            "Minecraft server JAR does not exist:\n"
             f"{jar_path}"
         )
 
@@ -306,7 +525,8 @@ def start_minecraft_server() -> subprocess.Popen:
     log_file.write(
         "\n\n"
         f"===== Server started "
-        f"{datetime.now(timezone.utc).isoformat()} =====\n"
+        f"{datetime.now(timezone.utc).isoformat()} "
+        "=====\n"
     )
 
     log_file.flush()
@@ -330,27 +550,45 @@ async def stop_minecraft_server():
         minecraft_process = None
 
         try:
-            response = await mc_command("stop")
-            return response or "Stop command sent."
+            response = await mc_command(
+                "stop"
+            )
+
+            return (
+                response
+                or "Stop command sent."
+            )
+
         except Exception:
-            return "Minecraft server does not appear to be running."
+            return (
+                "Minecraft server does not "
+                "appear to be running."
+            )
 
-    try:
-        response = await mc_command("stop")
+    response = await mc_command(
+        "stop"
+    )
 
-        for _ in range(60):
-            if minecraft_process.poll() is not None:
-                minecraft_process = None
-                return response or "Minecraft server stopped."
+    for _ in range(60):
+        if minecraft_process is None:
+            return (
+                response
+                or "Minecraft server stopped."
+            )
 
-            await asyncio.sleep(1)
+        if minecraft_process.poll() is not None:
+            minecraft_process = None
 
-        raise RuntimeError(
-            "Minecraft did not stop within 60 seconds."
-        )
+            return (
+                response
+                or "Minecraft server stopped."
+            )
 
-    except Exception:
-        raise
+        await asyncio.sleep(1)
+
+    raise RuntimeError(
+        "Minecraft did not stop within 60 seconds."
+    )
 
 
 # ============================================================
@@ -361,9 +599,11 @@ def resolve_targets():
     targets = []
 
     for guild in bot.guilds:
+
         if (
             target_server != "all"
-            and target_server.lower() not in guild.name.lower()
+            and target_server.lower()
+            not in guild.name.lower()
         ):
             continue
 
@@ -371,14 +611,20 @@ def resolve_targets():
             continue
 
         for channel in guild.text_channels:
-            permissions = channel.permissions_for(guild.me)
 
-            if not permissions.send_messages:
+            permissions_for_bot = (
+                channel.permissions_for(
+                    guild.me
+                )
+            )
+
+            if not permissions_for_bot.send_messages:
                 continue
 
             if (
                 target_channel == "all"
-                or channel.name.lower() == target_channel.lower()
+                or channel.name.lower()
+                == target_channel.lower()
             ):
                 targets.append(channel)
 
@@ -393,9 +639,192 @@ def track_task(task: asyncio.Task):
     active_tasks.add(task)
 
     def finished(completed_task):
-        active_tasks.discard(completed_task)
+        active_tasks.discard(
+            completed_task
+        )
 
-    task.add_done_callback(finished)
+    task.add_done_callback(
+        finished
+    )
+
+
+# ============================================================
+# Permission Commands
+# ============================================================
+
+@bot.command()
+@bot_permission("owner")
+async def grant(
+    ctx: commands.Context,
+    role: str,
+    user_id: int,
+):
+    role = role.lower()
+
+    if role not in {
+        "admin",
+        "mod",
+    }:
+        await ctx.send(
+            "Usage: `~grant <admin|mod> <user_id>`"
+        )
+        return
+
+    user_id_string = str(user_id)
+
+    # Prevent the owner from being accidentally placed
+    # into another role.
+    if user_id == OWNER_ID:
+        await ctx.send(
+            "`The owner already has every permission.`"
+        )
+        return
+
+    # Remove the user from every role first.
+    permissions["admins"] = [
+        uid
+        for uid in permissions["admins"]
+        if uid != user_id_string
+    ]
+
+    permissions["mods"] = [
+        uid
+        for uid in permissions["mods"]
+        if uid != user_id_string
+    ]
+
+    permissions[role + "s"].append(
+        user_id_string
+    )
+
+    save_permissions()
+
+    await ctx.send(
+        f"`Granted {role} permissions to "
+        f"{user_id}.`"
+    )
+
+    log_action(
+        ctx,
+        f"~grant {role} {user_id}",
+        f"Granted {role} role to {user_id}",
+    )
+
+
+@bot.command()
+@bot_permission("owner")
+async def revoke(
+    ctx: commands.Context,
+    user_id: int,
+):
+    if user_id == OWNER_ID:
+        await ctx.send(
+            "`The owner cannot be revoked.`"
+        )
+        return
+
+    user_id_string = str(user_id)
+
+    found = False
+
+    for role in (
+        "admins",
+        "mods",
+    ):
+        if user_id_string in permissions[role]:
+            permissions[role].remove(
+                user_id_string
+            )
+            found = True
+
+    if not found:
+        await ctx.send(
+            "`That user does not have a bot role.`"
+        )
+        return
+
+    save_permissions()
+
+    await ctx.send(
+        f"`Revoked bot permissions from "
+        f"{user_id}.`"
+    )
+
+    log_action(
+        ctx,
+        f"~revoke {user_id}",
+        f"Revoked permissions from {user_id}",
+    )
+
+
+@bot.command()
+@bot_permission("owner")
+async def perms(
+    ctx: commands.Context,
+):
+    admins = permissions.get(
+        "admins",
+        [],
+    )
+
+    mods = permissions.get(
+        "mods",
+        [],
+    )
+
+    lines = [
+        "Bobbot Permissions",
+        "=========================",
+        "",
+        f"Owner: {OWNER_ID}",
+        "",
+        "Admins:",
+    ]
+
+    if admins:
+        lines.extend(
+            f"  {user_id}"
+            for user_id in admins
+        )
+    else:
+        lines.append(
+            "  None"
+        )
+
+    lines.append("")
+    lines.append("Mods:")
+
+    if mods:
+        lines.extend(
+            f"  {user_id}"
+            for user_id in mods
+        )
+    else:
+        lines.append(
+            "  None"
+        )
+
+    await ctx.send(
+        f"```text\n"
+        f"{chr(10).join(lines)}"
+        f"\n```"
+    )
+
+
+@bot.command()
+async def role(
+    ctx: commands.Context,
+):
+    user_role = get_role(
+        ctx.author.id
+    )
+
+    if user_role is None:
+        user_role = "none"
+
+    await ctx.send(
+        f"`Your Bobbot role: {user_role}`"
+    )
 
 
 # ============================================================
@@ -403,7 +832,7 @@ def track_task(task: asyncio.Task):
 # ============================================================
 
 @bot.command()
-@admin_only()
+@bot_permission("mod")
 async def mc(
     ctx: commands.Context,
     *,
@@ -414,7 +843,9 @@ async def mc(
     )
 
     try:
-        response = await mc_command(command)
+        response = await mc_command(
+            command
+        )
 
         await send_mc_result(
             ctx,
@@ -424,7 +855,8 @@ async def mc(
         log_action(
             ctx,
             f"~mc {command}",
-            response or "Command executed successfully.",
+            response
+            or "Command executed successfully.",
         )
 
     except Exception as e:
@@ -434,8 +866,9 @@ async def mc(
 
         await ctx.send(
             f"```text\n"
-            f"Minecraft RCON error:\n{e}"
-            f"\n```"
+            f"Minecraft RCON error:\n"
+            f"{e}\n"
+            f"```"
         )
 
         log_action(
@@ -447,7 +880,7 @@ async def mc(
 
 
 @bot.command()
-@admin_only()
+@bot_permission("mod")
 async def mcsay(
     ctx: commands.Context,
     *,
@@ -460,13 +893,15 @@ async def mcsay(
 
         await send_mc_result(
             ctx,
-            response or "Message sent.",
+            response
+            or "Message sent.",
         )
 
         log_action(
             ctx,
             f"~mcsay {message}",
-            response or "Message sent.",
+            response
+            or "Message sent.",
         )
 
     except Exception as e:
@@ -483,35 +918,40 @@ async def mcsay(
 
 
 @bot.command()
-@admin_only()
+@bot_permission("mod")
 async def mcstatus(
     ctx: commands.Context,
 ):
     try:
-        response = await mc_command("list")
+        response = await mc_command(
+            "list"
+        )
 
         await send_mc_result(
             ctx,
-            response or "Minecraft server responded.",
+            response
+            or "Minecraft server responded.",
         )
 
     except Exception as e:
         await ctx.send(
             f"```text\n"
-            f"Minecraft RCON unavailable:\n{e}"
-            f"\n```"
+            f"Minecraft RCON unavailable:\n"
+            f"{e}\n"
+            f"```"
         )
 
 
 @bot.command()
-@admin_only()
+@bot_permission("admin")
 async def mcstart(
     ctx: commands.Context,
 ):
     if minecraft_running():
         await ctx.send(
-            f"`Minecraft server is already running "
-            f"(PID {minecraft_process.pid}).`"
+            f"`Minecraft server is already "
+            f"running (PID "
+            f"{minecraft_process.pid}).`"
         )
         return
 
@@ -526,7 +966,8 @@ async def mcstart(
         log_action(
             ctx,
             "~mcstart",
-            f"Minecraft server started with PID {process.pid}",
+            f"Minecraft server started with PID "
+            f"{process.pid}",
         )
 
     except Exception as e:
@@ -536,8 +977,9 @@ async def mcstart(
 
         await ctx.send(
             f"```text\n"
-            f"Minecraft startup error:\n{e}"
-            f"\n```"
+            f"Minecraft startup error:\n"
+            f"{e}\n"
+            f"```"
         )
 
         log_action(
@@ -549,7 +991,7 @@ async def mcstart(
 
 
 @bot.command()
-@admin_only()
+@bot_permission("admin")
 async def mcstop(
     ctx: commands.Context,
 ):
@@ -558,7 +1000,9 @@ async def mcstop(
             "`[Minecraft] Stopping server...`"
         )
 
-        response = await stop_minecraft_server()
+        response = (
+            await stop_minecraft_server()
+        )
 
         await ctx.send(
             f"`{response}`"
@@ -577,8 +1021,9 @@ async def mcstop(
 
         await ctx.send(
             f"```text\n"
-            f"Minecraft shutdown error:\n{e}"
-            f"\n```"
+            f"Minecraft shutdown error:\n"
+            f"{e}\n"
+            f"```"
         )
 
         log_action(
@@ -603,10 +1048,14 @@ async def test(
         "-------------------------\n"
         "Status: Online\n"
         f"Host: {socket.gethostname()}\n"
-        f"Latency: {round(bot.latency * 1000)}ms\n"
-        f"Connected Guilds: {len(bot.guilds)}\n"
-        f"RCON Host: {MINECRAFT_RCON_HOST}\n"
-        f"RCON Port: {MINECRAFT_RCON_PORT}\n"
+        f"Latency: "
+        f"{round(bot.latency * 1000)}ms\n"
+        f"Connected Guilds: "
+        f"{len(bot.guilds)}\n"
+        f"RCON Host: "
+        f"{MINECRAFT_RCON_HOST}\n"
+        f"RCON Port: "
+        f"{MINECRAFT_RCON_PORT}\n"
         f"Minecraft Process: "
         f"{'Running' if minecraft_running() else 'Not tracked'}\n"
         "-------------------------\n"
@@ -653,12 +1102,19 @@ async def spam(
             targets = resolve_targets()
 
             if not targets:
-                targets = [ctx.channel]
+                targets = [
+                    ctx.channel
+                ]
 
             for target in targets:
                 for _ in range(count):
-                    await target.send(message)
-                    await asyncio.sleep(0.5)
+                    await target.send(
+                        message
+                    )
+
+                    await asyncio.sleep(
+                        0.5
+                    )
 
         except asyncio.CancelledError:
             pass
@@ -675,7 +1131,8 @@ async def spam(
     track_task(task)
 
     await ctx.send(
-        f"Started spam task: `{count}` messages."
+        f"Started spam task: "
+        f"`{count}` messages."
     )
 
 
@@ -710,15 +1167,22 @@ async def delay(
 
     async def delayed_task():
         try:
-            await asyncio.sleep(seconds)
+            await asyncio.sleep(
+                seconds
+            )
 
             command_text = command.strip()
 
             if command_text.startswith("~"):
-                command_text = command_text[1:]
+                command_text = (
+                    command_text[1:]
+                )
 
             fake_message = ctx.message
-            original_content = fake_message.content
+
+            original_content = (
+                fake_message.content
+            )
 
             fake_message.content = (
                 f"~{command_text}"
@@ -728,8 +1192,11 @@ async def delay(
                 await bot.process_commands(
                     fake_message
                 )
+
             finally:
-                fake_message.content = original_content
+                fake_message.content = (
+                    original_content
+                )
 
         except asyncio.CancelledError:
             pass
@@ -746,7 +1213,8 @@ async def delay(
     track_task(task)
 
     await ctx.send(
-        f"Scheduled command in `{seconds}` seconds."
+        f"Scheduled command in "
+        f"`{seconds}` seconds."
     )
 
 
@@ -755,7 +1223,7 @@ async def delay(
 # ============================================================
 
 @bot.command()
-@admin_only()
+@bot_permission("admin")
 async def settarget(
     ctx: commands.Context,
     target_type: str,
@@ -772,7 +1240,9 @@ async def settarget(
 
     elif target_type == "channel":
         target_channel = (
-            value.removeprefix("#").lower()
+            value.removeprefix(
+                "#"
+            ).lower()
         )
 
     else:
@@ -804,7 +1274,7 @@ async def targets(
 
 
 @bot.command()
-@admin_only()
+@bot_permission("admin")
 async def servers(
     ctx: commands.Context,
 ):
@@ -814,6 +1284,7 @@ async def servers(
     ]
 
     for guild in bot.guilds:
+
         lines.append(
             f"{guild.name} ({guild.id})"
         )
@@ -822,9 +1293,11 @@ async def servers(
             continue
 
         for channel in guild.text_channels:
+
             if channel.permissions_for(
                 guild.me
             ).send_messages:
+
                 lines.append(
                     f"  #{channel.name}"
                 )
@@ -841,13 +1314,16 @@ async def servers(
 # ============================================================
 
 @bot.command()
-@admin_only()
+@bot_permission("admin")
 async def reboot(
     ctx: commands.Context,
 ):
-    if not os.path.isfile(RESTART_SCRIPT):
+    if not os.path.isfile(
+        RESTART_SCRIPT
+    ):
         await ctx.send(
-            f"`restart.sh not found: {RESTART_SCRIPT}`"
+            f"`restart.sh not found: "
+            f"{RESTART_SCRIPT}`"
         )
         return
 
@@ -906,6 +1382,7 @@ async def help_command(
         "  ~spam <count> <message>\n"
         "  ~stop\n"
         "  ~delay <seconds> <command>\n"
+        "  ~role\n"
         "\n"
         "Minecraft:\n"
         "  ~mc <minecraft command>\n"
@@ -913,6 +1390,11 @@ async def help_command(
         "  ~mcstatus\n"
         "  ~mcstart\n"
         "  ~mcstop\n"
+        "\n"
+        "Permissions:\n"
+        "  ~grant <admin|mod> <user_id>\n"
+        "  ~revoke <user_id>\n"
+        "  ~perms\n"
         "\n"
         "Targeting:\n"
         "  ~settarget server <name|all>\n"
@@ -923,6 +1405,12 @@ async def help_command(
         "System:\n"
         "  ~reboot\n"
         "  ~help\n"
+        "\n"
+        "Permission hierarchy:\n"
+        "  Owner = Everything\n"
+        "  Admin = Everything except grant/revoke\n"
+        "  Mod = Everything except grant/revoke,\n"
+        "        mcstart, and mcstop\n"
         "```"
     )
 
@@ -965,9 +1453,17 @@ async def on_command_error(
         error,
         commands.CheckFailure,
     ):
+        user_role = get_role(
+            ctx.author.id
+        )
+
+        if user_role is None:
+            user_role = "none"
+
         await ctx.send(
-            "`You do not have permission "
-            "to use this command.`"
+            f"`You do not have permission "
+            f"to use this command. "
+            f"Your bot role: {user_role}`"
         )
         return
 
@@ -993,17 +1489,21 @@ async def on_ready():
     )
 
     logger.info(
-        f"Connected to "
-        f"{len(bot.guilds)} Discord guild(s)."
+        f"Connected to {len(bot.guilds)} "
+        f"Discord guild(s)."
     )
 
     logger.info(
-        "Minecraft server: "
+        f"Permission owner: {OWNER_ID}"
+    )
+
+    logger.info(
+        f"Minecraft server: "
         f"{MINECRAFT_DIRECTORY}"
     )
 
     logger.info(
-        "Minecraft RCON: "
+        f"Minecraft RCON: "
         f"{MINECRAFT_RCON_HOST}:"
         f"{MINECRAFT_RCON_PORT}"
     )
@@ -1024,6 +1524,20 @@ async def on_disconnect():
 
 logger.info(
     "[System] Starting Bobbot9000..."
+)
+
+logger.info(
+    f"[Permissions] Owner: {OWNER_ID}"
+)
+
+logger.info(
+    f"[Permissions] Admins: "
+    f"{len(permissions['admins'])}"
+)
+
+logger.info(
+    f"[Permissions] Mods: "
+    f"{len(permissions['mods'])}"
 )
 
 bot.run(

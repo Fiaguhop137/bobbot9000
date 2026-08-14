@@ -1,9 +1,34 @@
 [System] Starting Bobbot9000...
+[Permissions] Owner: 789314712990384168
+[Permissions] Admins: 1
+[Permissions] Mods: 0
 logging in using static token
 Shard ID None has sent the IDENTIFY payload.
-Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-b-xp56",{"micros":204528,"calls":["id_created",{"micros":500,"calls":[]},"session_lookup_time",{"micros":250,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"sessions-prd-gcp-us-east1-b-3",{"micros":203453,"calls":["start_session",{"micros":131002,"calls":["prd-rpc-6b4d49f588-zlnjl",{"micros":35729,"calls":["get_user",{"micros":5822},"get_guilds",{"micros":2844},"send_scheduled_deletion_message",{"micros":15},"guild_join_requests",{"micros":1413},"authorized_ip_coro",{"micros":8},"pending_payments",{"micros":1475},"apex_experiments",{"micros":86854},"sessions_experiments",{"micros":13},"played_application_ids",{"micros":5},"linked_users",{"micros":4},"ad_personalization_toggles_disabled",{"micros":4},"regional_feature_config",{"micros":4}]}]},"starting_guild_connect",{"micros":66,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":13285,"calls":[]},"guilds_started",{"micros":123,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":58951,"calls":[]},"connect_finished",{"micros":58961,"calls":[]},"build_ready",{"micros":12,"calls":[]},"clean_ready",{"micros":2,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: b161c3a1d13fdc1a75f20a46e92861e0).
+Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-b-d0z3",{"micros":144368,"calls":["id_created",{"micros":580,"calls":[]},"session_lookup_time",{"micros":316,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-b-22",{"micros":142819,"calls":["start_session",{"micros":120046,"calls":["prd-rpc-5f6bf5c758-z7rxh",{"micros":35402,"calls":["get_user",{"micros":11145},"get_guilds",{"micros":2385},"send_scheduled_deletion_message",{"micros":13},"guild_join_requests",{"micros":566},"authorized_ip_coro",{"micros":9},"pending_payments",{"micros":1729},"apex_experiments",{"micros":75005},"sessions_experiments",{"micros":6},"played_application_ids",{"micros":4},"linked_users",{"micros":4},"ad_personalization_toggles_disabled",{"micros":3},"regional_feature_config",{"micros":3}]}]},"starting_guild_connect",{"micros":95,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":1648,"calls":[]},"guilds_started",{"micros":149,"calls":[]},"guilds_connect",{"micros":4,"calls":[]},"presence_connect",{"micros":20851,"calls":[]},"connect_finished",{"micros":20863,"calls":[]},"build_ready",{"micros":14,"calls":[]},"clean_ready",{"micros":2,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 22339b54e722c036855d55f406febca0).
 Logged in as bobbot9000#8975 (ID: 1533157532510584894)
 Connected to 2 Discord guild(s).
+Permission owner: 789314712990384168
 Minecraft server: /home/firebot/Downloads/minecraft_server
 Minecraft RCON: 127.0.0.1:25575
 Command prefix: ~
+Minecraft RCON command failed
+Traceback (most recent call last):
+  File "/home/firebot/git/bobbot9000/bot.py", line 846, in mc
+    response = await mc_command(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/firebot/git/bobbot9000/bot.py", line 449, in mc_command
+    return rcon(command)
+           ^^^^^^^^^^^^^
+  File "/home/firebot/git/bobbot9000/bot.py", line 436, in rcon
+    with MCRcon(
+  File "/home/firebot/.local/lib/python3.12/site-packages/mcrcon.py", line 57, in __enter__
+    self.connect()
+  File "/home/firebot/.local/lib/python3.12/site-packages/mcrcon.py", line 77, in connect
+    self.socket.connect((self.host, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+[2026-08-14T22:02:25.445810+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc start" | Action="[Errno 111] Connection refused"
+[2026-08-14T22:02:33.261452+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 27787"
+Cleaning up tasks.
+Cleaning up after 1 tasks.
+All tasks finished cancelling.
+Closing the event loop.

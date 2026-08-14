@@ -34,3 +34,6 @@
 [2026-08-14T20:49:04.068845+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="fiaguhop137" (1342173566828810271) | Command="~mcstop" | Action="Stopping the server"
 [2026-08-14T21:13:14.592405+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="fiaguhop137" (1342173566828810271) | Command="~reboot" | Action="Bot restart requested"
 [2026-08-14T21:14:54.872120+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="fiaguhop137" (1342173566828810271) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-14T21:48:46.430230+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="fiaguhop137" (1342173566828810271) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-14T22:02:25.445810+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc start" | Action="[Errno 111] Connection refused"
+[2026-08-14T22:02:33.261452+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 27787"
