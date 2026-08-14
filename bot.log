@@ -20,3 +20,5 @@
 [2026-08-13T19:18:00.030201+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="redstone137" (1492932060782919760) | Command="!reboot" | Action="Bot restart triggered"
 [2026-08-13T19:18:00.032466+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="redstone137" (1492932060782919760) | Command="~reboot" | Action="Bot restart requested"
 [2026-08-13T21:47:54.239364+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="redstone137" (1492932060782919760) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-14T19:03:19.231191+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-14T19:03:19.263237+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~reboot" | Action="Bot restart requested"

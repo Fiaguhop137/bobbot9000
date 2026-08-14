@@ -1,33 +1,9 @@
 [System] Starting Bobbot9000...
 logging in using static token
 Shard ID None has sent the IDENTIFY payload.
-Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-b-l2x7",{"micros":2957678,"calls":["id_created",{"micros":427,"calls":[]},"session_lookup_time",{"micros":301,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-33",{"micros":2955975,"calls":["start_session",{"micros":2917168,"calls":["prd-rpc-68c584895d-5d7kw",{"micros":415164,"calls":["get_user",{"micros":70073},"get_guilds",{"micros":25346},"send_scheduled_deletion_message",{"micros":12},"guild_join_requests",{"micros":5},"authorized_ip_coro",{"micros":10},"pending_payments",{"micros":9935},"apex_experiments",{"micros":2429354},"sessions_experiments",{"micros":6},"played_application_ids",{"micros":4},"linked_users",{"micros":3},"ad_personalization_toggles_disabled",{"micros":4},"regional_feature_config",{"micros":3}]}]},"starting_guild_connect",{"micros":37,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":18263,"calls":[]},"guilds_started",{"micros":156,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":20297,"calls":[]},"connect_finished",{"micros":20310,"calls":[]},"build_ready",{"micros":16,"calls":[]},"clean_ready",{"micros":23,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 5b88608cda1c1a27e6c5f8fffa7a5c89).
+Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-d-6xqw",{"micros":510079,"calls":["id_created",{"micros":973,"calls":[]},"session_lookup_time",{"micros":325,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-d-84",{"micros":508217,"calls":["start_session",{"micros":499954,"calls":["prd-rpc-6cdb4cd847-6w6qk",{"micros":270023,"calls":["get_user",{"micros":24460},"get_guilds",{"micros":19607},"send_scheduled_deletion_message",{"micros":9},"guild_join_requests",{"micros":4},"authorized_ip_coro",{"micros":10},"pending_payments",{"micros":1382},"apex_experiments",{"micros":174727},"sessions_experiments",{"micros":9},"played_application_ids",{"micros":6},"linked_users",{"micros":5},"ad_personalization_toggles_disabled",{"micros":5},"regional_feature_config",{"micros":5}]}]},"starting_guild_connect",{"micros":54,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":3767,"calls":[]},"guilds_started",{"micros":198,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":4215,"calls":[]},"connect_finished",{"micros":4225,"calls":[]},"build_ready",{"micros":14,"calls":[]},"clean_ready",{"micros":3,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 6832cf1863876a07527603c5ab717886).
 Logged in as bobbot9000#8975 (ID: 1533157532510584894)
 Connected to 2 Discord guild(s).
 Minecraft RCON: 127.0.0.1:25575
 Command prefix: ~
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 5b88608cda1c1a27e6c5f8fffa7a5c89 under trace ["gateway-prd-arm-us-east1-b-rc90",{"micros":809,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":480,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"sessions-prd-gcp-us-east1-b-33",{"micros":16}]}].
-Websocket closed with 1006, attempting a reconnect.
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 5b88608cda1c1a27e6c5f8fffa7a5c89 under trace ["gateway-prd-arm-us-east1-c-9wqr",{"micros":571,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":263,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-33",{"micros":14}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 5b88608cda1c1a27e6c5f8fffa7a5c89 under trace ["gateway-prd-arm-us-east1-d-gs33",{"micros":513,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":219,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-33",{"micros":14}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 5b88608cda1c1a27e6c5f8fffa7a5c89 under trace ["gateway-prd-arm-us-east1-d-b0rd",{"micros":1713,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":1377,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-33",{"micros":15}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 5b88608cda1c1a27e6c5f8fffa7a5c89 under trace ["gateway-prd-arm-us-east1-c-sg62",{"micros":674,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":332,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-b-33",{"micros":20}]}].
- to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 7d9e46ebfda60dc24c3cf7005abc45d1 under trace ["gateway-prd-arm-us-east1-c-rzn7",{"micros":3835,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":3551,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-c-49",{"micros":14}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 7d9e46ebfda60dc24c3cf7005abc45d1 under trace ["gateway-prd-arm-us-east1-d-lxx5",{"micros":623,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":332,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-c-49",{"micros":13}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 7d9e46ebfda60dc24c3cf7005abc45d1 under trace ["gateway-prd-arm-us-east1-b-z2hb",{"micros":601,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":252,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-c-49",{"micros":15}]}].
+
