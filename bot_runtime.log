@@ -79,3 +79,4 @@ Shard ID None has successfully RESUMED session 55492786ab56afd2d4aaefcdbf1e6c38 
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
 Shard ID None has successfully RESUMED session 55492786ab56afd2d4aaefcdbf1e6c38 under trace ["gateway-prd-arm-us-east1-c-knpq",{"micros":743,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":316,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-d-73",{"micros":50}]}].
+[2026-08-15T20:49:59.911679+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="pludunn" (1512533966001930254) | Command="~echo hi" | Action="Discord echo"

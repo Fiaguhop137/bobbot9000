@@ -128,3 +128,4 @@
 [2026-08-15T16:28:27.423215+00:00] SUCCESS | Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Command="~mc pardon fiaguhop137" | Action="Unbanned Fiaguhop137"
 [2026-08-15T16:31:54.231512+00:00] SUCCESS | Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Command="~mc pardon dragondog558" | Action="Unbanned DragonDog558"
 [2026-08-15T16:32:10.494109+00:00] SUCCESS | Guild="Yap" | Channel="#everyone" | User="fiaguhop137" (1342173566828810271) | Command="~mc ban fiaguhop137" | Action="Banned Fiaguhop137: Banned by an operator."
+[2026-08-15T20:49:59.911679+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="pludunn" (1512533966001930254) | Command="~echo hi" | Action="Discord echo"
