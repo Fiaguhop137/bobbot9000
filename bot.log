@@ -60,3 +60,5 @@
 [2026-08-15T01:05:51.501403+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="fiaguhop137" (1342173566828810271) | Command="~mc kick dragondog558" | Action="Kicked DragonDog558: Kicked by an operator"
 [2026-08-15T01:07:19.780236+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="fiaguhop137" (1342173566828810271) | Command="~mcstop" | Action="Stopping the server"
 [2026-08-15T01:08:08.282304+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="fiaguhop137" (1342173566828810271) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-15T01:12:21.067854+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 74956"
+[2026-08-15T01:13:40.023246+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="fiaguhop137" (1342173566828810271) | Command="~reboot" | Action="Bot restart requested"

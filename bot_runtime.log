@@ -4,14 +4,10 @@
 [Permissions] Mods: 0
 logging in using static token
 Shard ID None has sent the IDENTIFY payload.
-Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-b-spwx",{"micros":131704,"calls":["id_created",{"micros":627,"calls":[]},"session_lookup_time",{"micros":240,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-27",{"micros":130513,"calls":["start_session",{"micros":116837,"calls":["prd-rpc-6cbc7955c8-rldrh",{"micros":44848,"calls":["get_user",{"micros":10233},"get_guilds",{"micros":6849},"send_scheduled_deletion_message",{"micros":17},"guild_join_requests",{"micros":3},"authorized_ip_coro",{"micros":9},"pending_payments",{"micros":1350},"apex_experiments",{"micros":62461},"sessions_experiments",{"micros":5},"played_application_ids",{"micros":3},"linked_users",{"micros":2},"ad_personalization_toggles_disabled",{"micros":2},"regional_feature_config",{"micros":2}]}]},"starting_guild_connect",{"micros":70,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":1940,"calls":[]},"guilds_started",{"micros":115,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":11483,"calls":[]},"connect_finished",{"micros":11515,"calls":[]},"build_ready",{"micros":32,"calls":[]},"clean_ready",{"micros":2,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 707174d8165cb835cdcf1adfd2a88d36).
+Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-d-zg45",{"micros":1015226,"calls":["id_created",{"micros":1038,"calls":[]},"session_lookup_time",{"micros":4674,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"sessions-prd-gcp-us-east1-d-94",{"micros":1008386,"calls":["start_session",{"micros":987143,"calls":["prd-rpc-6cbc7955c8-rsp89",{"micros":655839,"calls":["get_user",{"micros":46158},"get_guilds",{"micros":80997},"send_scheduled_deletion_message",{"micros":11},"guild_join_requests",{"micros":46200},"authorized_ip_coro",{"micros":9},"pending_payments",{"micros":11716},"apex_experiments",{"micros":265390},"sessions_experiments",{"micros":6},"played_application_ids",{"micros":4},"linked_users",{"micros":3},"ad_personalization_toggles_disabled",{"micros":4},"regional_feature_config",{"micros":3}]}]},"starting_guild_connect",{"micros":60,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":8381,"calls":[]},"guilds_started",{"micros":126,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":12639,"calls":[]},"connect_finished",{"micros":12656,"calls":[]},"build_ready",{"micros":16,"calls":[]},"clean_ready",{"micros":2,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: e6e018a3ef5a4ceefa577a17a7ae196d).
 Logged in as bobbot9000#8975 (ID: 1533157532510584894)
 Connected to 2 Discord guild(s).
 Permission owner: 789314712990384168
 Minecraft server: /home/firebot/Downloads/minecraft_server
 Minecraft RCON: 127.0.0.1:25575
 Command prefix: ~
-Cleaning up tasks.
-Cleaning up after 1 tasks.
-All tasks finished cancelling.
-Closing the event loop.
