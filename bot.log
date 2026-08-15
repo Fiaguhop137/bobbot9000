@@ -62,3 +62,7 @@
 [2026-08-15T01:08:08.282304+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="fiaguhop137" (1342173566828810271) | Command="~reboot" | Action="Bot restart requested"
 [2026-08-15T01:12:21.067854+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 74956"
 [2026-08-15T01:13:40.023246+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="fiaguhop137" (1342173566828810271) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-15T01:18:57.372392+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="fiaguhop137" (1342173566828810271) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-15T01:18:57.652747+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="fiaguhop137" (1342173566828810271) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-15T01:19:11.025634+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="fiaguhop137" (1342173566828810271) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-15T02:32:28.950338+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Stopping the server"
