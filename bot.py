@@ -39,7 +39,7 @@ OWNER_ID = 789314712990384168
 MINECRAFT_DIRECTORY = "/home/firebot/Downloads/minecraft_server"
 
 MINECRAFT_JAR = (
-    "fabric-server-mc.1.21.1-loader.0.19.3-launcher.1.1.2.jar"
+    "fabric-server-mc.1.21.11-loader.0.19.3-launcher.1.1.2"
 )
 
 MINECRAFT_RCON_HOST = "127.0.0.1"

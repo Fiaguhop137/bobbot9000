@@ -80,3 +80,28 @@ Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
 Shard ID None has successfully RESUMED session 55492786ab56afd2d4aaefcdbf1e6c38 under trace ["gateway-prd-arm-us-east1-c-knpq",{"micros":743,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":316,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-d-73",{"micros":50}]}].
 [2026-08-15T20:49:59.911679+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="pludunn" (1512533966001930254) | Command="~echo hi" | Action="Discord echo"
+Unhandled command error
+Traceback (most recent call last):
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 939, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/ext/commands/core.py", line 855, in invoke
+    await self.prepare(ctx)
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/ext/commands/core.py", line 789, in prepare
+    await self._parse_arguments(ctx)
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/ext/commands/core.py", line 697, in _parse_arguments
+    transformed = await self.transform(ctx, param)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/ext/commands/core.py", line 549, in transform
+    argument = view.get_quoted_word()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/firebot/.local/lib/python3.12/site-packages/discord/ext/commands/view.py", line 174, in get_quoted_word
+    raise UnexpectedQuoteError(current)
+discord.ext.commands.errors.UnexpectedQuoteError: Unexpected quote mark, '"', in non-quoted string
+[2026-08-15T23:03:43.919400+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~revoke 1342173566828810271" | Action="Revoked permissions from 1342173566828810271"
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 55492786ab56afd2d4aaefcdbf1e6c38 under trace ["gateway-prd-arm-us-east1-b-l2x7",{"micros":673,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":336,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-d-73",{"micros":14}]}].
+Cleaning up tasks.
+Cleaning up after 1 tasks.
+All tasks finished cancelling.
+Closing the event loop.
