@@ -159,3 +159,97 @@
 [2026-08-16T02:38:32.748141+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc gamerule players_sleeping_percentage true" | Action="Expected integer...ercentage true<--[HERE]"
 [2026-08-16T02:39:12.344546+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc gamerule keep_inventory true" | Action="Gamerule keep_inventory is now set to: true"
 [2026-08-16T02:39:29.591146+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-16T15:05:49.755473+00:00] ERROR | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mc op dragondog558" | Action="[Errno 111] Connection refused"
+[2026-08-16T15:05:49.975032+00:00] ERROR | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mc op dragondog558" | Action="[Errno 111] Connection refused"
+[2026-08-16T15:06:01.859308+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 613107"
+[2026-08-16T15:06:01.900521+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 613106"
+[2026-08-16T15:06:38.520008+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mc op dragondog558" | Action="Made DragonDog558 a server operator"
+[2026-08-16T15:06:38.840300+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mc op dragondog558" | Action="Nothing changed. The player already is an operator"
+[2026-08-16T15:06:54.853623+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Minecraft server does not appear to be running."
+[2026-08-16T15:06:55.613129+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-16T15:20:01.726188+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="fiaguhop137" (1342173566828810271) | Command="~mcstart" | Action="Minecraft server started with PID 617016"
+[2026-08-16T15:20:20.096123+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 617192"
+[2026-08-16T18:37:57.007314+00:00] SUCCESS | Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-16T18:38:01.769721+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="fiaguhop137" (1342173566828810271) | Command="~mcstart" | Action="Minecraft server started with PID 664022"
+[2026-08-16T18:54:30.326997+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc deop fiaguhop137" | Action="Made Fiaguhop137 no longer a server operator"
+[2026-08-16T18:54:30.560025+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc deop fiaguhop137" | Action="Nothing changed. The player is not an operator"
+[2026-08-16T18:54:35.486920+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc op dragondog558" | Action="Made DragonDog558 a server operator"
+[2026-08-16T18:54:35.519108+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc op dragondog558" | Action="Nothing changed. The player already is an operator"
+[2026-08-16T19:14:29.183953+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="fiaguhop137" (1342173566828810271) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-16T19:14:53.243732+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="fiaguhop137" (1342173566828810271) | Command="~mcstart" | Action="Minecraft server started with PID 674815"
+[2026-08-16T19:15:23.078866+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 675008"
+[2026-08-16T20:10:39.080865+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="fiaguhop137" (1342173566828810271) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-16T20:11:06.788611+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="fiaguhop137" (1342173566828810271) | Command="~mcstart" | Action="Minecraft server started with PID 688673"
+[2026-08-16T20:22:26.010546+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="fiaguhop137" (1342173566828810271) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-16T20:22:33.097854+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="fiaguhop137" (1342173566828810271) | Command="~mcstart" | Action="Minecraft server started with PID 691674"
+[2026-08-16T21:15:56.056017+00:00] SUCCESS | Guild="Yap" | Channel="#emberbot137-remote-console" | User="fiaguhop137" (1342173566828810271) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-16T22:41:08.846248+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~revoke 1342173566828810271" | Action="Revoked permissions from 1342173566828810271"
+[2026-08-16T22:44:39.278055+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 724769"
+[2026-08-16T22:44:39.314776+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 724768"
+[2026-08-16T22:44:48.785234+00:00] ERROR | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mc worldborder set 300000" | Action="[Errno 111] Connection refused"
+[2026-08-16T22:44:49.053653+00:00] ERROR | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mc worldborder set 300000" | Action="[Errno 111] Connection refused"
+[2026-08-16T22:45:08.189919+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-16T22:45:08.377152+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-16T23:21:33.810407+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-16T23:21:34.016783+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-16T23:22:35.549491+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#general" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 744451"
+[2026-08-17T03:13:44.550135+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 805914"
+[2026-08-17T03:13:56.173131+00:00] ERROR | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="[Errno 111] Connection refused"
+[2026-08-17T03:14:01.944821+00:00] ERROR | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="[Errno 111] Connection refused"
+[2026-08-17T03:14:11.386784+00:00] SUCCESS | Guild="Yap" | Channel="#remote-controlled-bob" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-17T16:40:15.427307+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 981322"
+[2026-08-17T16:40:38.266077+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc worldborder set 100" | Action="[Errno 111] Connection refused"
+[2026-08-17T16:40:48.170853+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc worldborder set 10000" | Action="Set the world border to 10000.0 block(s) wide"
+[2026-08-17T16:59:16.706844+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc chunky start" | Action="[Chunky] A task was already started for this world. To continue running it, type '/chunky continue'. To start a new task, type '/chunky confirm'."
+[2026-08-17T16:59:33.508115+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc chunky continue" | Action="[Chunky] Task continuing for minecraft:overworld."
+[2026-08-17T19:32:47.813285+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc chunky" | Action="Chunky Commands
+chunky start - Start a new chunk generation task
+chunky pause - Pause current tasks and save progress
+chunky continue - Continue current or saved tasks
+chunky cancel - Stop and delete current or saved tasks
+chunky world <world> - Set the world target
+chunky worldborder - Use the world border center & radius
+chunky center <x> <z> - Set the center block location
+chunky spawn - Set the center to the spawn point
+chunky radius <radius> - Set the radius
+chunky corners <x1> <z1> <x2> <z2> - Set by corners
+chunky shape <shape> - Set the shape to generate
+chunky pattern <pattern> - Set the generation pattern
+chunky silent - Toggle displaying update messages
+chunky quiet <interval> - Set the quiet interval
+chunky trim - Delete chunks outside selection
+chunky selection - Display the current selection
+chunky progress - Displays current task progress
+chunky reload - Reload configuration"
+[2026-08-17T19:33:08.549068+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc kill @e[type=creeper]" | Action="No entity was found"
+[2026-08-17T19:47:41.671613+00:00] SUCCESS | Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Command="~mc chunky" | Action="Chunky Commands
+chunky start - Start a new chunk generation task
+chunky pause - Pause current tasks and save progress
+chunky continue - Continue current or saved tasks
+chunky cancel - Stop and delete current or saved tasks
+chunky world <world> - Set the world target
+chunky worldborder - Use the world border center & radius
+chunky center <x> <z> - Set the center block location
+chunky spawn - Set the center to the spawn point
+chunky radius <radius> - Set the radius
+chunky corners <x1> <z1> <x2> <z2> - Set by corners
+chunky shape <shape> - Set the shape to generate
+chunky pattern <pattern> - Set the generation pattern
+chunky silent - Toggle displaying update messages
+chunky quiet <interval> - Set the quiet interval
+chunky trim - Delete chunks outside selection
+chunky selection - Display the current selection
+chunky progress - Displays current task progress
+chunky reload - Reload configuration"
+[2026-08-17T19:47:50.552972+00:00] SUCCESS | Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-17T19:47:52.601245+00:00] SUCCESS | Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 1024982"
+[2026-08-17T19:49:33.600514+00:00] SUCCESS | Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-17T19:49:35.038080+00:00] SUCCESS | Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 1025822"
+[2026-08-17T19:50:09.180835+00:00] SUCCESS | Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Minecraft server does not appear to be running."
+[2026-08-17T19:50:11.722457+00:00] SUCCESS | Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 1026076"
+[2026-08-17T19:51:19.730314+00:00] SUCCESS | Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 1026582"
+[2026-08-17T19:52:33.464831+00:00] SUCCESS | Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-17T19:52:43.910930+00:00] SUCCESS | Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-17T19:52:47.033502+00:00] SUCCESS | Guild="Yap" | Channel="#everyone" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 1027206"
+[2026-08-17T20:05:47.582875+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc start" | Action="Unknown or incomplete command. See below for errorstart<--[HERE]"
+[2026-08-17T20:07:06.151018+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc tp fiaguhop137 ~ 80 ~" | Action="Teleported Fiaguhop137 to 16.000000, 80.000000, 0.000000"
