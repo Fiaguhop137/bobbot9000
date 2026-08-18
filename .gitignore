@@ -6,3 +6,4 @@ venv/
 chat.log
 bot_runtime.log
 bot.log
+*.mca
