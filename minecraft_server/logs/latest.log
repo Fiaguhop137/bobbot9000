@@ -1,255 +1,50 @@
-[22:11:38] [main/INFO]: Loading Minecraft 1.21.11 with Fabric Loader 0.19.3
-[22:11:38] [main/WARN]: Warnings were found!
- - Mod 'Forge Config API Port' (forgeconfigapiport) 21.11.1 recommends any version of modmenu, which is missing!
-	 - You should install any version of modmenu for the optimal experience.
- - Mod 'Naturally Trimmed' (naturally_trimmed) 3.5.0 recommends version 17.0.0-alpha.1 or later of modmenu, which is missing!
-	 - You should install version 17.0.0-alpha.1 or later of modmenu for the optimal experience.
- - Mod 'Naturally Trimmed' (naturally_trimmed) 3.5.0 recommends version 3.8.1+1.21.11 or later of yet_another_config_lib_v3, which is missing!
-	 - You should install version 3.8.1+1.21.11 or later of yet_another_config_lib_v3 for the optimal experience.
-[22:11:38] [main/INFO]: Loading 118 mods:
-	- appleskin 3.0.8+mc1.21.11
-	- artifacts 14.0.3
-	   |-- cardinal-components-base 7.3.0
-	   |-- cardinal-components-entity 7.3.0
-	   \-- expandability 13.0.1
-	- artifactscrafting 1.2.0
-	- balm 21.11.9.1
-	   \-- kuma_api 21.11.12
-	- bunnyboots 1.21.11
-	- c2me 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-base 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-client-uncapvd 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-fixes-chunkio-threading-issues 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-fixes-general-threading-issues 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-fixes-worldgen-threading-issues 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-fixes-worldgen-vanilla-bugs 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-notickvd 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-opts-allocs 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-opts-chunkio 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-opts-dfc 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-opts-math 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-opts-natives-math 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-opts-scheduling 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-opts-worldgen-general 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-opts-worldgen-vanilla 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-rewrites-chunk-serializer 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-rewrites-chunk-system 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-rewrites-chunkio 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-server-utils 0.4.0-alpha.0.26+1.21.11
-	   |-- c2me-threading-lighting 0.4.0-alpha.0.26+1.21.11
-	   |-- com_github_ben-manes_caffeine_caffeine 3.2.1
-	   |-- com_ibm_async_asyncutil 0.1.0
-	   |-- io_reactivex_rxjava3_rxjava 3.1.12
-	   |-- mixinsquared 0.3.7-beta.1
-	   |-- net_objecthunter_exp4j 0.4.8
-	   |-- org_jctools_jctools-core 4.0.5
-	   \-- org_reactivestreams_reactive-streams 1.0.4
-	- chunky 1.4.55
-	- cloth-config 21.11.153
-	   \-- cloth-basic-math 0.6.1
-	- cobweb 1.4.0
-	- collective 8.32
-	- comforts 14.0.2+1.21.11
-	   |-- cardinal-components-base 7.3.0
-	   |-- cardinal-components-entity 7.3.0
-	   \-- spectrelib 0.20.2+1.21.11
-	        |-- com_electronwill_night-config_core 3.8.3
-	        \-- com_electronwill_night-config_toml 3.8.3
-	- entityculling 1.10.5
-	   |-- transition 1.0.21
-	   \-- trender 1.0.15
-	- explorerscompass 1.21.11-2.5.1-fabric
-	- explorify 1.6.5
-	- fabric-api 0.141.6+1.21.11
-	   |-- fabric-api-base 1.0.5+4ebb5c083e
-	   |-- fabric-api-lookup-api-v1 1.6.114+20dc27073e
-	   |-- fabric-biome-api-v1 17.1.1+4fc5413f3e
-	   |-- fabric-block-api-v1 1.1.10+4ebb5c083e
-	   |-- fabric-block-view-api-v2 1.0.39+4ebb5c083e
-	   |-- fabric-command-api-v2 2.4.7+6b42a6003e
-	   |-- fabric-content-registries-v0 10.2.14+4fc5413f3e
-	   |-- fabric-convention-tags-v1 2.1.55+7f945d5b3e
-	   |-- fabric-convention-tags-v2 2.17.3+8ef948ba3e
-	   |-- fabric-crash-report-info-v1 0.3.23+4ebb5c083e
-	   |-- fabric-data-attachment-api-v1 1.8.48+eed0806f3e
-	   |-- fabric-data-generation-api-v1 23.5.0+88d7da613e
-	   |-- fabric-dimensions-v1 4.0.28+4fc5413f3e
-	   |-- fabric-entity-events-v1 3.1.1+1d0ab4303e
-	   |-- fabric-events-interaction-v0 4.1.1+3b89ecf63e
-	   |-- fabric-game-rule-api-v1 2.0.3+4fc5413f3e
-	   |-- fabric-item-api-v1 11.6.0+67f17bb43e
-	   |-- fabric-item-group-api-v1 4.2.36+4fc5413f3e
-	   |-- fabric-key-binding-api-v1 1.1.7+4fc5413f3e
-	   |-- fabric-lifecycle-events-v1 2.6.15+4ebb5c083e
-	   |-- fabric-loot-api-v2 3.0.73+3f89f5a53e
-	   |-- fabric-loot-api-v3 2.0.20+78c8b4663e
-	   |-- fabric-message-api-v1 6.1.12+4ebb5c083e
-	   |-- fabric-model-loading-api-v1 6.0.15+4fc5413f3e
-	   |-- fabric-networking-api-v1 5.1.6+6b6d71a53e
-	   |-- fabric-object-builder-api-v1 21.1.40+4fc5413f3e
-	   |-- fabric-particles-v1 4.2.12+4fc5413f3e
-	   |-- fabric-recipe-api-v1 8.2.4+4ebb5c083e
-	   |-- fabric-registry-sync-v0 6.2.6+1718722b3e
-	   |-- fabric-renderer-api-v1 8.0.3+f4ffd2e53e
-	   |-- fabric-renderer-indigo 5.0.3+f4ffd2e53e
-	   |-- fabric-rendering-fluids-v1 3.1.43+4ebb5c083e
-	   |-- fabric-rendering-v1 16.2.10+0290ad933e
-	   |-- fabric-resource-conditions-api-v1 5.0.35+4fc5413f3e
-	   |-- fabric-resource-loader-v0 3.3.4+4fc5413f3e
-	   |-- fabric-resource-loader-v1 1.0.10+78c8b4663e
-	   |-- fabric-screen-api-v1 3.1.7+4ebb5c083e
-	   |-- fabric-screen-handler-api-v1 1.3.162+4fc5413f3e
-	   |-- fabric-serialization-api-v1 1.0.5+4ebb5c083e
-	   |-- fabric-sound-api-v1 1.0.51+4fc5413f3e
-	   |-- fabric-tag-api-v1 1.3.0+88d7da613e
-	   |-- fabric-transfer-api-v1 6.0.25+4fc5413f3e
-	   \-- fabric-transitive-access-wideners-v1 7.1.0+014c8cec3e
-	- fabricloader 0.19.3
-	   \-- mixinextras 0.5.4
-	- ferritecore 8.2.0
-	- forgeconfigapiport 21.11.1
-	   |-- com_electronwill_night-config_core 3.8.3
-	   \-- com_electronwill_night-config_toml 3.8.3
-	- forgivingvoid 21.11.3
-	- geophilic 3.6
-	- hardcorerevival 21.11.5
-	- iceberg 1.4.0.1
-	- infinitetrading 5.0
-	- java 25
-	- jei 27.30.0.76
-	- krypton 0.2.10
-	   \-- com_velocitypowered_velocity-native 3.4.0-SNAPSHOT
-	- lithium 0.21.4+mc1.21.11
-	- minecraft 1.21.11
-	- mr_lukis_grandcapitals 1.1.3
-	- naturally_trimmed 3.5.0
-	   |-- org_quiltmc_parsers_gson 0.3.1
-	   \-- org_quiltmc_parsers_json 0.3.1
-	- naturescompass 1.21.11-2.5.0-fabric
-	- nekomasfixed 0.5.2-1.21.11
-	- perpetua 1.21.11
-	- puzzleslib 21.11.13
-	- pyrotechnic_elytra 1.0.1
-	- too_expensive_removed 1-v1.2.7
-	- trade_cycling 1.21.11-1.0.20
-	   |-- fabric-key-binding-api-v1 1.1.7+4fc5413f53
-	   \-- fabric-screen-api-v1 3.1.7+4ebb5c0853
-	- trinkets 3.11.1
-	   |-- cardinal-components-base 7.3.0
-	   \-- cardinal-components-entity 7.3.0
-	- villagerinabucket 1.21.11-1.0.0
-	- voicechat 1.21.11-2.6.22
-	   |-- fabric-key-binding-api-v1 1.1.7+4fc5413f53
-	   |-- fabric-rendering-v1 16.2.5+1fb1cde953
-	   \-- voicechat_api 2.6.20
-	- waystones 21.11.9
-[22:11:39] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/firebot/git/bobbot9000/minecraft_server/libraries/net/fabricmc/sponge-mixin/0.17.3+mixin.0.8.7/sponge-mixin-0.17.3+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[22:11:39] [main/INFO]: Compatibility level set to JAVA_21
-[22:11:39] [main/WARN]: Reference map 'balm.refmap.json' for balm.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/WARN]: Reference map 'balm.refmap.json' for balm.api.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/WARN]: Reference map 'balm.refmap.json' for balm.fabric.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.base.mixin
-[22:11:39] [main/INFO]: Global Executor Parallelism: 3 configured, 3 evaluated, 3 default evaluated
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.fixes.chunkio.threading_issues.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.fixes.general.threading_issues.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.threading_issues.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.vanilla_bugs.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.notickvd.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.opts.allocs.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.opts.chunkio.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.opts.dfc.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.opts.math.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.opts.natives_math.mixin
-[22:11:39] [main/INFO]: Attempting to call native library. If your game crashes right after this point, native acceleration may not be available for your system.
-[22:11:39] [main/INFO]: Detected maximum supported ISA target: AVX2
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.opts.scheduling.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.general.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.vanilla.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunk_serializer.mixin
-[22:11:39] [main/INFO]: Disabling com.ishland.c2me.rewrites.chunk_serializer.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunksystem.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunkio.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.server.utils.mixin
-[22:11:39] [main/INFO]: Initializing com.ishland.c2me.threading.lighting.mixin
-[22:11:39] [main/WARN]: Reference map 'cobweb.refmap.json' for cobweb.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/WARN]: Reference map 'cobweb.refmap.json' for cobweb.fabric.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/WARN]: Reference map 'comforts.refmap.json' for comforts.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/WARN]: Reference map 'forgivingvoid.refmap.json' for forgivingvoid.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/WARN]: Reference map 'forgivingvoid.refmap.json' for forgivingvoid.fabric.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/WARN]: Reference map 'hardcorerevival.refmap.json' for hardcorerevival.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/WARN]: Reference map 'kuma_api.refmap.json' for kuma_api.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/WARN]: Reference map 'kuma_api.refmap.json' for kuma_api.fabric.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/INFO]: Loaded configuration file for Lithium: 171 options available, 0 override(s) found.
-[22:11:39] [main/WARN]: Reference map 'pyrotechnic_elytra.refmap.json' for pyrotechnic_elytra.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/WARN]: Reference map 'pyrotechnic_elytra.refmap.json' for pyrotechnic_elytra.fabric.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/WARN]: Reference map 'villagerinabucket.refmap.json' for villagerinabucket-common.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/WARN]: Reference map 'waystones.refmap.json' for waystones.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:39] [main/WARN]: Reference map 'waystones.refmap.json' for waystones.fabric.mixins.json could not be read. If this is a development environment you can ignore this message
-[22:11:40] [main/WARN]: Error loading class: ca/spottedleaf/starlight/common/integration/v0/ChunkSystemHooks (java.lang.ClassNotFoundException: ca/spottedleaf/starlight/common/integration/v0/ChunkSystemHooks)
-[22:11:40] [main/WARN]: @Mixin target ca/spottedleaf/starlight/common/integration/v0/ChunkSystemHooks was not found c2me-rewrites-chunk-system.mixins.json:scalablelux.MixinChunkSystemHooks from mod c2me-rewrites-chunk-system
-[22:11:40] [main/WARN]: Error loading class: ca/spottedleaf/starlight/common/thread/SchedulingUtil (java.lang.ClassNotFoundException: ca/spottedleaf/starlight/common/thread/SchedulingUtil)
-[22:11:40] [main/WARN]: Error loading class: de/siphalor/amecs/key_modifiers/impl/AmecsKeyModifiersEarlyInit (java.lang.ClassNotFoundException: de/siphalor/amecs/key_modifiers/impl/AmecsKeyModifiersEarlyInit)
-[22:11:40] [main/WARN]: @Mixin target de.siphalor.amecs.key_modifiers.impl.AmecsKeyModifiersEarlyInit was not found jei.mixins.json:AmecsKeyModifiersEarlyInitMixin from mod jei
-[22:11:41] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.4).
-[22:11:50] [main/INFO]: Loading Collective version 8.32.
-[22:11:50] [main/INFO]: ExpandAbility here, who dis?
-[22:11:51] [main/INFO]: Compression will use libdeflate (Linux x86_64), encryption will use OpenSSL 3.x.x (Linux x86_64)
-[22:11:51] [main/INFO]: Loading Naturally Trimmed config from config file
-[22:11:51] [main/INFO]: [STDOUT]: register Blocks
-[22:11:51] [main/INFO]: [STDOUT]: register BlockEntityType
-[22:11:51] [main/INFO]: Registering items...
-[22:11:51] [main/INFO]: Items registered successfully
-[22:11:51] [main/INFO]: [STDOUT]: register ItemGroup
-[22:11:51] [main/INFO]: [STDOUT]: register EntityType
-[22:11:51] [main/INFO]: [STDOUT]: register Particles
-[22:11:51] [main/INFO]: [STDOUT]: register Enchantments
-[22:11:51] [main/INFO]: [STDOUT]: register Effects
-[22:11:51] [main/INFO]: [STDOUT]: register Component
-[22:11:51] [main/INFO]: [STDOUT]: register LootTables
-[22:11:51] [main/INFO]: [STDOUT]: register Other
-[22:11:51] [main/INFO]: [STDOUT]: Registering Mod Recipes
-[22:11:51] [main/INFO]: Registering screen handlers for nekomasfixed
-[22:11:51] [main/INFO]: [STDOUT]: register LootTableAdds
-[22:11:51] [main/INFO]: Constructing components for puzzleslib:common
-[22:11:51] [main/INFO]: [voicechat] Compatibility version 20
-[22:11:51] [main/INFO]: [voicechat] Loading plugins
-[22:11:51] [main/INFO]: [voicechat] Loaded 0 plugin(s)
-[22:11:51] [main/INFO]: [voicechat] Initializing plugins
-[22:11:51] [main/INFO]: [voicechat] Initialized 0 plugin(s)
-[22:11:51] [main/INFO]: Krypton is now accelerating your Minecraft server's networking stack 🚀
-[22:11:52] [main/ERROR]: Couldn't load mr_lukis_grandcapitals pack metadata: Pack declares support for version newer than 81, but is missing mandatory fields min_format and max_format
-[22:11:52] [main/ERROR]: Couldn't load mr_lukis_grandcapitals pack metadata: Pack declares support for version newer than 81, but is missing mandatory fields min_format and max_format
-[22:11:52] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[22:11:52] [main/ERROR]: Couldn't load mr_lukis_grandcapitals pack metadata: Pack declares support for version newer than 81, but is missing mandatory fields min_format and max_format
-[22:11:53] [main/ERROR]: Failed to decode value DataResult.Success[ResourceKey[minecraft:dimension / minecraft:the_end]] from ("minecraft:the_end", {generator:{settings:"minecraft:the_end",type:"minecraft:the_end"},type:"minecraft:the_end"})  Optional.empty
-[22:11:54] [Worker-Main-3/WARN]: Found loot table element validation problem in {nekomasfixed:blocks/coral_nautilus_block@minecraft:loot_table}.pools[0].entries[0]: Unreachable entry!
-[22:11:54] [Worker-Main-3/WARN]: Found loot table element validation problem in {nekomasfixed:blocks/zombie_nautilus_block@minecraft:loot_table}.pools[0].entries[0]: Unreachable entry!
-[22:11:54] [Worker-Main-3/WARN]: Found loot table element validation problem in {nekomasfixed:blocks/nautilus_block@minecraft:loot_table}.pools[0].entries[0]: Unreachable entry!
-[22:11:55] [main/INFO]: Loaded 2109 recipes
-[22:11:55] [main/INFO]: Loaded 2178 advancements
-[22:11:55] [main/INFO]: Applied 208 biome modifications to 64 of 65 new biomes in 17.79 ms
-[22:11:55] [Server thread/INFO]: Starting minecraft server version 1.21.11
-[22:11:55] [Server thread/INFO]: Loading properties
-[22:11:55] [Server thread/INFO]: Default game type: SURVIVAL
-[22:11:55] [Server thread/INFO]: Generating keypair
-[22:11:55] [Server thread/INFO]: Starting Minecraft server on *:25565
-[22:11:55] [Server thread/INFO]: Preparing level "world"
-[22:11:56] [Server thread/INFO]: Enforcing safe world random access
-[22:11:56] [Server thread/INFO]: [STDOUT]: Density function compilation finished in 418.2 ms
-[22:11:56] [Server thread/INFO]: Using TheSpeedyObjectFactory without Unsafe
-[22:11:57] [Server thread/INFO]: [STDOUT]: Density function compilation finished in 23.04 ms
-[22:11:57] [Server thread/INFO]: Loading 0 persistent chunks...
-[22:11:57] [Server thread/INFO]: Preparing spawn area: 100%
-[22:11:57] [Server thread/INFO]: Time elapsed: 103 ms
-[22:11:57] [Server thread/INFO]: Done (1.368s)! For help, type "help"
-[22:11:57] [Server thread/INFO]: Starting remote control listener
-[22:11:57] [Server thread/INFO]: Thread RCON Listener started
-[22:11:57] [Server thread/INFO]: RCON running on 0.0.0.0:25575
-[22:11:57] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 25565
-[22:11:59] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[22:11:59] [Server thread/INFO]: [Rcon: Made DragonDog558 a server operator]
-[22:11:59] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[22:12:57] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[22:27:22] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[22:27:22] [Server thread/INFO]: [Rcon: Made Fiaguhop137 no longer a server operator]
-[22:27:22] [RCON Client /127.0.0.1 #3/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[03:37:23] [Netty Epoll IO #2/ERROR]: Error sending packet clientbound/minecraft:disconnect
+io.netty.handler.codec.EncoderException: Sending unknown packet 'clientbound/minecraft:disconnect'
+	at knot//net.minecraft.class_9136.method_56426(class_9136.java:50)
+	at knot//net.minecraft.class_9136.encode(class_9136.java:14)
+	at knot//net.minecraft.class_2545.method_10838(class_2545.java:26)
+	at knot//net.minecraft.class_2545.encode(class_2545.java:12)
+	at knot//io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:827)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:752)
+	at knot//io.netty.channel.ChannelOutboundHandlerAdapter.write(ChannelOutboundHandlerAdapter.java:113)
+	at knot//net.minecraft.class_2535$2.write(class_2535.java:488)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:827)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:804)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:869)
+	at knot//io.netty.channel.DefaultChannelPipeline.writeAndFlush(DefaultChannelPipeline.java:1046)
+	at knot//io.netty.channel.Channel.writeAndFlush(Channel.java:257)
+	at knot//net.minecraft.class_2535.method_36942(class_2535.java:324)
+	at knot//net.minecraft.class_2535.method_10764(class_2535.java:316)
+	at knot//net.minecraft.class_2535.method_52906(class_2535.java:298)
+	at knot//net.minecraft.class_2535.method_10752(class_2535.java:292)
+	at knot//net.minecraft.class_2535.exceptionCaught(class_2535.java:143)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:289)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:271)
+	at knot//io.netty.channel.DefaultChannelPipeline$HeadContext.exceptionCaught(DefaultChannelPipeline.java:1396)
+	at knot//io.netty.channel.DefaultChannelPipeline.fireExceptionCaught(DefaultChannelPipeline.java:890)
+	at knot//io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.handleReadException(AbstractEpollStreamChannel.java:725)
+	at knot//io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:820)
+	at knot//io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.handle(AbstractEpollChannel.java:482)
+	at knot//io.netty.channel.epoll.EpollIoHandler$DefaultEpollIoRegistration.handle(EpollIoHandler.java:317)
+	at knot//io.netty.channel.epoll.EpollIoHandler.processReady(EpollIoHandler.java:515)
+	at knot//io.netty.channel.epoll.EpollIoHandler.run(EpollIoHandler.java:460)
+	at knot//io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at knot//io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at knot//io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193)
+	at knot//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[12:11:57] [User Authenticator #1/INFO]: UUID of player Fiaguhop137 is 921bb602-2859-45d6-b353-c8b50c4cecdb
+[12:11:59] [Server thread/INFO]: Fiaguhop137[/192.168.122.1:48542] logged in with entity id 276 at (63.5, 71.0, -667.5)
+[12:11:59] [Server thread/INFO]: Fiaguhop137 joined the game
+[12:11:59] [Server thread/INFO]: Sending item configs to client
+[12:12:00] [Server thread/INFO]: [voicechat] Received secret request of Fiaguhop137 (20)
+[12:12:00] [Server thread/INFO]: [voicechat] Sent secret to Fiaguhop137
+[12:12:00] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 921bb602-2859-45d6-b353-c8b50c4cecdb
+[12:12:01] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 921bb602-2859-45d6-b353-c8b50c4cecdb
+[12:12:01] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player Fiaguhop137 (921bb602-2859-45d6-b353-c8b50c4cecdb) successfully connected to voice chat
+[12:12:02] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2302ms or 46 ticks behind
+[12:20:23] [Server thread/INFO]: Fiaguhop137 lost connection: Disconnected
+[12:20:23] [Server thread/INFO]: Fiaguhop137 left the game
+[12:20:23] [Server thread/INFO]: [voicechat] Disconnecting client Fiaguhop137
+[12:21:23] [Server thread/INFO]: Server empty for 60 seconds, pausing

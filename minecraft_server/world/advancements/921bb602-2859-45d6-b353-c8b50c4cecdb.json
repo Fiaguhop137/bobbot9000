@@ -3162,5 +3162,35 @@
     },
     "done": true
   },
+  "nekomasfixed:recipes/building_blocks/stone_from_kilning": {
+    "criteria": {
+      "has_block": "2026-08-20 12:17:38 -0400"
+    },
+    "done": true
+  },
+  "nekomasfixed:recipes/combat/diamond_sickle": {
+    "criteria": {
+      "has_ingredients": "2026-08-20 12:16:13 -0400"
+    },
+    "done": true
+  },
+  "nekomasfixed:recipes/combat/wooden_sickle": {
+    "criteria": {
+      "has_ingredients": "2026-08-20 12:16:13 -0400"
+    },
+    "done": true
+  },
+  "nekomasfixed:recipes/combat/stone_sickle": {
+    "criteria": {
+      "has_ingredients": "2026-08-20 12:17:38 -0400"
+    },
+    "done": true
+  },
+  "nekomasfixed:recipes/building_blocks/smooth_stone_from_kilning": {
+    "criteria": {
+      "has_block": "2026-08-20 12:18:34 -0400"
+    },
+    "done": true
+  },
   "DataVersion": 4671
 }
