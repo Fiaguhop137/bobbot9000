@@ -255,3 +255,32 @@ chunky reload - Reload configuration"
 [2026-08-17T20:07:06.151018+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc tp fiaguhop137 ~ 80 ~" | Action="Teleported Fiaguhop137 to 16.000000, 80.000000, 0.000000"
 [2026-08-18T21:04:31.631549+00:00] SUCCESS | Guild="Yap" | Channel="#plasma-dragon" | User="fiaguhop137" (1342173566828810271) | Command="~echo meow" | Action="Discord echo"
 [2026-08-18T21:04:31.642922+00:00] SUCCESS | Guild="Yap" | Channel="#plasma-dragon" | User="fiaguhop137" (1342173566828810271) | Command="~echo meow" | Action="Discord echo"
+[2026-08-19T00:03:49.155337+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft directory does not exist:
+/home/firebot/Downloads/minecraft_server"
+[2026-08-19T00:03:57.434925+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft directory does not exist:
+/home/firebot/Downloads/minecraft_server"
+[2026-08-19T00:07:24.885046+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-19T00:07:25.907225+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-19T00:07:27.136873+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft directory does not exist:
+/home/firebot/Downloads/minecraft_server"
+[2026-08-19T00:07:27.157362+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft directory does not exist:
+/home/firebot/Downloads/minecraft_server"
+[2026-08-19T00:07:30.567247+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft directory does not exist:
+/home/firebot/Downloads/minecraft_server"
+[2026-08-19T00:07:30.624263+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft directory does not exist:
+/home/firebot/Downloads/minecraft_server"
+[2026-08-19T00:07:45.992254+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft directory does not exist:
+/home/firebot/Downloads/minecraft_server"
+[2026-08-19T00:07:46.293333+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft directory does not exist:
+/home/firebot/Downloads/minecraft_server"
+[2026-08-19T00:08:03.526793+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-19T00:08:03.900987+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-19T00:08:10.676760+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 1439740"
+[2026-08-19T00:08:10.713513+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 1439741"
+[2026-08-19T00:33:56.588822+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-19T00:33:57.450631+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Stopping the server"
+[2026-08-19T00:36:47.541422+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-19T00:36:47.726353+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-19T00:37:21.561417+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 1446835"
+[2026-08-19T20:12:14.759903+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~reboot" | Action="Bot restart requested"
+[2026-08-19T20:14:54.870985+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 1728328"
