@@ -29,3 +29,103 @@ Shard ID None has successfully RESUMED session 0d92247d754e30c88461853b23a29b55 
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
 Shard ID None has successfully RESUMED session 0d92247d754e30c88461853b23a29b55 under trace ["gateway-prd-arm-us-east1-b-lqhb",{"micros":668,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":279,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"sessions-prd-gcp-us-east1-c-72",{"micros":15}]}].
+[2026-08-20T02:11:35.957558+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstop" | Action="Minecraft server does not appear to be running."
+[2026-08-20T02:11:37.129690+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mcstart" | Action="Minecraft server started with PID 1817833"
+Minecraft RCON command failed
+Traceback (most recent call last):
+  File "/home/firebot/git/bobbot9000/bot.py", line 846, in mc
+    response = await mc_command(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/firebot/git/bobbot9000/bot.py", line 449, in mc_command
+    return rcon(command)
+           ^^^^^^^^^^^^^
+  File "/home/firebot/git/bobbot9000/bot.py", line 436, in rcon
+    with MCRcon(
+  File "/home/firebot/.local/lib/python3.12/site-packages/mcrcon.py", line 57, in __enter__
+    self.connect()
+  File "/home/firebot/.local/lib/python3.12/site-packages/mcrcon.py", line 77, in connect
+    self.socket.connect((self.host, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+[2026-08-20T02:11:43.121454+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc op dragondog558" | Action="[Errno 111] Connection refused"
+Minecraft RCON command failed
+Traceback (most recent call last):
+  File "/home/firebot/git/bobbot9000/bot.py", line 846, in mc
+    response = await mc_command(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/firebot/git/bobbot9000/bot.py", line 449, in mc_command
+    return rcon(command)
+           ^^^^^^^^^^^^^
+  File "/home/firebot/git/bobbot9000/bot.py", line 436, in rcon
+    with MCRcon(
+  File "/home/firebot/.local/lib/python3.12/site-packages/mcrcon.py", line 57, in __enter__
+    self.connect()
+  File "/home/firebot/.local/lib/python3.12/site-packages/mcrcon.py", line 77, in connect
+    self.socket.connect((self.host, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+[2026-08-20T02:11:49.730762+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc op dragondog558" | Action="[Errno 111] Connection refused"
+Minecraft RCON command failed
+Traceback (most recent call last):
+  File "/home/firebot/git/bobbot9000/bot.py", line 846, in mc
+    response = await mc_command(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/firebot/git/bobbot9000/bot.py", line 449, in mc_command
+    return rcon(command)
+           ^^^^^^^^^^^^^
+  File "/home/firebot/git/bobbot9000/bot.py", line 436, in rcon
+    with MCRcon(
+  File "/home/firebot/.local/lib/python3.12/site-packages/mcrcon.py", line 57, in __enter__
+    self.connect()
+  File "/home/firebot/.local/lib/python3.12/site-packages/mcrcon.py", line 77, in connect
+    self.socket.connect((self.host, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+[2026-08-20T02:11:51.045522+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc op dragondog558" | Action="[Errno 111] Connection refused"
+Minecraft RCON command failed
+Traceback (most recent call last):
+  File "/home/firebot/git/bobbot9000/bot.py", line 846, in mc
+    response = await mc_command(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/firebot/git/bobbot9000/bot.py", line 449, in mc_command
+    return rcon(command)
+           ^^^^^^^^^^^^^
+  File "/home/firebot/git/bobbot9000/bot.py", line 436, in rcon
+    with MCRcon(
+  File "/home/firebot/.local/lib/python3.12/site-packages/mcrcon.py", line 57, in __enter__
+    self.connect()
+  File "/home/firebot/.local/lib/python3.12/site-packages/mcrcon.py", line 77, in connect
+    self.socket.connect((self.host, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+[2026-08-20T02:11:52.494417+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc op dragondog558" | Action="[Errno 111] Connection refused"
+Minecraft RCON command failed
+Traceback (most recent call last):
+  File "/home/firebot/git/bobbot9000/bot.py", line 846, in mc
+    response = await mc_command(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/firebot/git/bobbot9000/bot.py", line 449, in mc_command
+    return rcon(command)
+           ^^^^^^^^^^^^^
+  File "/home/firebot/git/bobbot9000/bot.py", line 436, in rcon
+    with MCRcon(
+  File "/home/firebot/.local/lib/python3.12/site-packages/mcrcon.py", line 57, in __enter__
+    self.connect()
+  File "/home/firebot/.local/lib/python3.12/site-packages/mcrcon.py", line 77, in connect
+    self.socket.connect((self.host, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+[2026-08-20T02:11:53.798546+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc op dragondog558" | Action="[Errno 111] Connection refused"
+Minecraft RCON command failed
+Traceback (most recent call last):
+  File "/home/firebot/git/bobbot9000/bot.py", line 846, in mc
+    response = await mc_command(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/firebot/git/bobbot9000/bot.py", line 449, in mc_command
+    return rcon(command)
+           ^^^^^^^^^^^^^
+  File "/home/firebot/git/bobbot9000/bot.py", line 436, in rcon
+    with MCRcon(
+  File "/home/firebot/.local/lib/python3.12/site-packages/mcrcon.py", line 57, in __enter__
+    self.connect()
+  File "/home/firebot/.local/lib/python3.12/site-packages/mcrcon.py", line 77, in connect
+    self.socket.connect((self.host, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+[2026-08-20T02:11:55.091135+00:00] ERROR | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc op dragondog558" | Action="[Errno 111] Connection refused"
+[2026-08-20T02:12:00.098376+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc op dragondog558" | Action="Made DragonDog558 a server operator"
+[2026-08-20T02:27:22.293870+00:00] SUCCESS | Guild="Froggo SMP" | Channel="#bots" | User="dragondog558" (789314712990384168) | Command="~mc deop fiaguhop137" | Action="Made Fiaguhop137 no longer a server operator"
