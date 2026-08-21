@@ -560,3 +560,6 @@ Shard ID None has successfully RESUMED session 60e000bc64f2da1a199985e66288fc13 
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
 Shard ID None has successfully RESUMED session 60e000bc64f2da1a199985e66288fc13 under trace ["gateway-prd-arm-us-east1-b-tp0b",{"micros":551,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":171,"calls":[]},"session_lookup_finished",{"micros":7,"calls":[]},"sessions-prd-gcp-us-east1-b-15",{"micros":17}]}].
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 60e000bc64f2da1a199985e66288fc13 under trace ["gateway-prd-arm-us-east1-b-rt8x",{"micros":739,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":433,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-15",{"micros":41}]}].
