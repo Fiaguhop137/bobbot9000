@@ -73037,3 +73037,19 @@ io.netty.handler.codec.EncoderException: Sending unknown packet 'clientbound/min
 	at knot//io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193)
 	at knot//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
+[19:42:55] [Server thread/INFO]: Stopping server
+[19:42:55] [Server thread/INFO]: Saving players
+[19:42:55] [Server thread/INFO]: Saving worlds
+[19:42:55] [Server thread/INFO]: ServerLevel[world]/minecraft:overworld: waiting for 729 chunks to unload
+[19:42:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[19:42:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[19:42:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:42:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:42:55] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[19:42:55] [C2ME Storage #3/INFO]: Storage thread Thread[#68,C2ME Storage #3,5,main] stopped
+[19:42:55] [C2ME Storage #2/INFO]: Storage thread Thread[#67,C2ME Storage #2,5,main] stopped
+[19:42:55] [C2ME Storage #1/INFO]: Storage thread Thread[#66,C2ME Storage #1,5,main] stopped
+[19:42:55] [C2ME Storage #6/INFO]: Storage thread Thread[#71,C2ME Storage #6,5,main] stopped
+[19:42:55] [C2ME Storage #5/INFO]: Storage thread Thread[#70,C2ME Storage #5,5,main] stopped
+[19:42:55] [C2ME Storage #4/INFO]: Storage thread Thread[#69,C2ME Storage #4,5,main] stopped
+[19:42:55] [Server thread/INFO]: Thread RCON Listener stopped
