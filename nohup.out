@@ -540,3 +540,23 @@ Shard ID None has successfully RESUMED session 255883ba1d708a0ec5e6f7b2065bac15 
 Got a request to RESUME the websocket.
 Shard ID None has sent the RESUME payload.
 Shard ID None has successfully RESUMED session 255883ba1d708a0ec5e6f7b2065bac15 under trace ["gateway-prd-arm-us-east1-c-xwzh",{"micros":621,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":272,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"sessions-prd-gcp-us-east1-b-34",{"micros":15}]}].
+[System] Starting Bobbot9000...
+[Permissions] Owner: 789314712990384168
+[Permissions] Admins: 0
+[Permissions] Mods: 0
+logging in using static token
+Shard ID None has sent the IDENTIFY payload.
+Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-b-718g",{"micros":126017,"calls":["id_created",{"micros":1042,"calls":[]},"session_lookup_time",{"micros":303,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"sessions-prd-gcp-us-east1-b-15",{"micros":124351,"calls":["start_session",{"micros":101200,"calls":["prd-rpc-5bb7bdff79-m2bzd",{"micros":27117,"calls":["get_user",{"micros":6105},"get_guilds",{"micros":5512},"send_scheduled_deletion_message",{"micros":16},"guild_join_requests",{"micros":1099},"authorized_ip_coro",{"micros":11},"pending_payments",{"micros":1639},"apex_experiments",{"micros":65217},"sessions_experiments",{"micros":10},"played_application_ids",{"micros":4},"linked_users",{"micros":3},"ad_personalization_toggles_disabled",{"micros":2},"regional_feature_config",{"micros":3}]}]},"starting_guild_connect",{"micros":62,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":342,"calls":[]},"guilds_started",{"micros":146,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":22543,"calls":[]},"connect_finished",{"micros":22571,"calls":[]},"build_ready",{"micros":26,"calls":[]},"clean_ready",{"micros":2,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 60e000bc64f2da1a199985e66288fc13).
+Logged in as bobbot9000#8975 (ID: 1533157532510584894)
+Connected to 2 Discord guild(s).
+Permission owner: 789314712990384168
+Minecraft server: /home/firebot/git/bobbot9000/minecraft_server
+Minecraft RCON: 127.0.0.1:25575
+Command prefix: ~
+Websocket closed with 1006, attempting a reconnect.
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 60e000bc64f2da1a199985e66288fc13 under trace ["gateway-prd-arm-us-east1-b-xp56",{"micros":1267,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":808,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"sessions-prd-gcp-us-east1-b-15",{"micros":18}]}].
+Got a request to RESUME the websocket.
+Shard ID None has sent the RESUME payload.
+Shard ID None has successfully RESUMED session 60e000bc64f2da1a199985e66288fc13 under trace ["gateway-prd-arm-us-east1-b-tp0b",{"micros":551,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":171,"calls":[]},"session_lookup_finished",{"micros":7,"calls":[]},"sessions-prd-gcp-us-east1-b-15",{"micros":17}]}].
