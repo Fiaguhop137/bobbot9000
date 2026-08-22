@@ -1,34 +1,31 @@
+davey is not installed, voice will NOT be supported
 [System] Starting Bobbot9000...
 [Permissions] Owner: 789314712990384168
 [Permissions] Admins: 0
 [Permissions] Mods: 0
+[2026-08-21 23:01:06] [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+Privileged message content intent is missing, commands may not work as expected.
+[2026-08-21 23:01:06] [INFO    ] discord.client: logging in using static token
 logging in using static token
-Shard ID None has sent the IDENTIFY payload.
-Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-b-dsp7",{"micros":434746,"calls":["id_created",{"micros":614,"calls":[]},"session_lookup_time",{"micros":2948,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-b-1",{"micros":429788,"calls":["start_session",{"micros":413448,"calls":["prd-rpc-5bb7bdff79-n59t2",{"micros":149635,"calls":["get_user",{"micros":13731},"get_guilds",{"micros":16307},"send_scheduled_deletion_message",{"micros":16},"guild_join_requests",{"micros":2145},"authorized_ip_coro",{"micros":10},"pending_payments",{"micros":17094},"apex_experiments",{"micros":237111},"sessions_experiments",{"micros":8},"played_application_ids",{"micros":7},"linked_users",{"micros":5},"ad_personalization_toggles_disabled",{"micros":3},"regional_feature_config",{"micros":3}]}]},"starting_guild_connect",{"micros":29,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"presence_started",{"micros":322,"calls":[]},"guilds_started",{"micros":117,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":15820,"calls":[]},"connect_finished",{"micros":15842,"calls":[]},"build_ready",{"micros":25,"calls":[]},"clean_ready",{"micros":3,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 22e75d26cccab11c977c5de5cd20bab0).
+[2026-08-21 23:01:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: c700784e5f4a53c00581cf5e1d461dad).
+Shard ID None has connected to Gateway (Session ID: c700784e5f4a53c00581cf5e1d461dad).
 Logged in as bobbot9000#8975 (ID: 1533157532510584894)
-Connected to 2 Discord guild(s).
+Connected to 1 Discord guild(s).
 Permission owner: 789314712990384168
 Minecraft server: /home/firebot/git/bobbot9000/minecraft_server
 Minecraft RCON: 127.0.0.1:25575
 Command prefix: ~
-Websocket closed with 1006, attempting a reconnect.
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 22e75d26cccab11c977c5de5cd20bab0 under trace ["gateway-prd-arm-us-east1-b-tp0b",{"micros":1359,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":588,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-1",{"micros":13}]}].
-Websocket closed with 1006, attempting a reconnect.
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 22e75d26cccab11c977c5de5cd20bab0 under trace ["gateway-prd-arm-us-east1-c-fg1n",{"micros":535,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":243,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-1",{"micros":14}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 22e75d26cccab11c977c5de5cd20bab0 under trace ["gateway-prd-arm-us-east1-b-bq4d",{"micros":576,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":258,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-b-1",{"micros":15}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 22e75d26cccab11c977c5de5cd20bab0 under trace ["gateway-prd-arm-us-east1-d-s1zz",{"micros":594,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":287,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-b-1",{"micros":13}]}].
-Got a request to RESUME the websocket.
-Shard ID None has sent the RESUME payload.
-Shard ID None has successfully RESUMED session 22e75d26cccab11c977c5de5cd20bab0 under trace ["gateway-prd-arm-us-east1-d-f62c",{"micros":579,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":287,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"sessions-prd-gcp-us-east1-b-1",{"micros":14}]}].
-Cleaning up tasks.
-Cleaning up after 1 tasks.
-All tasks finished cancelling.
-Closing the event loop.
+[2026-08-22 02:58:27] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
+Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
+[2026-08-22 04:50:08] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
+Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
+[2026-08-22 05:17:25] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
+Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
+[2026-08-22 08:19:26] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
+Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
+[2026-08-22 09:22:41] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
+Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
+[2026-08-22 10:22:52] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
+Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
+[2026-08-22 10:45:59] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
+Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
