@@ -3,41 +3,27 @@ davey is not installed, voice will NOT be supported
 [Permissions] Owner: 789314712990384168
 [Permissions] Admins: 0
 [Permissions] Mods: 0
-[2026-08-21 23:01:06] [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+[2026-08-22 23:01:10] [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
 Privileged message content intent is missing, commands may not work as expected.
-[2026-08-21 23:01:06] [INFO    ] discord.client: logging in using static token
+[2026-08-22 23:01:10] [INFO    ] discord.client: logging in using static token
 logging in using static token
-[2026-08-21 23:01:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: c700784e5f4a53c00581cf5e1d461dad).
-Shard ID None has connected to Gateway (Session ID: c700784e5f4a53c00581cf5e1d461dad).
+[2026-08-22 23:01:11] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: d52ed87bef626ffe698609ef7d2af86b).
+Shard ID None has connected to Gateway (Session ID: d52ed87bef626ffe698609ef7d2af86b).
 Logged in as bobbot9000#8975 (ID: 1533157532510584894)
 Connected to 1 Discord guild(s).
 Permission owner: 789314712990384168
 Minecraft server: /home/firebot/git/bobbot9000/minecraft_server
 Minecraft RCON: 127.0.0.1:25575
 Command prefix: ~
-[2026-08-22 02:58:27] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-[2026-08-22 04:50:08] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-[2026-08-22 05:17:25] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-[2026-08-22 08:19:26] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-[2026-08-22 09:22:41] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-[2026-08-22 10:22:52] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-[2026-08-22 10:45:59] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-[2026-08-22 13:36:59] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-[2026-08-22 16:44:46] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-[2026-08-22 18:18:52] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-[2026-08-22 18:52:18] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-[2026-08-22 20:50:45] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-[2026-08-22 22:58:02] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
-Shard ID None has successfully RESUMED session c700784e5f4a53c00581cf5e1d461dad.
+[2026-08-23 02:18:14] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session d52ed87bef626ffe698609ef7d2af86b.
+Shard ID None has successfully RESUMED session d52ed87bef626ffe698609ef7d2af86b.
+[2026-08-23 06:00:58] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session d52ed87bef626ffe698609ef7d2af86b.
+Shard ID None has successfully RESUMED session d52ed87bef626ffe698609ef7d2af86b.
+[2026-08-23 06:58:00] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session d52ed87bef626ffe698609ef7d2af86b.
+Shard ID None has successfully RESUMED session d52ed87bef626ffe698609ef7d2af86b.
+[2026-08-23 09:00:50] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session d52ed87bef626ffe698609ef7d2af86b.
+Shard ID None has successfully RESUMED session d52ed87bef626ffe698609ef7d2af86b.
+[2026-08-23 12:25:45] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session d52ed87bef626ffe698609ef7d2af86b.
+Shard ID None has successfully RESUMED session d52ed87bef626ffe698609ef7d2af86b.
+[2026-08-23 15:06:17] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session d52ed87bef626ffe698609ef7d2af86b.
+Shard ID None has successfully RESUMED session d52ed87bef626ffe698609ef7d2af86b.
