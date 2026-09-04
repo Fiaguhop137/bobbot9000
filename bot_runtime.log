@@ -3,19 +3,23 @@ davey is not installed, voice will NOT be supported
 [Permissions] Owner: 789314712990384168
 [Permissions] Admins: 0
 [Permissions] Mods: 0
-[2026-09-03 16:20:30] [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+[2026-09-03 23:01:04] [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
 Privileged message content intent is missing, commands may not work as expected.
-[2026-09-03 16:20:30] [INFO    ] discord.client: logging in using static token
+[2026-09-03 23:01:04] [INFO    ] discord.client: logging in using static token
 logging in using static token
-[2026-09-03 16:20:31] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 382c764c5f124aaa22cb23e156658531).
-Shard ID None has connected to Gateway (Session ID: 382c764c5f124aaa22cb23e156658531).
+[2026-09-03 23:01:06] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: c7fae8a1f66ba7e75062c57db87952f9).
+Shard ID None has connected to Gateway (Session ID: c7fae8a1f66ba7e75062c57db87952f9).
 Logged in as bobbot9000#8975 (ID: 1533157532510584894)
 Connected to 1 Discord guild(s).
 Permission owner: 789314712990384168
 Minecraft server: /home/firebot/git/bobbot9000/minecraft_server
 Minecraft RCON: 127.0.0.1:25575
 Command prefix: ~
-[2026-09-03 19:33:30] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 382c764c5f124aaa22cb23e156658531.
-Shard ID None has successfully RESUMED session 382c764c5f124aaa22cb23e156658531.
-[2026-09-03 20:19:00] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 382c764c5f124aaa22cb23e156658531.
-Shard ID None has successfully RESUMED session 382c764c5f124aaa22cb23e156658531.
+[2026-09-04 00:14:55] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c7fae8a1f66ba7e75062c57db87952f9.
+Shard ID None has successfully RESUMED session c7fae8a1f66ba7e75062c57db87952f9.
+[2026-09-04 01:07:09] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c7fae8a1f66ba7e75062c57db87952f9.
+Shard ID None has successfully RESUMED session c7fae8a1f66ba7e75062c57db87952f9.
+[2026-09-04 03:20:08] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c7fae8a1f66ba7e75062c57db87952f9.
+Shard ID None has successfully RESUMED session c7fae8a1f66ba7e75062c57db87952f9.
+[2026-09-04 06:08:18] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c7fae8a1f66ba7e75062c57db87952f9.
+Shard ID None has successfully RESUMED session c7fae8a1f66ba7e75062c57db87952f9.
